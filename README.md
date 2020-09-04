@@ -7,7 +7,7 @@ Das ganze ist in CSS geschrieben und kann, solange es noch nicht im Portal Integ
 
 1.	Lade dir das Addon Custom Style Script herunter und Installiere es. Das benötigst du, um den Code in die Websites einzubinden.
 
-    	Chrome: https://chrome.google.com/webstore/detail/custom-style-script/ecjfaoeopefafjpdgnfcjnhinpbldjij 
+	Chrome: https://chrome.google.com/webstore/detail/custom-style-script/ecjfaoeopefafjpdgnfcjnhinpbldjij 
 	
 	Opera: https://addons.opera.com/de/extensions/details/custom-style-script/ 
 	
