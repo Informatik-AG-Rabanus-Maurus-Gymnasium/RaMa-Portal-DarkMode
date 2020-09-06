@@ -46,7 +46,7 @@ ul.m_menu0 > li > a {
 	transition: background 1s, color 0.5s;
 	border-radius: 2px;
 	box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
-	bos-sizing: border-box;
+	box-sizing: border-box;
 	border: 1px solid rgba(255,255,255,0.16);
 }
 ul.m_menu0 > li > a:hover {
@@ -97,9 +97,10 @@ ul.m_menu1 > li > a {
 	background-color:rgba(255,255,255,0.15);
 	transition: background 1s, color 0.5s;
 	box-sizing: border-box;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 5px 1px #000;
 	border: 1px solid rgba(255,255,255,0.16);
 	text-shadow: 1px 1px 1px #121212;
+	border-radius: 2px;
 }
 ul.m_menu1 > li > a:hover {
 	background:rgba(255,255,255,0.75);
@@ -255,11 +256,13 @@ ul.oe_sidebar > li > a{
 	width:105px;
 	height:95px;
 	padding:10px;
-	margin:4px !important;
+	margin-left:4px !important;
+	margin-top: 4px !important;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
 	border: 1px solid rgba(255,255,255,0.16);
 	border-radius: 2px;
+	min-height: 60px;
 }
 ul.oe_sidebar > li > a:hover,
 ul.oe_sidebar > li.selected > a{
