@@ -324,7 +324,7 @@ h2 {
 	width:890px;
 	height:560px;
         overflow:auto;
-	background:none;
+	background:transparent;
 	font-weight:normal;
         padding-bottom: 40px;
 }
@@ -343,7 +343,7 @@ tr.zeile_g {
 	text-shadow: 1px 1px 1px #121212;
 }
 tr.zeile_u {
-	background: none;
+	transition: background 1s;
 }
 tr.zeile_y {
 	background-color: #f0e0d0;
@@ -357,7 +357,7 @@ tr.zeile_g:hover {
 	text-shadow: none;
 }
 tr.zeile_u:hover {
-	background-color: #ffd080;
+	background-color: #424242;
 }
 tr.zeile_y:hover {
 	background-color: #ffd080;
@@ -400,13 +400,13 @@ input, textarea, select {
 	padding: 2px;
 	border: 1px solid #616161;
 	background-color: rgba(255,255,255,0.1); 
-	color: #000000;
+	color: #F5F5F5 !important;
 	font-size: 0.9em;
 	transition: background 0.5s, color 0.25s;
 }
 input:focus, textarea:focus {
-	background-color: #757575; 
-	border: 1px solid rgba(255,255,255,0.5);
+	background-color: #616161; 
+	border: 1px solid #424242;
 	color: #121212;
 }
 button {
@@ -589,4 +589,7 @@ td.plan {
 }
 #charCounter {
 	color: #fff !important;
+}
+[style*="background:#f0f040;"] {
+	background: #616161 !important;
 }
