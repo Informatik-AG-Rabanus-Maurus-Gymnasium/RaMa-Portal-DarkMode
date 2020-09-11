@@ -163,8 +163,8 @@ ul.oe_menu > li{
 }
 ul.oe_menu > li > a{
 	display:block;
-	background-color: rgb(255,255,255,0.15);
-	color: rgb(255,255,255,0.87);
+	background-color: rgba(255,255,255,0.15);
+	color: rgba(255,255,255,0.87);
 	text-decoration:none;
 	border-radius: 2px;
 	font-size:16px;
@@ -179,7 +179,7 @@ ul.oe_menu > li > a{
 }
 ul.oe_menu > li > a:hover,
 ul.oe_menu > li.selected > a{
-	background:rgb(255,255,255,0.75);
+	background: rgba(255,255,255,0.75);
 	color: #121212;
 }
 .oe_wrapper ul.hovered > li > a{
