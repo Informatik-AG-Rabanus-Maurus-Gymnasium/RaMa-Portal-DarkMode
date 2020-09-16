@@ -646,7 +646,6 @@ td.plan {
 	background-color: #9E9D24 !important;
 }
 
-/* F1 */
 [style*="background:rgb(249,238,244);"] {
 	background-color: #c3c900 !important;
 }
