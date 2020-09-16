@@ -512,7 +512,7 @@ button:hover {
 }
 td.plan {
 	transition: background ease .1s;
-	background: #212121 !important;
+	background: #363636 !important;
 }
 
 
@@ -595,57 +595,60 @@ td.plan {
 
 
 
-/* Stundenplan Design
 
-
-Deutsch
+/* Deutsch */
 [style*="background:rgb(123,187,209);"] {
-	background-color: #B71C1C !important;
+	background-color: #c90700 !important;
 }
 
-Mathe
+/* Mathe */
 [style*="background:rgb(210,226,248);"] {
-	background-color: #1565C0 !important;
+	background-color: #00c3c9 !important;
 }
 
-Musik
+/* Musik */
 [style*="background:rgb(210,218,202);"] {
-	background-color: #37474F !important;
+	background-color: #c9005e !important;
 }
 
-Sport
+/* Sport */
 [style*="background:rgb(204,184,232);"] {
-	background-color: #00695C !important;
+	background-color: #c96b00 !important;
 }
 
-Biologie
+/* Biologie */
 [style*="background:rgb(189,198,208);"] {
-	background-color: #1B5E20 !important;
+	background-color: #00c907 !important;
 }
 
-Religion
+/* Religion */
 [style*="background:rgb(84,237,237);"] {
 	background-color: #4527A0 !important;
 }
 
-Physik
+/* Physik */
 [style*="background:rgb(111,215,226);"] {
 	background-color: #4E342E !important;
 }
 
-Latein
+/* Latein */
 [style*="background:rgb(243,243,243);"] {
 	background-color: #E65100 !important;
 }
 
-Religion
+/* Religion */
 [style*="background:rgb(84,237,237);"] {
 	background-color: #4527A0 !important;
 }
 
-AGs 
+/* AGs */
 [style*="background:rgb(255,255,255);"] {
 	background-color: #9E9D24 !important;
 }
 
-*/
+/* F1 */
+[style*="background:rgb(249,238,244);"] {
+	background-color: #c3c900 !important;
+}
+
+
