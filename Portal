@@ -64,7 +64,7 @@ ul.m_menu0 > li > p {
 	height:80px;
 	padding:10px;
 	margin:2px;
-}
+} 
 ul.m_menu0 > li > a.disabled {
 	opacity:0.3;
 }
