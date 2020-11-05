@@ -39,6 +39,7 @@ body {
 	text-align:right;
 	height:20px;
 	color:#fff;
+	z-index: 2;
 }
 .reference a{
 	color:#fff;
@@ -62,6 +63,7 @@ body {
 	box-sizing: border-box;
 	overflow: hidden;
 	/*! margin-bottom: 100px; */
+	z-index: 2;
 }
 [class^="navbar-section"]  {
 	height: 40px;
@@ -113,26 +115,31 @@ body {
 	position:fixed;
 	left:0px;
 	top:45px;
-	width:70px;
+	width:80px;
 	height:800px;
 	padding:0px;
 	float:left;
-	background:#aaa;
+	background:#212121;
 	font-size:16px;
 	font-weight:bold;
 	overflow-x:hidden;
 	overflow-y:auto;
+	box-shadow: 0px 0px 5px #000;
+	z-index: 1;
 }
 .flist a{
-	color:#666;
+	color:#fafafa;
+	/*! border: 1px solid #f00; */
 }
 .flist a:hover{
-	color:#000;
+	color:#666;
 	cursor:pointer;
+	background: #424242;
+	background: #424242;
 }
 .felem{
 	box-sizing: border-box;
-	width:100%;
+	width:90%;
 	min-height:40px;
 	float:left;
 	margin:0;
@@ -140,6 +147,10 @@ body {
 	overflow:hidden;
 	word-break: break-word;
 	position: relative;
+	border: 1px solid #2fd3d3;
+	margin-top: 4px;
+	border-radius: 0px 4px 4px 0px;
+	transition: 0.2s all;
 }
 .felem_s{
 	box-sizing: border-box;
@@ -156,9 +167,9 @@ body {
 }
 .mlist{
 	position:fixed;
-	left:70px;
+	left:80px;
 	top:45px;
-	width:200px;
+	width:220px;
 	height:800px;
 	padding:0px;
 	float:left;
@@ -206,9 +217,8 @@ body {
 	overflow-y: auto;
 }
 .mtabs {
-	background-color: #ccc;
 	height:41px;
-	width:200px;
+	width:220xp;
 }
 [class^="mtab-"]  {
 	height: 41px;
@@ -229,14 +239,21 @@ body {
 	overflow:hidden;
 }
 .mtab-front {
-	background-color: #ccc;
+	background-color: #d32f2f;
 	width: 110px;
 	color: black;
+	border-radius: 4px;
+	margin: 0px 4px 0px 4px;
+	box-shadow: 0px 0px 5px #000;
+	border: 1px solid rgba(255,255,255,0.12);
 }
 .mtab-back {
-	background-color: #9e9e9e;
-	color: #555;
+	background-color: #424242;
+	color: #fff;
 	width:90px;
+	border-radius: 4px;
+	border: 1px solid rgba(255,255,255,0.12);
+	margin-right: 4px;
 }
 .works{
 	position:fixed;
