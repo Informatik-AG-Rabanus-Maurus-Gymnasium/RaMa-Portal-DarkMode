@@ -29,6 +29,7 @@ body {
 	cursor: pointer;
 }
 .reference {
+	box-shadow: 0px 0px 5px #000;
 	position:fixed;
 	left:0px;
 	bottom:0px;
@@ -64,6 +65,7 @@ body {
 	overflow: hidden;
 	/*! margin-bottom: 100px; */
 	z-index: 2;
+	box-shadow: 0px 0px 5px #000;
 }
 [class^="navbar-section"]  {
 	height: 40px;
@@ -132,10 +134,8 @@ body {
 	/*! border: 1px solid #f00; */
 }
 .flist a:hover{
-	color:#666;
+	color: #fff;
 	cursor:pointer;
-	background: #424242;
-	background: #424242;
 }
 .felem{
 	box-sizing: border-box;
@@ -147,7 +147,8 @@ body {
 	overflow:hidden;
 	word-break: break-word;
 	position: relative;
-	border: 1px solid #2fd3d3;
+	border: 1px solid #d32f2f;
+	border-left: none;
 	margin-top: 4px;
 	border-radius: 0px 4px 4px 0px;
 	transition: 0.2s all;
@@ -157,9 +158,12 @@ body {
 	width:100%;
 	min-height:40px;
 	float:left;
-	margin:0px;
-	padding:6px;
-	background-color:#ccc;
+	margin-top: 4px;
+	padding: 10px 4px;
+	background-color: #616161;
+	border: 1px solid #D32F2F;
+	border-left: none;
+	border-radius: 0px 4px 4px 0px;
 	overflow:hidden;
 	color:#000;
 	word-break: break-word;
@@ -169,7 +173,7 @@ body {
 	position:fixed;
 	left:80px;
 	top:45px;
-	width:220px;
+	width: 230px;
 	height:800px;
 	padding:0px;
 	float:left;
@@ -212,13 +216,15 @@ body {
 }
 .mscrollbox {
 	height: calc(100% - 41px);
-	position: relative;
+	position: fixed;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 .mtabs {
 	height:41px;
-	width:220xp;
+	width: 230px;
+	margin-top: 10px;
+	margin-left: 5px;
 }
 [class^="mtab-"]  {
 	height: 41px;
@@ -240,25 +246,25 @@ body {
 }
 .mtab-front {
 	background-color: #d32f2f;
-	width: 110px;
+	width: 100px !important;
 	color: black;
 	border-radius: 4px;
-	margin: 0px 4px 0px 4px;
+	margin: 0px 5px 0px 5px;
 	box-shadow: 0px 0px 5px #000;
 	border: 1px solid rgba(255,255,255,0.12);
 }
 .mtab-back {
 	background-color: #424242;
 	color: #fff;
-	width:90px;
+	width: 100px !important;
 	border-radius: 4px;
 	border: 1px solid rgba(255,255,255,0.12);
-	margin-right: 4px;
+	margin-right: 5px;
 }
 .works{
 	position:fixed;
-	left:270px;
-	top:40px;
+	left: 300px;
+	top: 45px;
 	width:100%;
 	height:800px;
 	padding:16px;
@@ -266,7 +272,7 @@ body {
 	float:left;
 	background:#121212;
 	font-size:14px;
-	color:#000;
+	color: #fff;
 	overflow:auto;
 	z-index:-1;
 }
