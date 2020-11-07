@@ -9,7 +9,7 @@
 	padding:0;
 }
 html {
-	background:#121212;
+	background:#0f0;
 	background-size:100%;
 	background-size:cover;
 	height:100%;
@@ -69,9 +69,9 @@ body {
 	padding: 0px 4px;
 	box-sizing: border-box;
 	overflow: hidden;
-	/*! margin-bottom: 100px; */
 	z-index: 2;
 	box-shadow: 0px 0px 5px #000;
+	align-items: center;
 }
 [class^="navbar-section"]  {
 	height: 40px;
@@ -124,14 +124,11 @@ body {
 	left:0px;
 	top:45px;
 	width:80px;
-	height:800px;
 	padding:0px;
 	float:left;
 	background:#212121;
 	font-size:16px;
 	font-weight:bold;
-	overflow-x:hidden;
-	overflow-y:auto;
 	box-shadow: 0px 0px 5px #000;
 	z-index: 1;
 }
@@ -602,28 +599,29 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    overflow: visible;
   }
   .flist {
     overflow: scroll;
-    height: 85% !important;
+    height: calc(100% - 80px) !important;
   }
   .felem {
     overflow: scroll;
   }
   .navelem_l {
-    margin:1.5vh 0vw 0vh 1.7vw !important;
+    margin:10px 0vw 0vh 1.5vw !important;
     min-width: 2vw !important;
     width:3.5vw !important;
     height:3.5vw !important;
     padding:6px;
     text-align:left;
-    background-size: 6vw !important;
+    background-size: 90% !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+    max-width: 20px !important;
+    max-height: 20px !important;
   }
   .navelem_r{
-    margin:1.5vh 0vw 0vh 1.7vw !important;
+    margin:10px 0vw 0vh 1.7vw !important;
     min-width: 5px !important;
     width:3.5vw !important;
     height:3.5vw !important;
@@ -632,6 +630,10 @@ body {
     background-size: 20px !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    max-width: 20px !important;
+    max-height: 20px !important;
   }
   .navbar-section-c {
     width: auto !important;
@@ -650,13 +652,15 @@ body {
     z-index: 2;
     overflow: scroll;
     box-shadow: 0px 0px 5px #000;
+    max-height: 40px;
+    min-height: 35px;
   }
   .mlist {
     position:fixed !important;
     left:80px;
     top:45px;
-    width:80vw !important;
-    height:44vh !important;
+    width:calc(100% - 80px) !important;
+    height:calc(50% - 45px) !important;
     background:#121212;
     overflow: scroll !important;
     border-bottom: 1px solid var(--primary);
@@ -666,8 +670,8 @@ body {
     position:fixed !important;
     left:80px !important;
     top:50vh !important;
-    width:70vw !important;
-    height:40vh !important;
+    width:calc(100% - 120px) !important;
+    height:calc(50% - 67px) !important;
     padding:16px;
     padding-left: 26px;
     float:left;
@@ -679,7 +683,7 @@ body {
   }
   .mtabs {
     height:41px;
-    width:70vw;
+    width:75vw;
     margin: 10px 4vw 0px 4vw;
     justify-content: space-around;
     display: flex;
@@ -711,11 +715,11 @@ body {
     box-shadow: 0px 0px 8px #000;
   }
   .mscrollbox {
-    height: 33.2vh !important;
+    height: calc(50% - 106px) !important;
     position: fixed;
     overflow: scroll !important;
     margin-top: 10px;
     left: 27vw;
-    width: 73vw;
+    width: calc(100% - 140px);
   }
 }
