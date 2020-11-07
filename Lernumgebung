@@ -9,7 +9,7 @@
 	padding:0;
 }
 html {
-	background:#fff;
+	background:#121212;
 	background-size:100%;
 	background-size:cover;
 	height:100%;
@@ -655,18 +655,19 @@ body {
     position:fixed !important;
     left:80px;
     top:45px;
-    width:75vw !important;
+    width:80vw !important;
     height:44vh !important;
     background:#121212;
     overflow: scroll !important;
-    border-bottom: 1px solid var(--primary) !important;
+    border-bottom: 1px solid var(--primary);
+    border-right: none;
   }
   .works {
     position:fixed !important;
     left:80px !important;
-    top:295px !important;
-    width:62vw !important;
-    height:36vh !important;
+    top:50vh !important;
+    width:70vw !important;
+    height:40vh !important;
     padding:16px;
     padding-left: 26px;
     float:left;
@@ -678,8 +679,10 @@ body {
   }
   .mtabs {
     height:41px;
-    width:220px;
-    margin: 10px 0px 0px 4vw;
+    width:70vw;
+    margin: 10px 4vw 0px 4vw;
+    justify-content: space-around;
+    display: flex;
   }
   .melem {
     width:150px;
