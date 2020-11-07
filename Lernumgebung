@@ -1,3 +1,9 @@
+:root {
+	--primary: #9d2033;
+}
+
+
+
 * {
 	margin:0;
 	padding:0;
@@ -13,7 +19,7 @@ body {
 	font-size:16px;
 	color:#000;
 }
-@media (max-width: 999px) {
+@media (max-width: 1080px) {
 	.to-hide {
 	   display: none;
 	}
@@ -33,7 +39,7 @@ body {
 	position:fixed;
 	left:0px;
 	bottom:0px;
-	background:#666;
+	background:#424242;
 	width:100%;
 	font-size:12px;
 	line-height:20px;
@@ -99,7 +105,7 @@ body {
 	text-align:left;
 	background-color: #424242;
 	border-radius: 4px;
-	border: 1px solid #D32F2F;
+	border: 1px solid var(--primary);
 	background-position-x: 4px !important;
 }
 .navelem_r{
@@ -147,9 +153,9 @@ body {
 	overflow:hidden;
 	word-break: break-word;
 	position: relative;
-	border: 1px solid #d32f2f;
+	border: 1px solid var(--primary);
 	border-left: none;
-	margin-top: 4px;
+	margin-top: 5px;
 	border-radius: 0px 4px 4px 0px;
 	transition: 0.2s all;
 }
@@ -161,7 +167,7 @@ body {
 	margin-top: 4px;
 	padding: 10px 5px;
 	background-color: #616161;
-	border: 1px solid #D32F2F;
+	border: 1px solid var(--primary);
 	border-left: none;
 	border-radius: 0px 4px 4px 0px;
 	overflow:hidden;
@@ -180,7 +186,7 @@ body {
 	background:#121212;
 	font-size:14px;
 	color:#fff;
-	border-right: 1px solid #D32F2F;
+	border-right: 1px solid var(--primary);
 }
 .mlist a{
 	color:#666;
@@ -249,7 +255,7 @@ body {
 	overflow:hidden;
 }
 .mtab-front {
-	background-color: #d32f2f;
+	background-color: var(--primary);
 	width: 100px !important;
 	color: black;
 	border-radius: 4px;
@@ -510,7 +516,7 @@ body {
 	z-index:11;
 	width:32px;
 	height:32px;
-	top:40px;
+	top:45px;
 	right:4px;
 	padding:0px;
 	background: url(icn/fullscreen32.png) center no-repeat;
@@ -583,4 +589,130 @@ body {
 .light
 {
 	background: #fff;
+}
+
+
+
+
+
+/* Mobile-CSS + DarkMode */
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+  }
+  .flist {
+    overflow: scroll;
+    height: 85% !important;
+  }
+  .felem {
+    overflow: scroll;
+  }
+  .navelem_l {
+    margin:1.5vh 0vw 0vh 1.7vw !important;
+    min-width: 2vw !important;
+    width:3.5vw !important;
+    height:3.5vw !important;
+    padding:6px;
+    text-align:left;
+    background-size: 6vw !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  .navelem_r{
+    margin:1.5vh 0vw 0vh 1.7vw !important;
+    min-width: 5px !important;
+    width:3.5vw !important;
+    height:3.5vw !important;
+    padding:6px;
+    float:left;
+    background-size: 20px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  .navbar-section-c {
+    width: auto !important;
+  }
+  .navbar-section-l {
+    width: auto !important;
+  }
+  .reference {
+    background:#424242;
+    width:100vw;
+    font-size:10px;
+    line-height:20px;
+    text-align:center;
+    height:7vh;
+    color:#fff;
+    z-index: 2;
+    overflow: scroll;
+    box-shadow: 0px 0px 5px #000;
+  }
+  .mlist {
+    position:fixed !important;
+    left:80px;
+    top:45px;
+    width:75vw !important;
+    height:44vh !important;
+    background:#121212;
+    overflow: scroll !important;
+    border-bottom: 1px solid var(--primary) !important;
+  }
+  .works {
+    position:fixed !important;
+    left:80px !important;
+    top:295px !important;
+    width:62vw !important;
+    height:36vh !important;
+    padding:16px;
+    padding-left: 26px;
+    float:left;
+    background:#121212;
+    font-size:14px;
+    color:#000;
+    overflow:auto;
+    z-index:-1;
+  }
+  .mtabs {
+    height:41px;
+    width:220px;
+    margin: 10px 0px 0px 4vw;
+  }
+  .melem {
+    width:150px;
+    padding:8px 15px 8px 40px !important;
+    background:#212121;
+    color:#fff;
+    overflow-y:scroll;
+    background-repeat: no-repeat;
+    background-size: 7vh;
+    margin: 0px 0px 5px 5px;
+    border-radius: 25px;
+    background-position: 3px !important;
+    box-shadow: 0px 0px 5px #000;
+  }
+  .melem_s{
+    width:150px;
+    padding:8px 15px 8px 40px !important;
+    background:#424242;
+    color:#fff;
+    margin: 0px 0px 5px 5px;
+    border-radius: 25px;
+    overflow-y:scroll;
+    background-repeat: no-repeat;
+    background-size: 7vh;
+    background-position: 3px !important;
+    box-shadow: 0px 0px 8px #000;
+  }
+  .mscrollbox {
+    height: 33.2vh !important;
+    position: fixed;
+    overflow: scroll !important;
+    margin-top: 10px;
+    left: 27vw;
+    width: 73vw;
+  }
 }
