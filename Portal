@@ -1,3 +1,7 @@
+:root {
+	--primary: #9d2033;
+}
+
 
 * {
 	margin:0;
@@ -35,7 +39,7 @@ ul.m_menu0 > li {
 }
 ul.m_menu0 > li > a {
 	display:block;
-	background-color: #9d2032;
+	background-color: var(--primary);
 	color:#fff;
 	text-decoration:none;
 	font-size:16px;
@@ -44,8 +48,8 @@ ul.m_menu0 > li > a {
 	padding:10px;
 	margin:4px;
 	transition: background 1s, color 0.5s;
-	border-radius: 2px;
-	box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+	border-radius: 4px;
+	box-shadow: 0px 0px 5px #000;
 	box-sizing: border-box;
 	border: 1px solid rgba(255,255,255,0.16);
 }
@@ -100,7 +104,7 @@ ul.m_menu1 > li > a {
 	box-shadow: 0px 0px 5px 1px #000;
 	border: 1px solid rgba(255,255,255,0.16);
 	text-shadow: 1px 1px 1px #121212;
-	border-radius: 2px;
+	border-radius: 4px;
 }
 ul.m_menu1 > li > a:hover {
 	background:rgba(255,255,255,0.75);
@@ -166,7 +170,7 @@ ul.oe_menu > li > a{
 	background-color: rgba(255,255,255,0.15);
 	color: rgba(255,255,255,0.87);
 	text-decoration:none;
-	border-radius: 2px;
+	border-radius: 4px;
 	font-size:16px;
 	width:105px;
 	height:95px;
@@ -197,7 +201,7 @@ ul.oe_menu div{
 	padding:20px;
 	display:none;
 	text-shadow: 1px 1px 1px #121212;
-	border-radius: 2px;
+	border-radius: 4px;
 }
 ul.oe_menu div ul li a{
 	text-decoration:none;
@@ -329,7 +333,7 @@ h2 {
         padding-bottom: 40px;
 }
 a:link, a:visited {
-        color: #9d2032;
+        color: var(--primary);
         text-decoration: none;
 	transition: color 0.5s;
 }
