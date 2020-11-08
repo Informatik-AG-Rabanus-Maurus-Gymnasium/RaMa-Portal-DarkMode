@@ -9,7 +9,7 @@
 	padding:0;
 }
 html {
-	background:#0f0;
+	background:#121212;
 	background-size:100%;
 	background-size:cover;
 	height:100%;
@@ -64,14 +64,12 @@ body {
 	font-size:13px;
 	line-height:13px;
 	text-align:right;
-	height:45px;
+	height:40px;
 	color:#fff;
 	padding: 0px 4px;
 	box-sizing: border-box;
 	overflow: hidden;
-	z-index: 2;
 	box-shadow: 0px 0px 5px #000;
-	align-items: center;
 }
 [class^="navbar-section"]  {
 	height: 40px;
@@ -98,7 +96,7 @@ body {
 	margin:4px 0px 4px 6px;
 	min-width:20px;
 	height:20px;
-	padding:6px 4px 6px 1.75em;
+	padding:6px 4px 6px 18px;
 	float:left;
 	display:flex;
 	align-items:center;
@@ -199,7 +197,10 @@ body {
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow: ellipsis;
-	border-radius: 0px 100px 100px 0px;
+  background:#212121;
+  color:#fff;
+	border-radius: 0px 25px 25px 0px;
+  box-shadow: 0px 0px 5px #000;
 	transition: 0.5s all;
 }
 .target.over{
@@ -214,8 +215,9 @@ body {
 	height:30px;
 	padding: 6px 20px 6px 42px !important;
 	color: #fff;
-	background: #616161;
-	border-radius: 0px 100px 100px 0px;
+	background: #424242;
+	border-radius: 0px 25px 25px 0px;
+  box-shadow: 0px 0px 8px #000;
 	margin-top: 10px;
 	white-space:nowrap;
 	overflow:hidden;
@@ -223,15 +225,15 @@ body {
 }
 .mscrollbox {
 	height: calc(100% - 41px);
-	position: fixed;
+	position: relative;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: scroll;
 }
 .mtabs {
 	height:41px;
 	width: 230px;
 	margin-top: 10px;
-	margin-left: 5px;
+  overflow: hidden;
 }
 [class^="mtab-"]  {
 	height: 41px;
@@ -596,130 +598,105 @@ body {
 
 @media screen and (max-width: 640px) {
   .navbar {
-    width: 100vw;
     display: flex;
     flex-direction: row;
+    height: 45px;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar-section-c, .navbar-section-l {
+    width: auto !important;
+  }
+  .navelem_l {
+    margin:10px 0vw 0vh 1.5vw !important;
+    min-width: 2vw;
+    width:3.5vw;
+    height:3.5vw;
+    padding:6px;
+    background-size: 90% !important;
+    background-position: center !important;
+    max-width: 20px;
+    max-height: 20px;
+  }
+  .navelem_r{
+    margin:10px 0vw 0vh 1.7vw;
+    min-width: 5px;
+    width:3.5vw;
+    height:3.5vw;
+    padding:6px;
+    float:left;
+    background-size: 90% !important;
+    background-position: center !important;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    max-width: 20px;
+    max-height: 20px;
   }
   .flist {
     overflow: scroll;
     height: calc(100% - 80px) !important;
+    width: 80px;
+    z-index: 1;
   }
   .felem {
     overflow: scroll;
   }
-  .navelem_l {
-    margin:10px 0vw 0vh 1.5vw !important;
-    min-width: 2vw !important;
-    width:3.5vw !important;
-    height:3.5vw !important;
-    padding:6px;
-    text-align:left;
-    background-size: 90% !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    max-width: 20px !important;
-    max-height: 20px !important;
-  }
-  .navelem_r{
-    margin:10px 0vw 0vh 1.7vw !important;
-    min-width: 5px !important;
-    width:3.5vw !important;
-    height:3.5vw !important;
-    padding:6px;
-    float:left;
-    background-size: 20px !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    border: 1px solid var(--primary);
-    border-radius: 4px;
-    max-width: 20px !important;
-    max-height: 20px !important;
-  }
-  .navbar-section-c {
-    width: auto !important;
-  }
-  .navbar-section-l {
-    width: auto !important;
-  }
-  .reference {
-    background:#424242;
-    width:100vw;
-    font-size:10px;
-    line-height:20px;
-    text-align:center;
-    height:7vh;
-    color:#fff;
-    z-index: 2;
-    overflow: scroll;
-    box-shadow: 0px 0px 5px #000;
-    max-height: 40px;
-    min-height: 35px;
-  }
   .mlist {
-    position:fixed !important;
-    left:80px;
-    top:45px;
     width:calc(100% - 80px) !important;
     height:calc(50% - 45px) !important;
-    background:#121212;
     overflow: scroll !important;
     border-bottom: 1px solid var(--primary);
     border-right: none;
-  }
-  .works {
-    position:fixed !important;
-    left:80px !important;
-    top:50vh !important;
-    width:calc(100% - 120px) !important;
-    height:calc(50% - 67px) !important;
-    padding:16px;
-    padding-left: 26px;
-    float:left;
-    background:#121212;
-    font-size:14px;
-    color:#000;
-    overflow:auto;
-    z-index:-1;
+    left:80px;
+    top:45px;
   }
   .mtabs {
-    height:41px;
-    width:75vw;
-    margin: 10px 4vw 0px 4vw;
+    height:45px;
+    width: calc(100% - 10px);
+    margin: 10px 0px 10px 0px;
     justify-content: space-around;
     display: flex;
+    align-items: center;
+  }
+  .mscrollbox {
+    position: fixed;
+    overflow-y: scroll;
+    left: 27vw;
+    height: calc(50% - 110px);
+    width: calc(100% - 85px);
   }
   .melem {
-    width:150px;
     padding:8px 15px 8px 40px !important;
-    background:#212121;
-    color:#fff;
     overflow-y:scroll;
     background-repeat: no-repeat;
     background-size: 7vh;
-    margin: 0px 0px 5px 5px;
+    margin: 5px 0px 0px 5px;
     border-radius: 25px;
     background-position: 3px !important;
-    box-shadow: 0px 0px 5px #000;
   }
   .melem_s{
     width:150px;
     padding:8px 15px 8px 40px !important;
-    background:#424242;
-    color:#fff;
-    margin: 0px 0px 5px 5px;
+    margin: 5px 0px 0px 5px;
     border-radius: 25px;
     overflow-y:scroll;
-    background-repeat: no-repeat;
     background-size: 7vh;
     background-position: 3px !important;
-    box-shadow: 0px 0px 8px #000;
   }
-  .mscrollbox {
-    height: calc(50% - 106px) !important;
-    position: fixed;
-    overflow: scroll !important;
-    margin-top: 10px;
-    left: 27vw;
-    width: calc(100% - 140px);
+  .works {
+    left:80px;
+    top:50vh;
+    width:calc(100% - 120px) !important;
+    height:calc(50% - 67px) !important;
+    overflow:scroll;
+  }
+  .reference {
+    font-size:10px;
+    text-align:center;
+    height:7vh;
+    overflow-y: scroll;
+    max-height: 40px;
+    min-height: 35px;
   }
 }
