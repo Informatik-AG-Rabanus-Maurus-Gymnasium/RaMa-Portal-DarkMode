@@ -112,6 +112,8 @@ body {
 	max-width:6%;
 	height:20px;
 	padding:6px 4px 6px 18px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
 	float:right;
 	display:flex;
 	align-items:center;
@@ -120,7 +122,7 @@ body {
 .flist{
 	position:fixed;
 	left:0px;
-	top:45px;
+	top:40px;
 	width:80px;
 	padding:0px;
 	float:left;
@@ -344,7 +346,8 @@ body {
 	padding:16px;
 	font-size:16px;
 	line-height:48px;
-	border:solid 1px #aaa;
+	border:solid 1px #fff;
+  border-radius: 8px;
 	background-color: #121212;
 	align-items:center;
 	display:flex;
@@ -352,6 +355,7 @@ body {
 	overflow:hidden;
 	left:300px;
 	top:55px;
+  box-shadow: 0px 0px 15px #000;
 }
 .welem_t{
 	position:fixed;
@@ -389,12 +393,11 @@ body {
 	font-size:16px;
 	width:100px;
 	margin-left:20px;
-    padding:6px;
-    background:#fff;
-    border:solid 1px black;
-    cursor:pointer;
-    -webkit-border-radius:0px;
-    border-radius:0px;
+  padding:6px;
+  background:#fff;
+  border:solid 1px var(--primary);
+  cursor:pointer;
+  border-radius:4px;
 }
 .welem_s input[type=button] {
 	font-family:"Trebuchet MS", Tahoma, Helvetica, sans-serif;
@@ -609,51 +612,47 @@ body {
     width: auto !important;
   }
   .navelem_l {
-    margin:10px 0vw 0vh 1.5vw !important;
-    min-width: 2vw;
-    width:3.5vw;
-    height:3.5vw;
+    margin:10px 0px 0px 1.5vw !important;
+    min-width: unset;
+    width:12px !important;
+    height:12px !important;
     padding:6px;
     background-size: 90% !important;
     background-position: center !important;
-    max-width: 20px;
-    max-height: 20px;
   }
   .navelem_r{
-    margin:10px 0vw 0vh 1.7vw;
-    min-width: 5px;
-    width:3.5vw;
-    height:3.5vw;
-    padding:6px;
+    margin:10px 0px 0px 1.5vw !important;
+    min-width: unset;
     float:left;
+    width:12px !important;
+    height:12px !important;
+    padding:6px;
     background-size: 90% !important;
     background-position: center !important;
-    border: 1px solid var(--primary);
-    border-radius: 4px;
-    max-width: 20px;
-    max-height: 20px;
   }
   .flist {
     overflow: scroll;
-    height: calc(100% - 80px) !important;
+    height: calc(93% - 45px) !important;
     width: 80px;
+    top: 45px;
     z-index: 1;
   }
   .felem {
     overflow: scroll;
   }
   .mlist {
-    width:calc(100% - 80px) !important;
-    height:calc(50% - 45px) !important;
+    height: calc(50% - 45px) !important;
+    width: calc(100% - 80px) !important;
     overflow: scroll !important;
     border-bottom: 1px solid var(--primary);
     border-right: none;
     left:80px;
     top:45px;
+    box-sizing: border-box;
   }
   .mtabs {
-    height:45px;
-    width: calc(100% - 10px);
+    height: 45px;
+    width: 100%;
     margin: 10px 0px 10px 0px;
     justify-content: space-around;
     display: flex;
@@ -662,9 +661,9 @@ body {
   .mscrollbox {
     position: fixed;
     overflow-y: scroll;
-    left: 27vw;
+    left: 90px;
     height: calc(50% - 110px);
-    width: calc(100% - 85px);
+    width: calc(100% - 90px);
   }
   .melem {
     padding:8px 15px 8px 40px !important;
@@ -686,17 +685,82 @@ body {
   }
   .works {
     left:80px;
-    top:50vh;
-    width:calc(100% - 120px) !important;
-    height:calc(50% - 67px) !important;
-    overflow:scroll;
+    top:50%;
+    width:calc(100% - 80px) !important;
+    height:43% !important;
+    overflow:visible;
+    z-index: 5;
+    box-sizing: border-box;
   }
   .reference {
     font-size:10px;
     text-align:center;
-    height:7vh;
+    height: 7%;
     overflow-y: scroll;
     max-height: 40px;
     min-height: 35px;
+    z-index: 11;
+    box-sizing: border-box;
+  }
+  small:first-of-type:only-of-type {
+    display: none;
+  }
+  span:first-of-type:only-of-type {
+    display: none;
+  }
+  br:nth-child(3):only-of-type {
+    display: none;
+  }
+  .openfs {
+    display: none;
+  }
+  .exitfs {
+    display: none;
+  }
+  .welem_s{
+    width:90%;
+    height:40%;
+    margin: 0px !important;
+    padding: 0px !important;
+    line-height:20px;
+    font-size: 12px;
+    overflow:hidden;
+    left:5%;
+    top:30%;
+  }
+  .welem_t{
+    margin-left:50%;
+    margin-top: 48.5%;
+    overflow:scroll;
+    background-size: 20px;
+  }
+  .xl {
+    height:40%;
+  }
+  .welem_s input[type=text] {
+    font-size:12px;
+    width:85% !important;
+  }
+  .welem_s input[type=submit] {
+    font-size:12px;
+    width:70px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .welem_s input[type=radio] {
+    margin-top: 5px;
+  }
+  #kopierenform {
+    margin-top: 15px;
+  }
+  
+  
+  
+  
+  
+  
+  [src="icn/rotleft.PNG"], [src="icn/rotright.PNG"] {
+    height: 20px;
+    filter: invert(0.5);
   }
 }
