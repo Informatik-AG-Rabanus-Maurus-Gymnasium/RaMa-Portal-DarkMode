@@ -38,6 +38,4 @@ Lg
 
 HackerFrosch
 
-
-
 E-Mail: HackerFrosch.GitHub@gmail.com
