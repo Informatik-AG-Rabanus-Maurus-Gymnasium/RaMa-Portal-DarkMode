@@ -4,7 +4,6 @@
 
 
 
-
 * {
 	margin:0;
 	padding:0;
@@ -20,7 +19,7 @@ body {
 	font-size:16px;
 	color:#000;
 }
-@media (max-width: 999px) {
+@media (max-width: 1080px) {
 	.to-hide {
 	   display: none;
 	}
@@ -36,7 +35,7 @@ body {
 	cursor: pointer;
 }
 .reference {
-  box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 5px #000;
 	position:fixed;
 	left:0px;
 	bottom:0px;
@@ -47,6 +46,7 @@ body {
 	text-align:right;
 	height:20px;
 	color:#fff;
+	z-index: 2;
 }
 .reference a{
 	color:#fff;
@@ -66,7 +66,7 @@ body {
 	text-align:right;
 	height:40px;
 	color:#fff;
-	padding: 0 4px;
+	padding: 0px 4px;
 	box-sizing: border-box;
 	overflow: hidden;
 	box-shadow: 0px 0px 5px #000;
@@ -104,6 +104,7 @@ body {
 	background-color: #424242;
 	border-radius: 4px;
 	border: 1px solid var(--primary);
+	background-position-x: 4px !important;
 }
 .navelem_r{
 	margin:4px 0px 4px 6px;
@@ -111,8 +112,6 @@ body {
 	max-width:6%;
 	height:20px;
 	padding:6px 4px 6px 18px;
-  border: 1px solid var(--primary);
-  border-radius: 4px;
 	float:right;
 	display:flex;
 	align-items:center;
@@ -121,9 +120,8 @@ body {
 .flist{
 	position:fixed;
 	left:0px;
-	top:40px;
-	width:70px;
-  height:800px;
+	top:45px;
+	width:80px;
 	padding:0px;
 	float:left;
 	background:#212121;
@@ -134,9 +132,10 @@ body {
 }
 .flist a{
 	color:#fafafa;
+	/*! border: 1px solid #f00; */
 }
 .flist a:hover{
-	color:#fff;
+	color: #fff;
 	cursor:pointer;
 }
 .felem{
@@ -145,21 +144,22 @@ body {
 	min-height:40px;
 	float:left;
 	margin:0;
-  margin-top: 5px;
 	padding:10px 4px;
 	overflow:hidden;
 	word-break: break-word;
 	position: relative;
 	border: 1px solid var(--primary);
 	border-left: none;
+	margin-top: 5px;
 	border-radius: 0px 4px 4px 0px;
 	transition: 0.2s all;
 }
 .felem_s{
 	box-sizing: border-box;
-	width:90%;
+	width: 90%;
 	min-height:40px;
 	float:left;
+	margin-top: 4px;
 	padding: 10px 5px;
 	background-color: #616161;
 	border: 1px solid var(--primary);
@@ -167,15 +167,14 @@ body {
 	border-radius: 0px 4px 4px 0px;
 	overflow:hidden;
 	color: #fff;
-  margin-top: 5px;
 	word-break: break-word;
 	position: relative;
 }
 .mlist{
 	position:fixed;
-	left:70px;
-	top:40px;
-	width:200px;
+	left:80px;
+	top:45px;
+	width: 230px;
 	height:800px;
 	padding:0px;
 	float:left;
@@ -194,7 +193,7 @@ body {
 .melem{
 	width:150px;
 	height:30px;
-	padding:6px 6px 6px 42px;
+	padding: 6px 20px 6px 42px !important;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow: ellipsis;
@@ -214,11 +213,11 @@ body {
 .melem_s{
 	width:152px;
 	height:30px;
-	padding:6px 6px 6px 42px;
+	padding: 6px 20px 6px 42px !important;
 	color: #fff;
 	background: #424242;
 	border-radius: 0px 25px 25px 0px;
-  box-shadow: 0px 0px 5px #000;
+  box-shadow: 0px 0px 8px #000;
 	margin-top: 10px;
 	white-space:nowrap;
 	overflow:hidden;
@@ -228,7 +227,7 @@ body {
 	height: calc(100% - 41px);
 	position: relative;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: scroll;
 }
 .mtabs {
 	height:41px;
@@ -345,8 +344,7 @@ body {
 	padding:16px;
 	font-size:16px;
 	line-height:48px;
-	border:solid 1px #fff;
-  border-radius: 8px;
+	border:solid 1px #aaa;
 	background-color: #121212;
 	align-items:center;
 	display:flex;
@@ -354,7 +352,6 @@ body {
 	overflow:hidden;
 	left:300px;
 	top:55px;
-  box-shadow: 0px 0px 15px #000;
 }
 .welem_t{
 	position:fixed;
@@ -392,11 +389,12 @@ body {
 	font-size:16px;
 	width:100px;
 	margin-left:20px;
-  padding:6px;
-  background:#fff;
-  border:solid 1px var(--primary);
-  cursor:pointer;
-  border-radius:4px;
+    padding:6px;
+    background:#fff;
+    border:solid 1px black;
+    cursor:pointer;
+    -webkit-border-radius:0px;
+    border-radius:0px;
 }
 .welem_s input[type=button] {
 	font-family:"Trebuchet MS", Tahoma, Helvetica, sans-serif;
@@ -599,9 +597,6 @@ body {
 /* Mobile-CSS + DarkMode */
 
 @media screen and (max-width: 640px) {
-  body {
-    font-size: 12px;
-  }
   .navbar {
     display: flex;
     flex-direction: row;
@@ -614,38 +609,42 @@ body {
     width: auto !important;
   }
   .navelem_l {
-    margin:7px 0px 0px 1.5vw !important;
-    min-width: unset;
-    width:12px !important;
-    height:12px !important;
+    margin:10px 0vw 0vh 1.5vw !important;
+    min-width: 2vw;
+    width:3.5vw;
+    height:3.5vw;
     padding:6px;
     background-size: 90% !important;
     background-position: center !important;
+    max-width: 20px;
+    max-height: 20px;
   }
   .navelem_r{
-    margin:7px 0px 0px 1.5vw !important;
-    min-width: unset;
-    float:left;
-    width:12px !important;
-    height:12px !important;
+    margin:10px 0vw 0vh 1.7vw;
+    min-width: 5px;
+    width:3.5vw;
+    height:3.5vw;
     padding:6px;
+    float:left;
     background-size: 90% !important;
     background-position: center !important;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    max-width: 20px;
+    max-height: 20px;
   }
   .flist {
     overflow: scroll;
-    height: calc(93% - 45px) !important;
+    height: calc(100% - 80px) !important;
     width: 80px;
-    top: 45px;
     z-index: 1;
   }
   .felem {
     overflow: scroll;
   }
   .mlist {
-    height: calc(50% - 45px) !important;
-    width: calc(100% - 80px) !important;
-    box-sizing: border-box;
+    width:calc(100% - 80px) !important;
+    height:calc(50% - 45px) !important;
     overflow: scroll !important;
     border-bottom: 1px solid var(--primary);
     border-right: none;
@@ -653,8 +652,8 @@ body {
     top:45px;
   }
   .mtabs {
-    height: 45px;
-    width: 100%;
+    height:45px;
+    width: calc(100% - 10px);
     margin: 10px 0px 10px 0px;
     justify-content: space-around;
     display: flex;
@@ -663,121 +662,41 @@ body {
   .mscrollbox {
     position: fixed;
     overflow-y: scroll;
-    left: 90px;
+    left: 27vw;
     height: calc(50% - 110px);
-    width: calc(100% - 90px);
+    width: calc(100% - 85px);
   }
-  .melem, .melem_s {
-    width: 150px;
-    margin: 7px 0px 0px 5px;
-    padding:8px 15px 8px 40px;
-    border-radius: 25px;
+  .melem {
+    padding:8px 15px 8px 40px !important;
     overflow-y:scroll;
-    background-size: 20%;
+    background-repeat: no-repeat;
+    background-size: 7vh;
+    margin: 5px 0px 0px 5px;
+    border-radius: 25px;
     background-position: 3px !important;
   }
-  .melem:last-of-type:last-child {
-    margin-bottom: 7px;
+  .melem_s{
+    width:150px;
+    padding:8px 15px 8px 40px !important;
+    margin: 5px 0px 0px 5px;
+    border-radius: 25px;
+    overflow-y:scroll;
+    background-size: 7vh;
+    background-position: 3px !important;
   }
-  .melem_s:last-of-type:last-child {
-    margin-bottom: 7px;
-  }
-  .works { 
+  .works {
     left:80px;
-    top:50%;
-    height:43% !important;
-    width:calc(100% - 80px) !important;
-    box-sizing: border-box;
-    overflow:visible;
-    z-index: 5;
-  }
-  .works h1{
-    font-size:20px;
-  }
-  .works h2{
-    font-size:16px;
-  }
-  .works h3{
-    font-size:14px;
+    top:50vh;
+    width:calc(100% - 120px) !important;
+    height:calc(50% - 67px) !important;
+    overflow:scroll;
   }
   .reference {
     font-size:10px;
     text-align:center;
-    height:7%;
-    box-sizing: border-box;
+    height:7vh;
     overflow-y: scroll;
-    z-index: 11;
-  }
-  small:first-of-type:only-of-type {
-    display: none;
-  }
-  span:first-of-type:only-of-type {
-    display: none;
-  }
-  br:nth-child(3):only-of-type {
-    display: none;
-  }
-  .openfs, .exitfs {
-    display: none;
-  }
-  .welem_s{
-    width:90%;
-    height:40%;
-    margin: 0px !important;
-    padding: 0px !important;
-    line-height:20px;
-    font-size: 12px;
-    overflow:hidden;
-    left:5%;
-    top:30%;
-    z-index: 5;
-  }
-  .welem_t{
-    margin-left:50%;
-    margin-top: 48.5%;
-    overflow:scroll;
-    background-size: 20px;
-  }
-  .xl {
-    height:40%;
-  }
-  .welem_s input[type=text] {
-    font-size:12px;
-    width:85% !important;
-  }
-  .welem_s input[type=submit] {
-    font-size:12px;
-    width:70px;
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-  .welem_s input[type=radio] {
-    margin-top: 5px;
-  }
-  #kopierenform {
-    margin-top: 15px;
-  }
-  [src="icn/rotleft.PNG"], [src="icn/rotright.PNG"] {
-    height: 20px;
-    filter: invert(0.5);
-  }
-  .tooltip-anchor [class^="tooltip"] {
-    background-color: unset !important;
-    padding: 0px !important;
-    border-radius: unset !important;
-    box-shadow: none !important;
-    position: relative !important;
-    visibility: visible !important;
-    z-index: 2 !important;
-    opacity: 1 !important;
-    transition: none !important;
-  }
-  .tooltip-anchor:hover [class^="tooltip"] {
-    visibility: visible !important;
-    opacity: 1 !important;
-    display: visible !important;
-  }
-  [href*="edumain.php?gruppe="]:last-child > .felem {
-    margin-bottom: 5px;
+    max-height: 40px;
+    min-height: 35px;
   }
 }
