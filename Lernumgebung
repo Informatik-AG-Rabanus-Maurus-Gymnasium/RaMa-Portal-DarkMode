@@ -668,7 +668,7 @@ body {
     width: calc(100% - 90px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   .melem, .melem_s {
@@ -780,6 +780,7 @@ body {
   #kopieren > a > .welem_t {
     margin-top: 54%;
     margin-left: 50%;
+    position: absolute;
   }
   #verschieben > a > .welem_t {
     margin-top: 37%;
