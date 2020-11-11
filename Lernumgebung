@@ -779,5 +779,7 @@ body {
   }
   [href*="edumain.php?gruppe="]:last-child > .felem {
     margin-bottom: 5px;
+    opacity: 1 !important;
+    transition: none !important;
   }
 }
