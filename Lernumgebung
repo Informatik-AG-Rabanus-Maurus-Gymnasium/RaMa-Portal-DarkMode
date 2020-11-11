@@ -666,6 +666,10 @@ body {
     left: 90px;
     height: calc(50% - 110px);
     width: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .melem, .melem_s {
     width: 150px;
@@ -673,8 +677,8 @@ body {
     padding:8px 15px 8px 40px;
     border-radius: 25px;
     overflow-y:scroll;
-    background-size: 20%;
-    background-position: 3px !important;
+    background-size: 18%;
+    background-position: 5px !important;
   }
   .melem:last-of-type:last-child {
     margin-bottom: 7px;
@@ -688,7 +692,7 @@ body {
     height:43% !important;
     width:calc(100% - 80px) !important;
     box-sizing: border-box;
-    overflow:visible;
+    overflow:scroll;
     z-index: 5;
   }
   .loader-container {
