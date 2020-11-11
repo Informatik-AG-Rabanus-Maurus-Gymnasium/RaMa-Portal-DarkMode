@@ -663,7 +663,7 @@ body {
   .mscrollbox {
     position: fixed;
     overflow-y: scroll;
-    left: 90px;
+    left: 80px;
     height: calc(50% - 110px);
     width: calc(100% - 90px);
     display: flex;
