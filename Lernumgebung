@@ -665,15 +665,11 @@ body {
     overflow-y: scroll;
     left: 80px;
     height: calc(50% - 110px);
-    width: calc(100% - 90px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    width: calc(100% - 80px);
   }
   .melem, .melem_s {
     width: 150px;
-    margin: 7px 0px 0px 5px;
+    margin: 7px 0px 0px 15px;
     padding:8px 15px 8px 40px;
     border-radius: 25px;
     overflow-y:scroll;
@@ -692,7 +688,7 @@ body {
     height:43% !important;
     width:calc(100% - 80px) !important;
     box-sizing: border-box;
-    overflow:scroll;
+    overflow:visible;
     z-index: 5;
   }
   .loader-container {
@@ -736,16 +732,25 @@ body {
     margin:0px;
     padding:0px 0px 20px 0px;
     line-height:20px;
-    font-size: 12px;
+    font-size:12px;
     overflow:hidden;
     left:5%;
     top:30%;
-    z-index: 5;
+    z-index:5;
   }
   .welem_t{
     margin-left:50%;
     background-size: 20px;
     position: absolute;
+  }
+  #rename > a > .welem_t {
+    margin-top: 60px;
+  }
+  #kopieren > a > .welem_t {
+    margin-top: 160px;
+  }
+  #verschieben > a > .welem_t {
+    margin-top: 110px;
   }
   .xl {
     height:40%;
@@ -771,16 +776,6 @@ body {
     margin-right: 20px !important;
     float: right;
   }
-  #rename > a > .welem_t {
-    margin-top: 60px;
-  }
-  #kopieren > a > .welem_t {
-    margin-top: 160px;
-    position: absolute;
-  }
-  #verschieben > a > .welem_t {
-    margin-top: 110px;
-  }
   [src="icn/rotleft.PNG"], [src="icn/rotright.PNG"] {
     height: 20px;
     filter: invert(0.5);
@@ -794,6 +789,7 @@ body {
     visibility: visible !important;
     z-index: 2 !important;
     opacity: 1 !important;
+    transition: none !important;
   }
   [href*="edumain.php?gruppe="]:last-child > .felem {
     margin-bottom: 5px;
