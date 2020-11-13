@@ -663,23 +663,23 @@ body {
   .mscrollbox {
     position: fixed;
     overflow-y: scroll;
-    left: 90px;
+    left: 80px;
     height: calc(50% - 110px);
-    width: calc(100% - 90px);
+    width: calc(100% - 80px);
   }
   .melem, .melem_s {
     width: 150px;
-    margin: 7px 0px 0px 5px;
+    margin: 7px 0px 0px 15px;
     padding:8px 15px 8px 40px;
     border-radius: 25px;
     overflow-y:scroll;
-    background-size: 20%;
-    background-position: 3px !important;
+    background-size: 35px;
+    background-position: 5px !important;
   }
-  .melem:last-of-type:last-child {
+  .melem:last-of-type {
     margin-bottom: 7px;
   }
-  .melem_s:last-of-type:last-child {
+  .melem_s:last-of-type {
     margin-bottom: 7px;
   }
   .works { 
@@ -690,6 +690,12 @@ body {
     box-sizing: border-box;
     overflow:visible;
     z-index: 5;
+  }
+  .loader-container {
+    width: calc(100% - 20px) !important;
+    height: calc(100% - 20px) !important;
+    top: 10px;
+    left: 10px;
   }
   .works h1{
     font-size:20px;
@@ -722,21 +728,29 @@ body {
   }
   .welem_s{
     width:90%;
-    height:40%;
-    margin: 0px !important;
-    padding: 0px !important;
+    height:auto !important;
+    margin:0px;
+    padding:0px 0px 20px 0px;
     line-height:20px;
-    font-size: 12px;
+    font-size:12px;
     overflow:hidden;
     left:5%;
     top:30%;
-    z-index: 5;
+    z-index:5;
   }
   .welem_t{
     margin-left:50%;
-    margin-top: 48.5%;
-    overflow:scroll;
     background-size: 20px;
+    position: absolute;
+  }
+  #rename > a > .welem_t {
+    margin-top: 60px;
+  }
+  #kopieren > a > .welem_t {
+    margin-top: 160px;
+  }
+  #verschieben > a > .welem_t {
+    margin-top: 110px;
   }
   .xl {
     height:40%;
@@ -754,8 +768,13 @@ body {
   .welem_s input[type=radio] {
     margin-top: 5px;
   }
-  #kopierenform {
-    margin-top: 15px;
+  #renameform, #kopierenform, #verschiebenform {
+    margin-top: 20px;
+  }
+  #verschiebenform > input, #kopierenform > input, #renameform > input {
+    width: 30%;
+    margin-right: 20px !important;
+    float: right;
   }
   [src="icn/rotleft.PNG"], [src="icn/rotright.PNG"] {
     height: 20px;
@@ -771,11 +790,6 @@ body {
     z-index: 2 !important;
     opacity: 1 !important;
     transition: none !important;
-  }
-  .tooltip-anchor:hover [class^="tooltip"] {
-    visibility: visible !important;
-    opacity: 1 !important;
-    display: visible !important;
   }
   [href*="edumain.php?gruppe="]:last-child > .felem {
     margin-bottom: 5px;
