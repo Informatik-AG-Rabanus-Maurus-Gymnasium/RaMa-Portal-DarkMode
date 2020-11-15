@@ -103,7 +103,7 @@ body {
 	text-align:left;
 	background-color: #424242;
 	border-radius: 4px;
-	border: 1px solid var(--primary);
+	border: 1px solid #616161;
 }
 .navelem_r{
 	margin:4px 0px 4px 6px;
@@ -111,7 +111,7 @@ body {
 	max-width:6%;
 	height:20px;
 	padding:6px 4px 6px 18px;
-  border: 1px solid var(--primary);
+  border: 1px solid #616161;
   border-radius: 4px;
 	float:right;
 	display:flex;
@@ -150,7 +150,7 @@ body {
 	overflow:hidden;
 	word-break: break-word;
 	position: relative;
-	border: 1px solid var(--primary);
+	border: 1px solid #616161;
 	border-left: none;
 	border-radius: 0px 4px 4px 0px;
 	transition: 0.2s all;
@@ -162,7 +162,7 @@ body {
 	float:left;
 	padding: 10px 5px;
 	background-color: #616161;
-	border: 1px solid var(--primary);
+	border: 1px solid #616161;
 	border-left: none;
 	border-radius: 0px 4px 4px 0px;
 	overflow:hidden;
@@ -175,7 +175,7 @@ body {
 	position:fixed;
 	left:70px;
 	top:40px;
-	width:200px;
+	width:230px;
 	height:800px;
 	padding:0px;
 	float:left;
@@ -192,7 +192,7 @@ body {
 	cursor:pointer;
 }
 .melem{
-	width:150px;
+	width:70%;
 	height:30px;
 	padding:6px 6px 6px 42px;
 	white-space:nowrap;
@@ -200,9 +200,11 @@ body {
 	text-overflow: ellipsis;
   background:#212121;
   color:#fff;
-	border-radius: 0px 25px 25px 0px;
+	border-radius: 25px;
   box-shadow: 0px 0px 5px #000;
 	transition: 0.5s all;
+	margin-top: 10px;
+	margin-left: 5px;
 }
 .target.over{
 	background:#a0d080;
@@ -212,17 +214,18 @@ body {
 	pointer-events: none;
 }
 .melem_s{
-	width:152px;
+	width:70%;
 	height:30px;
 	padding:6px 6px 6px 42px;
 	color: #fff;
 	background: #424242;
-	border-radius: 0px 25px 25px 0px;
+	border-radius: 25px;
   box-shadow: 0px 0px 5px #000;
 	margin-top: 10px;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow: ellipsis;
+		margin-left: 5px;
 }
 .mscrollbox {
 	height: calc(100% - 41px);
@@ -231,7 +234,7 @@ body {
 	overflow-y: auto;
 }
 .mtabs {
-	height:41px;
+	height:45px;
 	width: 230px;
 	margin-top: 10px;
   overflow: hidden;
@@ -346,8 +349,8 @@ body {
 	font-size:16px;
 	line-height:48px;
 	border:solid 1px #fff;
-  border-radius: 8px;
-	background-color: #121212;
+  border-radius:8px;
+	background-color:#121212;
 	align-items:center;
 	display:flex;
 	text-align:center;
@@ -442,7 +445,6 @@ body {
     -webkit-border-radius:0px;
     border-radius:0px;
 }
-
 .welem_s tr {
 	margin-bottom:1em;
 }
@@ -557,8 +559,7 @@ body {
 .pupil.over {
 	background: url(icn/dummy_green64.png) left no-repeat;
 }
-.nopupil
-{
+.nopupil {
 	width:80px;
 	height:60px;
 	float:left;
@@ -609,6 +610,7 @@ body {
     z-index: 2;
     align-items: center;
     justify-content: space-around;
+    box-sizing: border-box;
   }
   .navbar-section-c, .navbar-section-l {
     width: auto !important;
@@ -616,8 +618,8 @@ body {
   .navelem_l {
     margin:7px 0px 0px 1.5vw !important;
     min-width: unset;
-    width:12px !important;
-    height:12px !important;
+    width:15px !important;
+    height:15px !important;
     padding:6px;
     background-size: 90% !important;
     background-position: center !important;
@@ -626,8 +628,8 @@ body {
     margin:7px 0px 0px 1.5vw !important;
     min-width: unset;
     float:left;
-    width:12px !important;
-    height:12px !important;
+    width:15px !important;
+    height:15px !important;
     padding:6px;
     background-size: 90% !important;
     background-position: center !important;
@@ -664,12 +666,13 @@ body {
     position: fixed;
     overflow-y: scroll;
     left: 80px;
-    height: calc(50% - 110px);
+    height: calc(50% - 111px);
     width: calc(100% - 80px);
+    margin-left: 10px;
   }
   .melem, .melem_s {
     width: 150px;
-    margin: 7px 0px 0px 15px;
+    margin: 7px 0px 0px 5px;
     padding:8px 15px 8px 40px;
     border-radius: 25px;
     overflow-y:scroll;
@@ -689,13 +692,17 @@ body {
     width:calc(100% - 80px) !important;
     box-sizing: border-box;
     overflow:visible;
-    z-index: 5;
+    z-index:5;
   }
   .loader-container {
     width: calc(100% - 20px) !important;
     height: calc(100% - 20px) !important;
     top: 10px;
     left: 10px;
+  }
+  #iframe {
+    width: calc(100% - 80px) !important;
+    height: 43% !important;
   }
   .works h1{
     font-size:20px;
@@ -729,14 +736,14 @@ body {
   .welem_s{
     width:90%;
     height:auto !important;
-    margin:0px;
-    padding:0px 0px 20px 0px;
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
     line-height:20px;
-    font-size:12px;
-    overflow:hidden;
+    font-size: 12px;
+    overflow:visible;
     left:5%;
     top:30%;
-    z-index:5;
+    z-index: 5;
   }
   .welem_t{
     margin-left:50%;
@@ -789,9 +796,24 @@ body {
     visibility: visible !important;
     z-index: 2 !important;
     opacity: 1 !important;
-    transition: none !important;
   }
   [href*="edumain.php?gruppe="]:last-child > .felem {
     margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .navelem_l, .navelem_r {
+    width: 9px !important;
+    height: 9px !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media screen and (min-width:350px) and (max-width:400px) {
+  .navelem_l, .navelem_r {
+    width: 11px !important;
+    height: 11px !important;
+    margin-top: 8px !important;
   }
 }
