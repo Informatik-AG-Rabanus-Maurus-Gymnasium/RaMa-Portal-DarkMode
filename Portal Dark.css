@@ -532,6 +532,11 @@ td.plan {
 }
 #searchform {
 	background: transparent !important;
+	height: auto !important;
+	width: auto !important;
+	left: 28%;
+	margin: auto !important;
+	top: 20px;
 }
 [style="background:#eee; height:32px;"] {
 	background: #212121 !important;
