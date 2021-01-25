@@ -1,5 +1,6 @@
-Beta-DarkMode und Mobile-Design für das RaMa-Portal - by HackerFrosch
+# Beta-DarkMode und Mobile-Design für das RaMa-Portal - by HackerFrosch
 
+[https://jigsaw.w3.org/css-validator/images/vcss]
 
 
 Dies ist der Entwicklungs-Code für den RaMa-Portal DarkMode und das Mobile-Design. Das ganze basiert auf Vorgaben des Material-Themes (https://material.io). 
