@@ -1,4 +1,4 @@
-# Beta-DarkMode und Mobile-Design für das RaMa-Portal - by HackerFrosch
+# Beta-DarkMode und Mobile-Design für das RaMa-Portal
 
 ![CSS3 Validiert](https://jigsaw.w3.org/css-validator/images/vcss)
 
