@@ -615,6 +615,73 @@ filter: invert(1);
 }
 
 
+/* Icon-Austausch */
+
+.navelem_l[style*="background:url(icn/home.png)"] {
+    background: url(https://i.ibb.co/dm6vS6w/home.png) no-repeat left !important;
+    background-size: 18px !important;
+}
+.navelem_l[style*="background:url(icn/copy.png)"] {
+    background: url(https://i.ibb.co/NNpqzXQ/copy.png) no-repeat left !important;
+    background-size: 18px !important;
+}
+.navelem_l[style*="background:url(icn/move.png)"] {
+    background: url(https://i.ibb.co/ZWJCQ41/move.png) no-repeat left !important;
+    background-size: 20px !important;
+}
+.navelem_l[style*="background:url(icn/add.png)"] {
+    background: url(https://i.ibb.co/t805zS8/add.png) no-repeat left !important;
+    background-size: 16px !important;
+}
+.navelem_l[style*="background:url(icn/edit.png)"] {
+    background: url(https://i.ibb.co/PMSVFZk/edit.png) no-repeat left !important;
+    background-size: 20px !important;
+}
+.navelem_l[style*="background:url(icn/reload.png)"] {
+    background: url(https://i.ibb.co/HdjnbHq/reload.png) no-repeat left !important;
+    background-size: 16px !important;
+}
+.navelem_l[style*="background:url(icn/down.png)"] {
+    background: url(https://i.ibb.co/PDX8Hmm/down.png) no-repeat left !important;
+    background-size: 20px !important;
+}
+.navelem_l[style*="background:url(icn/lock.png)"] {
+    background: url(https://i.ibb.co/LhHfr8V/lock.png) no-repeat left !important;
+    background-size: 20px !important;
+}
+.navelem_l[style*="background:url(icn/unlock.png)"] {
+    background: url(https://i.ibb.co/L0FqY5C/unlock.png) no-repeat left !important;
+    background-size: 20px !important;
+}
+
+
+
+.melem[style*='background-image: url("icn/lnk.png")'], .melem_s[style*='background-image: url("icn/lnk.png")'] {
+    background-image: url(https://i.ibb.co/sq7JZMK/ink.png) !important;
+    background-position: 0px center !important;
+    background-size: contain !important;
+}
+.melem[style*='background-image: url("icn/docx.png")'], .melem_s[style*='background-image: url("icn/docx.png")'] {
+    background-image: url(https://i.ibb.co/SRPF8Rv/docx.png) !important;
+    background-position: 0px center !important;
+    background-size: contain !important;
+}
+
+.dhx_toolbar_base_18_dhx_skyblue, .dhx_toolbar_base_24_dhx_skyblue, .dhx_toolbar_base_32_dhx_skyblue, .dhx_toolbar_base_48_dhx_skyblue {
+    background: #212121;
+}
+.dhx_toolbar_base_18_dhx_skyblue div.dhx_toolbar_btn, .dhx_toolbar_base_24_dhx_skyblue div.dhx_toolbar_btn, .dhx_toolbar_base_32_dhx_skyblue div.dhx_toolbar_btn, .dhx_toolbar_base_48_dhx_skyblue div.dhx_toolbar_btn {
+color: #fff !important;
+}
+.dhx_spread_window {
+    background-color: #616161 !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    box-shadow: 0px 0px 3px #000;
+    border-radius: 4px;
+}
+.dhx_spread_modal {
+background: unset !important;
+}
 
 
 
