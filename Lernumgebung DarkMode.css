@@ -11,32 +11,31 @@
 }
 html {
 	background:#121212;
-	background-size:100%;
 	background-size:cover;
 	height:100%;
 }
 body {
 	font-family:"Source Sans Pro", "Trebuchet MS", Tahoma, Helvetica, sans-serif;
 	font-size:16px;
-	color:#fff;
+	color:#000;
 }
-@media (max-width: 999px) {
+@media (max-width: 1080px) {
 	.to-hide {
-	   display: none;
+	   display:none;
 	}
 }
 
 [draggable] {
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    -khtml-user-drag: element;
-    -webkit-user-drag: element;
-	cursor: pointer;
+  -moz-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  user-select:none;
+  -khtml-user-drag:element;
+  -webkit-user-drag:element;
+	cursor:pointer;
 }
 .reference {
-  box-shadow: 0px 0px 5px #000;
+  box-shadow:0px 0px 5px #000;
 	position:fixed;
 	left:0px;
 	bottom:0px;
@@ -48,14 +47,14 @@ body {
 	height:20px;
 	color:#fff;
 }
-.reference a{
+.reference a {
 	color:#fff;
 	text-decoration:none;
 }
-.reference a:hover{
+.reference a:hover {
 	color:#ddd;
 }
-.navbar{
+.navbar {
 	position:fixed;
 	left:0px;
 	top:0px;
@@ -66,34 +65,33 @@ body {
 	text-align:right;
 	height:40px;
 	color:#fff;
-	padding: 0 4px;
-	box-sizing: border-box;
-	overflow: hidden;
-	box-shadow: 0px 0px 5px #000;
-    z-index: 2;
+	padding:0px 4px;
+	box-sizing:border-box;
+	overflow:hidden;
+	box-shadow:0px 0px 5px #000;
 }
-[class^="navbar-section"]  {
-	height: 40px;
+[class^="navbar-section"] {
+	height:40px;
 	float:left;
 	/*! margin-bottom: ; */
 }
 .navbar-section-l > * {
-	height: 40px;
+	height:40px;
 }
-.navbar-section-c > *  {
-	height: 40px;
-	display: table;
- 	margin: 0 auto;
+.navbar-section-c > * {
+	height:40px;
+	display:table;
+ 	margin:0 auto;
 }
-.navbar a{
+.navbar a {
 	color:#fff;
 	text-decoration:none;
 }
-.navbar a:hover{
+.navbar a:hover {
 	color:#ddd;
 	cursor:pointer;
 }
-.navelem_l{
+.navelem_l {
 	margin:4px 0px 4px 6px;
 	min-width:20px;
 	height:20px;
@@ -103,23 +101,27 @@ body {
 	align-items:center;
 	text-align:left;
 	background-color: #424242;
+	border-radius:4px;
+	border:1px solid #616161;
 }
-.navelem_r{
+.navelem_r {
 	margin:4px 0px 4px 6px;
 	min-width:2%;
 	max-width:6%;
 	height:20px;
 	padding:6px 4px 6px 18px;
+  border:1px solid #616161;
+  border-radius:4px;
 	float:right;
 	display:flex;
 	align-items:center;
 	text-align:left;
 }
-.flist{
+.flist {
 	position:fixed;
 	left:0px;
 	top:40px;
-	width:80px;
+	width:70px;
   height:800px;
 	padding:0px;
 	float:left;
@@ -127,69 +129,69 @@ body {
 	font-size:16px;
 	font-weight:bold;
 	box-shadow: 0px 0px 5px #000;
-	z-index: 1;
+	z-index:1;
 }
-.flist a{
+.flist a {
 	color:#fafafa;
 }
-.flist a:hover{
+.flist a:hover {
 	color:#fff;
 	cursor:pointer;
 }
-.felem{
-	box-sizing: border-box;
+.felem {
+	box-sizing:border-box;
 	width:90%;
 	min-height:40px;
 	float:left;
 	margin:0;
-  margin-top: 5px;
+  margin-top:5px;
 	padding:10px 4px;
 	overflow:hidden;
-	word-break: break-word;
-	position: relative;
-	border: 1px solid var(--primary);
-	border-left: none;
-	border-radius: 0px 4px 4px 0px;
-	transition: 0.2s all;
+	word-break:break-word;
+	position:relative;
+	border:1px solid #616161;
+	border-left:none;
+	border-radius:0px 4px 4px 0px;
+	transition:0.2s all;
 }
-.felem_s{
-	box-sizing: border-box;
+.felem_s {
+	box-sizing:border-box;
 	width:90%;
 	min-height:40px;
 	float:left;
-	padding: 10px 5px;
-	background-color: #616161;
-	border: 1px solid var(--primary);
-	border-left: none;
-	border-radius: 0px 4px 4px 0px;
+	padding:10px 4px;
+	background-color:#616161;
+	border:1px solid #616161;
+	border-left:none;
+	border-radius:0px 4px 4px 0px;
 	overflow:hidden;
-	color: #fff;
-  margin-top: 5px;
-	word-break: break-word;
-	position: relative;
+	color:#fff;
+  margin-top:5px;
+	word-break:break-word;
+	position:relative;
 }
-.mlist{
+.mlist {
 	position:fixed;
-	left:80px;
+	left:70px;
 	top:40px;
-	width:220px;
+	width:230px;
 	height:800px;
 	padding:0px;
 	float:left;
 	background:#121212;
 	font-size:14px;
 	color:#fff;
-	border-right: 1px solid var(--primary);
+	border-right:1px solid var(--primary);
 }
-.mlist a{
+.mlist a {
 	color:#666;
 }
-.mlist a:hover{
+.mlist a:hover {
 	color:#000;
 	cursor:pointer;
 }
-.melem{
-	width:150px;
+.melem {
+	width:70%;
 	height:30px;
 	padding:6px 6px 6px 42px;
 	white-space:nowrap;
@@ -197,119 +199,118 @@ body {
 	text-overflow: ellipsis;
   background:#212121;
   color:#fff;
-	border-radius: 0px 25px 25px 0px;
-  box-shadow: 0px 0px 5px #000;
-	transition: 0.5s all;
-margin-bottom: 10px
+	border-radius: 25px;
+  box-shadow:0px 0px 5px #000;
+	transition:0.5s all;
+	margin-top:10px;
+	margin-left:5px;
 }
-.target.over{
+.target.over {
 	background:#a0d080;
 	color:#000;
 }
 .target :not(a) {
-	pointer-events: none;
+	pointer-events:none;
 }
-.melem_s{
-	width:152px;
+.melem_s {
+	width:70%;
 	height:30px;
 	padding:6px 6px 6px 42px;
-	color: #fff;
-	background: #424242;
-	border-radius: 0px 25px 25px 0px;
-  box-shadow: 0px 0px 5px #000;
-	margin-bottom: 10px;
+	color:#fff;
+	background:#424242;
+	border-radius:25px;
+  box-shadow:0px 0px 5px #000;
+	margin-top:10px;
 	white-space:nowrap;
 	overflow:hidden;
-	text-overflow: ellipsis;
+	text-overflow:ellipsis;
+	margin-left:5px;
 }
 .mscrollbox {
-	height: calc(100% - 70px);
-	position: relative;
-	overflow-x: hidden;
-	overflow-y: auto;
+	height:calc(100% - 41px);
+	position:relative;
+	overflow-x:hidden;
+	overflow-y:auto;
 }
 .mtabs {
-	height:41px;
-	width: 220px;
-	margin-top: 10px;
-background: transparent;
-margin-bottom: 20px;
-display: flex;
-justify-content: space-evenly;
+	height:45px;
+	width:230px;
+	margin-top:10px;
+  overflow:hidden;
 }
-[class^="mtab-"]  {
-	height: 41px;
-	line-height: 41px;
- 	text-align: center;
+[class^="mtab-"] {
+	height:41px;
+	line-height:41px;
+  text-align:center;
 	float:left;
 }
 [class^="mtab-"] > * {
-	display: inline-block;
-	vertical-align: middle;
-	line-height: normal;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
 }
 [class^="mtab-"] * {
-	max-width: 100%;
-	text-decoration: none;
+	max-width:100%;
+	text-decoration:none;
 	white-space:nowrap;
-	text-overflow: ellipsis;
+	text-overflow:ellipsis;
 	overflow:hidden;
 }
 .mtab-front {
 	background-color: var(--primary);
-	width: 100px !important;
-	color: black;
-	border-radius: 4px;
-	box-shadow: 0px 0px 5px #000;
-	border: 1px solid rgba(255,255,255,0.12);
+	width:100px !important;
+	color:black;
+	border-radius:4px;
+	margin:0px 5px 0px 5px;
+	box-shadow:0px 0px 5px #000;
+	border:1px solid rgba(255,255,255,0.12);
 }
 .mtab-back {
-	background-color: #424242;
-	color: #fff;
-	width: 100px !important;
-	border-radius: 4px;
-	border: 1px solid rgba(255,255,255,0.12);
+	background-color:#424242;
+	color:#fff;
+	width:100px !important;
+	border-radius:4px;
+	border:1px solid rgba(255,255,255,0.12);
+	margin-right:5px;
 }
-.works{
+.works {
 	position:fixed;
-	left: 300px;
-	top: 45px;
-	width:calc(100% - 342px) !important;
-	height:calc(100% - 97px) !important;
+	left:300px;
+	top:45px;
+	width:100%;
+	height:800px;
 	padding:16px;
-	padding-left: 26px;
+	padding-left:26px;
 	float:left;
 	background:#121212;
 	font-size:14px;
-	color: #fff;
+	color:#fff;
 	overflow:auto;
 	z-index:-1;
 }
-.works a{
+.works a {
 	color:#666;
 }
-.works a:hover{
+.works a:hover {
 	color:#000;
 	cursor:pointer;
 }
 .works h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 16px 0px 16px 0px;
-    position: unset;
+	font-size:24px;
+	font-weight:bold;
+	margin:16px 0px 16px 0px;
 }
-}
-.works h2{
+.works h2 {
 	font-size:20px;
 	font-weight:bold;
 	margin:16px 0px 16px 0px;
 }
-.works h3{
+.works h3 {
 	font-size:16px;
 	font-weight:bold;
 	margin:16px 0px 16px 0px;
 }
-.works p{
+.works p {
 	margin:16px 0px 16px 0px;
 }
 .works input[type=submit] {
@@ -317,15 +318,15 @@ justify-content: space-evenly;
 	font-size:16px;
 	width:100px;
 	margin-left:20px;
-    padding:4px;
-    background:#fff;
+  padding:4px;
+  background:#fff;
 	color:#000;
-    border:solid 1px black;
-    cursor:pointer;
-    -webkit-border-radius:0px;
-    border-radius:0px;
+  border:solid 1px black;
+  cursor:pointer;
+  -webkit-border-radius:0px;
+  border-radius:0px;
 }
-.welem{
+.welem {
 	width:120px;
 	height:50px;
 	float:left;
@@ -337,7 +338,7 @@ justify-content: space-evenly;
 	overflow:hidden;
 	font-size:16px;
 }
-.welem_s{
+.welem_s {
 	position:fixed;
 	z-index:10;
 	width:568px;
@@ -347,17 +348,17 @@ justify-content: space-evenly;
 	font-size:16px;
 	line-height:48px;
 	border:solid 1px #fff;
-  border-radius: 8px;
-	background-color: #121212;
+  border-radius:8px;
+	background-color:#121212;
 	align-items:center;
 	display:flex;
 	text-align:center;
 	overflow:hidden;
 	left:300px;
 	top:55px;
-  box-shadow: 0px 0px 15px #000;
+  box-shadow:0px 0px 15px #000;
 }
-.welem_t{
+.welem_t {
 	position:fixed;
 	z-index:11;
 	width:20px;
@@ -369,20 +370,20 @@ justify-content: space-evenly;
 	text-align:center;
 	overflow:hidden;
 }
-.welem_s input[type=text]{
+.welem_s input[type=text] {
 	font-family:"Source Sans Pro", "Trebuchet MS", Tahoma, Helvetica, sans-serif;
 	font-size:16px;
 	width:400px;
 	background:#fff;
 	padding:6px;
 }
-.welem_s input[type=date]{
+.welem_s input[type=date] {
 	font-family:"Source Sans Pro", "Trebuchet MS", Tahoma, Helvetica, sans-serif;
 	font-size:16px;
 	background:#fff;
 	padding:6px;
 }
-.welem_s input[type=time]{
+.welem_s input[type=time] {
 	font-family:"Source Sans Pro", "Trebuchet MS", Tahoma, Helvetica, sans-serif;
 	font-size:16px;
 	background:#fff;
@@ -403,115 +404,114 @@ justify-content: space-evenly;
 	font-family:"Trebuchet MS", Tahoma, Helvetica, sans-serif;
 	font-size:16px;
 	width:100px;
-    padding:6px;
-    background:#fff;
-    border:solid 1px black;
-    cursor:pointer;
-    -webkit-border-radius:0px;
-    border-radius:0px;
+  padding:6px;
+  background:#fff;
+  border:solid 1px black;
+  cursor:pointer;
+  -webkit-border-radius:0px;
+  border-radius:0px;
 }
 .welem_s select {
-	background: linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(135deg, black 50%, transparent 50%), linear-gradient(to right, #bbb, #bbb);
+	background:
+    linear-gradient(45deg, transparent 50%, black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%),
+    linear-gradient(to right, lightgray, lightgray);
 	background-position: calc(100% - 21px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), 100% 0;
 	background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
 	background-repeat: no-repeat;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;	-moz-appearance: none;
+	box-sizing: border-box;
+	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
 	font-size:16px;
 	width:150px;
-    padding:6px;
-    border:solid 1px black;
-    cursor:pointer;
-    -webkit-border-radius:0px;
-    border-radius:0px;
+  padding:6px;
+  border:solid 1px black;
+  cursor:pointer;
+  -webkit-border-radius:0px;
+  border-radius:0px;
 }
 .welem_s textarea {
 	font-family:"Trebuchet MS", Tahoma, Helvetica, sans-serif;
 	font-size:14px;
 	width:550px;
 	height:170px;
-    padding:4px;
-    background:#eee;
-    border:solid 1px black;
+  padding:4px;
+  background:#eee;
+  border:solid 1px black;
 	resize:none;
-    -webkit-border-radius:0px;
-    border-radius:0px;
+  -webkit-border-radius:0px;
+  border-radius:0px;
 }
-
 .welem_s tr {
 	margin-bottom:1em;
 }
-
 .welem_s td {
-	padding: 5px;
+	padding:5px;
 }
-
 .welem_s table {
-	border-width: 0;
-	text-align: left;
-	line-height: 1.5em;
+	border-width:0;
+	text-align:left;
+	line-height:1.5em;
 }
-
 .xl {
 	height:236px;
 }
 .ytbcnt {
 	position:relative;
-    width:100%;
-    height:0;
-    padding-bottom:56.25%;
+  width:100%;
+  height:0;
+  padding-bottom:56.25%;
 }
 .ytbvid {
-	position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+	position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 .ggbbtn {
 	font-family:"Source Sans Pro", "Trebuchet MS", Tahoma, Helvetica, sans-serif;
 	font-size:10px;
 	width:70px;
 	height:40px;
-    padding:6px;
-    background:#212121;
+  padding:6px;
+  background:#fff;
 	color:#888;
-    border:solid 1px rgba(255,255,255,0.12);
-    cursor:pointer;
+  border:solid 1px #ccc;
+  cursor:pointer;
 	margin: 0px 6px 0px 0px;
 	text-align:center;
-    border-radius:30px;
+	-webkit-border-radius:0px;
+  border-radius:0px;
 	float:left;
-box-shadow: 0px 0px 5px #000;
 }
 .ggbbtn2 {
 	font-family:"Source Sans Pro", "Trebuchet MS", Tahoma, Helvetica, sans-serif;
 	font-size:10px;
 	width:70px;
 	height:40px;
-    padding:6px;
-    background:#212121;
+  padding:6px;
+  background:#888;
 	color:#fff;
-    border:solid 1px rgba(255,255,255,0.12);
-    cursor:pointer;
+  border:solid 1px #ccc;
+  cursor:pointer;
 	margin: 0px 6px 0px 0px;
 	text-align:center;
-    -webkit-border-radius:0px;
-    border-radius:30px;
+  -webkit-border-radius:0px;
+  border-radius:0px;
 	float:left;
-box-shadow: 0px 0px 5px #000;
 }
 .lcanvas {
-	position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+	position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
-.openfs{
+.openfs {
 	position:fixed;
 	z-index:11;
 	width:32px;
@@ -523,7 +523,7 @@ box-shadow: 0px 0px 5px #000;
 	text-align:center;
 	overflow:hidden;
 }
-.exitfs{
+.exitfs {
 	position:fixed;
 	z-index:11;
 	width:32px;
@@ -536,8 +536,7 @@ box-shadow: 0px 0px 5px #000;
 	text-align:center;
 	overflow:hidden;
 }
-.pupil
-{
+.pupil {
 	width:80px;
 	height:60px;
 	float:left;
@@ -551,13 +550,12 @@ box-shadow: 0px 0px 5px #000;
 	font-size:14px;
 }
 .pupil :not(a) {
-	pointer-events: none;
+	pointer-events:none;
 }
 .pupil.over {
 	background: url(icn/dummy_green64.png) left no-repeat;
 }
-.nopupil
-{
+.nopupil {
 	width:80px;
 	height:60px;
 	float:left;
@@ -581,37 +579,12 @@ box-shadow: 0px 0px 5px #000;
 	height:10px;
 	background-color:#80c080;
 }
-.searchline
-{
+.searchline {
 	height:30px;
 	padding:2px 2px 2px 2px;
 }
-.light
-{
-	background: #fff;
-}
-option {
-    background: #212121;
-}
-#iframe {
-    width: 100% !important;
-}
-.cke_1 .cke_top, .cke_1 .cke_bottom {
-    background: #212121;
-}
-.cke_wysiwyg_frame, .cke_wysiwyg_div {
-    background-color: #212121;
-    color: #fff;
-}
-.cke_editable {
-    cursor: text;
-    color: #fff !important;
-}
-.cke_inner {
-    background: #212121;
-}
-img[src="edufile.php?typ=img&id=419570"] {
-filter: invert(1);
+.light {
+	background:#fff;
 }
 
 
@@ -631,28 +604,19 @@ filter: invert(1);
     z-index: 2;
     align-items: center;
     justify-content: space-around;
+    box-sizing: border-box;
   }
   .navbar-section-c, .navbar-section-l {
     width: auto !important;
   }
-  .navelem_l {
-    margin:7px 0px 0px 1.5vw !important;
-    min-width: unset;
-    width:12px !important;
-    height:12px !important;
-    padding:6px;
+  .navelem_l, .navelem_r {
+    margin-left: 1.5vw !important;
+    float: left;
+    padding: 0px;
     background-size: 90% !important;
     background-position: center !important;
-  }
-  .navelem_r{
-    margin:7px 0px 0px 1.5vw !important;
-    min-width: unset;
-    float:left;
-    width:12px !important;
-    height:12px !important;
-    padding:6px;
-    background-size: 90% !important;
-    background-position: center !important;
+    box-sizing: border-box;
+    max-width: unset;
   }
   .flist {
     overflow: scroll;
@@ -671,8 +635,8 @@ filter: invert(1);
     overflow: scroll !important;
     border-bottom: 1px solid var(--primary);
     border-right: none;
-    left:80px;
-    top:45px;
+    left: 80px;
+    top: 45px;
   }
   .mtabs {
     height: 45px;
@@ -685,47 +649,59 @@ filter: invert(1);
   .mscrollbox {
     position: fixed;
     overflow-y: scroll;
-    left: 90px;
-    height: calc(50% - 110px);
-    width: calc(100% - 90px);
+    left: 80px;
+    height: calc(50% - 111px);
+    width: calc(100% - 80px);
+    margin-left: 10px;
   }
   .melem, .melem_s {
     width: 150px;
     margin: 7px 0px 0px 5px;
-    padding:8px 15px 8px 40px;
+    padding: 8px 15px 8px 40px;
     border-radius: 25px;
-    overflow-y:scroll;
-    background-size: 20%;
-    background-position: 3px !important;
+    overflow-y: scroll;
+    background-size: 35px;
+    background-position: 5px !important;
   }
-  .melem:last-of-type:last-child {
+  .melem:last-of-type {
     margin-bottom: 7px;
   }
-  .melem_s:last-of-type:last-child {
+  .melem_s:last-of-type {
     margin-bottom: 7px;
   }
   .works { 
-    left:80px;
-    top:50%;
-    height:43% !important;
-    width:calc(100% - 80px) !important;
+    left: 80px;
+    top: 50%;
+    height: 43% !important;
+    width: calc(100% - 80px) !important;
     box-sizing: border-box;
-    overflow:visible;
+    overflow: visible;
     z-index: 5;
+    box-shadow: inset 0px 0px 5px #000;
   }
-  .works h1{
-    font-size:20px;
+  .loader-container {
+    width: calc(100% - 20px) !important;
+    height: calc(100% - 20px) !important;
+    top: 10px;
+    left: 10px;
   }
-  .works h2{
-    font-size:16px;
+  #iframe {
+    width: calc(100% - 80px) !important;
+    height: 43% !important;
   }
-  .works h3{
-    font-size:14px;
+  .works h1 {
+    font-size: 20px;
+  }
+  .works h2 {
+    font-size: 16px;
+  }
+  .works h3 {
+    font-size: 14px;
   }
   .reference {
-    font-size:10px;
-    text-align:center;
-    height:7%;
+    font-size: 10px;
+    text-align: center;
+    height: 7%;
     box-sizing: border-box;
     overflow-y: scroll;
     z-index: 11;
@@ -742,44 +718,57 @@ filter: invert(1);
   .openfs, .exitfs {
     display: none;
   }
-  .welem_s{
-    width:90%;
-    height:40%;
-    margin: 0px !important;
-    padding: 0px !important;
-    line-height:20px;
+  .welem_s {
+    width: 90%;
+    height: auto !important;
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+    line-height: 20px;
     font-size: 12px;
-    overflow:hidden;
-    left:5%;
-    top:30%;
+    overflow: visible;
+    left: 5%;
+    top: 30%;
     z-index: 5;
   }
-  .welem_t{
-    margin-left:50%;
-    margin-top: 48.5%;
-    overflow:scroll;
+  .welem_t {
+    margin-left: 50%;
     background-size: 20px;
+    position: absolute;
+  }
+  #rename > a > .welem_t {
+    margin-top: 60px;
+  }
+  #kopieren > a > .welem_t {
+    margin-top: 160px;
+  }
+  #verschieben > a > .welem_t {
+    margin-top: 110px;
   }
   .xl {
-    height:40%;
+    height: 40%;
   }
   .welem_s input[type=text] {
-    font-size:12px;
-    width:85% !important;
+    font-size: 12px;
+    width: 85% !important;
   }
   .welem_s input[type=submit] {
-    font-size:12px;
-    width:70px;
+    font-size: 12px;
+    width: 70px;
     margin-left: 0px;
     margin-top: 10px;
   }
   .welem_s input[type=radio] {
     margin-top: 5px;
   }
-  #kopierenform {
-    margin-top: 15px;
+  #renameform, #kopierenform, #verschiebenform {
+    margin-top: 20px;
   }
-  [src="icn/rotleft.PNG"], [src="icn/rotright.PNG"] {
+  #verschiebenform > input, #kopierenform > input, #renameform > input {
+    width: 30%;
+    margin-right: 20px !important;
+    float: right;
+  }
+  [src="icn/rotleft.png"], [src="icn/rotright.png"] {
     height: 20px;
     filter: invert(0.5);
   }
@@ -792,14 +781,31 @@ filter: invert(1);
     visibility: visible !important;
     z-index: 2 !important;
     opacity: 1 !important;
-    transition: none !important;
-  }
-  .tooltip-anchor:hover [class^="tooltip"] {
-    visibility: visible !important;
-    opacity: 1 !important;
-    display: visible !important;
   }
   [href*="edumain.php?gruppe="]:last-child > .felem {
     margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .navelem_l, .navelem_r {
+    width: 23px !important;
+    height: 23px;
+    margin-top: 11px;
+  }
+}
+
+@media screen and (min-width:350px) and (max-width:400px) {
+  .navelem_l, .navelem_r {
+    width: 25px !important;
+    height: 25px;
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width:400px) and (max-width:640px) {
+  .navelem_l, .navelem_r {
+    width: 28px !important;
+    height: 28px;
+    margin-top: 4px;
   }
 }
