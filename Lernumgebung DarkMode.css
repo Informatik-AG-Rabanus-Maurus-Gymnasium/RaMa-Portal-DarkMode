@@ -152,21 +152,22 @@ body {
 	border-radius: 0px 4px 4px 0px;
 	transition: 0.2s all;
 }
-.felem_s{
-	box-sizing: border-box;
-	width:90%;
-	min-height:40px;
-	float:left;
-	padding: 10px 5px;
-	background-color: #616161;
-	border: 1px solid var(--primary);
-	border-left: none;
-	border-radius: 0px 4px 4px 0px;
-	overflow:hidden;
-	color: #fff;
-  margin-top: 5px;
-	word-break: break-word;
-	position: relative;
+.felem_s {
+    box-sizing: border-box;
+    width: 90%;
+    min-height: 40px;
+    float: left;
+    padding: 10px 5px;
+    background-color: #424242;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-left: none;
+    border-radius: 0px 4px 4px 0px;
+    overflow: hidden;
+    color: #fff;
+    margin-top: 5px;
+    word-break: break-word;
+    position: relative;
+    box-shadow: 0px 0px 2px #000;
 }
 .mlist{
 	position:fixed;
@@ -681,6 +682,15 @@ color: #fff !important;
 }
 .dhx_spread_modal {
 background: unset !important;
+}
+img[src*="icn/playpause200.png"] {
+    filter: invert(1);
+}
+#waveform > wave:nth-child(2) > wave:nth-child(1) {
+    filter: invert(0.3);
+}
+#applet_bttns {
+    margin-bottom: 5px;
 }
 
 
