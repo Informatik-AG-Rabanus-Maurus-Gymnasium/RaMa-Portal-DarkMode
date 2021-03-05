@@ -48,7 +48,7 @@ ul.m_menu0 > li > a {
 	border-radius: 4px;
 	box-shadow: 0px 0px 5px #000;
 	box-sizing: border-box;
-	border: 1px solid rgba(255,255,255,0.12);
+	border: 1px solid #cc354c;
 }
 ul.m_menu0 > li > a:hover {
 	background: #ebb5be;
@@ -94,11 +94,11 @@ ul.m_menu1 > li > a {
 	height: 95px;
 	padding: 10px;
 	margin: 4px;
-	background-color: rgba(255,255,255,0.16);
+	background-color: #424242;
 	transition: all 0.5s;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 5px 1px #000;
-	border: 1px solid rgba(255,255,255,0.16);
+	border: 1px solid #616161;
 	border-radius: 4px;
 }
 ul.m_menu1 > li > a:hover {
@@ -152,7 +152,7 @@ ul.oe_menu > li {
 }
 ul.oe_menu > li > a {
 	display: block;
-	background-color: rgba(255,255,255,0.16);
+	background-color: #424242;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 4px;
@@ -164,7 +164,7 @@ ul.oe_menu > li > a {
 	box-sizing: border-box;
 	transition: background 1s, color 0.5s;
 	box-shadow: 0px 0px 5px #000;
-	border: 1px solid rgba(255,255,255,0.16);
+	border: 1px solid #616161;
 }
 ul.oe_menu > li > a:hover,
 ul.oe_menu > li.selected > a {
@@ -248,7 +248,7 @@ ul.oe_sidebar > li > a {
 	margin-top: 4px !important;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 5px #000;
-	border: 1px solid rgba(255,255,255,0.16);
+	border: 1px solid #cc354c;
 	border-radius: 2px;
 }
 ul.oe_sidebar > li > a:hover,
@@ -388,9 +388,9 @@ input[disabled] {
 }
 input, textarea, select {
 	padding: 2px;
-	border: 1px solid #616161;
-	background-color: rgba(255,255,255,0.1) !important;
-	color: #fff !important;
+	border: 1px solid #616161 !important;
+	background-color: #424242 !important;
+	color: #fff;
 	font-size: 0.9em;
 	transition: background 0.5s, color 0.25s;
 	border-radius: 4px;
@@ -614,12 +614,16 @@ div.nzts {
 .content > div:nth-child(1) > table:nth-child(4) > tbody:nth-child(1) > tr > td > a {
 	color: #fff;
 }
+/* Klausurenplan */
 .daytable > tbody:nth-child(1) > tr:nth-child(1) > th {
 	background: #616161;
+	border-bottom: unset;
 }
 .daytable > tbody:nth-child(1) > tr > td {
 	background: #424242;
+	border-bottom: unset;
 }
+/* Klausurenplan Ende */
 #months {
 	background: #212121 none repeat scroll 0% 0% !important;
 }
@@ -636,7 +640,7 @@ td[style*="background:#f0f040"] {
 div.content > a > div[style*="background:#eee"] {
 	border-radius: 4px;
 	background: #424242 !important;
-	border: 1px solid rgba(255,255,255,0.12) !important;
+	border: 1px solid #616161 !important;
 	box-shadow: 0px 0px 5px #000;
 	margin-left: 5px !important;
 }
@@ -675,7 +679,7 @@ div[style*="background:#eee"] {
 	border-radius: 8px;
 	box-shadow: 0px 0px 10px #000;
 	height: auto !important;
-	border: 1px solid rgba(255,255,255,0.2) !important;
+	border: 1px solid #616161 !important;
 }
 .table tbody tr:nth-child(2n), .table th {
 	background-color: #212121;
@@ -689,13 +693,13 @@ tr.green td {
 .table tbody tr:nth-child(2n+1):hover, .table tbody tr:nth-child(2n):hover, .table th:hover {
 	background-color: #757575;
 }
-#videochatForm > div:nth-child(3) > a:nth-child(6) > div:nth-child(1) {
+a[onclick="clearNames()"] > div {
 	background: #424242 !important;
 	border: 1px solid #616161;
 	border-radius: 4px;
 	transition: background 1s, color 0.5s;
 }
-#videochatForm > div:nth-child(3) > a:nth-child(6) > div:nth-child(1):hover {
+a[onclick="clearNames()"] > div:hover {
 	background: rgba(255,255,255,0.75) !important;
 	color: #121212;
 }
@@ -801,7 +805,7 @@ span.version:before {
 	content: "Portal ";
 }
 span.version:after {
-	content: " | DarkMode v1.002";
+	content: " | DarkMode v1.003";
 }
 #uplform {
     background-color: #212121 !important;
