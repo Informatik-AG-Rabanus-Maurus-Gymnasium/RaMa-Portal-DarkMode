@@ -406,7 +406,7 @@ button {
 	font-family: "Source Sans Pro", "Trebuchet MS", Tahoma, Helvetica, sans-serif;
 	font-size: 0.9em;
 	color: #2050b0;
-	background: rgba(255,255,255,0.1);
+	background: #424242;
 	transition: background 0.5s, color 0.5s;
 }
 button:hover {
@@ -603,12 +603,12 @@ div.nzts {
 #videochatForm > div:nth-child(3) > a:nth-child(7) > div:nth-child(1) {
 	background: var(--primary) !important;
 	border-radius: 2px !important;
-	border: 1px solid rgba(255,255,255,0.16) !important;
+	border: 1px solid #616161 !important;
 	box-shadow: 0px 0px 5px #000;
 }
 .content > div:nth-child(1) > table:nth-child(4) > tbody:nth-child(1) > tr > td {
 	background: #727272 !important;
-	border: 1px solid rgba(255,255,255,0.16) !important;
+	border: 1px solid #616161 !important;
 	border-radius: 4px;
 }
 .content > div:nth-child(1) > table:nth-child(4) > tbody:nth-child(1) > tr > td > a {
@@ -811,5 +811,5 @@ span.version:after {
     background-color: #212121 !important;
     border-radius: 4px;
     width: auto !important;
-    border: 1px solid rgba(255,255,255,0.16);
+    border: 1px solid #616161;
 }
