@@ -580,8 +580,10 @@ td.plan {
 	background-color: #424242 !important;
 }
 [name="msgtext"] {
-	background: #424242 !important;
-	color: #fff !important;
+    background: #424242 !important;
+    color: #fff !important;
+    border-radius: 0px;
+    height: 67px !important;
 }
 #charCounter {
 	color: #fff !important;
@@ -799,5 +801,11 @@ span.version:before {
 	content: "Portal ";
 }
 span.version:after {
-	content: " | DarkMode v1.001";
+	content: " | DarkMode v1.002";
+}
+#uplform {
+    background-color: #212121 !important;
+    border-radius: 4px;
+    width: auto !important;
+    border: 1px solid rgba(255,255,255,0.16);
 }
