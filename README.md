@@ -21,7 +21,7 @@ Wer Anregungen oder Vorschläge hat oder selbst HTML und CSS beherscht, kann mic
 - Gib in der Spalte URL "https://portal.rama-mainz.de" ein.
 - Kopiere dann den Vollständigen Code aus der Datei "Portal DarkMode.css" und füge ihn in die Spalte Style (CSS) ein.
 
-### So sollte das ganze dann aussehen:
+So sollte das ganze dann aussehen:
 ![Image missing](https://user-images.githubusercontent.com/69604121/110132551-949bbe80-7dcb-11eb-8f52-89722d4440f8.png)
 
 
