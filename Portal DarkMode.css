@@ -876,6 +876,9 @@ td.speaker-right.lehrer:last-of-type {
 	color: #fff;
 	padding: 4px;
 }
+.speaker-new:nth-child(4) {
+font-size: 0px;
+}
 .message-new {
 	vertical-align: top;
 	background-color: #757575;
@@ -898,6 +901,7 @@ img[src="edu/icn/reddotok.png"] {
 	border-radius: 0px;
 	height: 67px !important;
 	border: unset !important;
+	outline: none !important;
 }
 form[action*="action=addmsg"] > div.content > table > tbody > tr > .speaker-right {
 	border-radius: 0px 15px 15px 0px !important;
@@ -909,26 +913,36 @@ form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .
 	border-radius: 0px 15px 0px 0px !important;
 }
 td.speaker-new:nth-child(2) > a > img {
-visibility: hidden;
+	visibility: hidden;
 }
 td.speaker-new:nth-child(2) {
-background-image: url(https://i.ibb.co/G0khmNw/searchpng-com-sent-icon-png-image-free-download.png);
-background-repeat: no-repeat;
-background-size: 35px;
-background-position: center 18px;
+	background-image: url(https://i.ibb.co/G0khmNw/searchpng-com-sent-icon-png-image-free-download.png);
+	background-repeat: no-repeat;
+	background-size: 35px;
+	background-position: center 18px;
 }
 a[href*="chat.php?action=direkt&id="] {
-    background-image: url(https://i.ibb.co/phq1GsN/reply-solid.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+	background-image: url(https://i.ibb.co/phq1GsN/reply-solid.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 a[href*="chat.php?action=direkt&id="] > img {
-visibility: hidden;
+	visibility: hidden;
 }
 .content > table[style*="width:880px;"] > tbody > tr > td.message-right.lehrer {
-    border-radius: 15px 0px 0px 15px;
+	border-radius: 15px 0px 0px 15px;
 }
 .content > table[style*="width:880px;"] > tbody > tr > td.speaker-right.lehrer {
-border-radius: 0px 15px 15px 0px;
+	border-radius: 0px 15px 15px 0px;
+}
+a[onclick*="$(\"#uplform\").show();"] > img {
+	visibility: hidden;
+}
+a[onclick*="$(\"#uplform\").show();"] {
+	background-image: url(https://i.ibb.co/vHQgXrC/upload.png);
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
 }
 /* Ende Chat-Design */
