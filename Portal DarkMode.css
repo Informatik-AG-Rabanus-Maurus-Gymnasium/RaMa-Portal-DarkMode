@@ -1,5 +1,7 @@
 :root {
 	--primary: #9d2032;
+	--message-left-background: #43A047;
+	--message-right-lehrer-background: #01579B;
 }
 
 
@@ -53,6 +55,7 @@ ul.m_menu0 > li > a {
 ul.m_menu0 > li > a:hover {
 	background: #ebb5be;
 	color: #121212;
+	border: 1px solid #cd6f7e;
 }
 ul.m_menu0 > li > p {
 	display: block;
@@ -249,13 +252,14 @@ ul.oe_sidebar > li > a {
 	box-sizing: border-box;
 	box-shadow: 0px 0px 5px #000;
 	border: 1px solid #cc354c;
-	border-radius: 2px;
+	border-radius: 4px;
 }
 ul.oe_sidebar > li > a:hover,
 ul.oe_sidebar > li.selected > a {
 	background: #ebb5be;
 	color: #121212;
 	text-shadow: 1px 1px 1px #616161;
+	border: 1px solid #cd6f7e;
 }
 ul.oe_sidebar div {
 	position: absolute;
@@ -535,56 +539,6 @@ td.plan {
 [style="background:#eee;"] {
 	background: #616161 !important;
 }
-.message-right {
-	background-color: #424242 !important;
-	color: #fff !important;
-	border: unset !important;
-	box-shadow: 0px 0px 10px #000 !important;
-}
-.speaker-right {
-	background: #757575 !important;
-	color: #fff !important;
-	box-shadow: 5px 0px 10px #000 !important;
-}
-.triangle-right {
-	border-left: 20px solid #757575 !important;
-}
-.message-right.lehrer {
-	background: #0D47A1 !important;
-	border: unset !important;
-	color: #fff !important;
-	box-shadow: 0px 0px 10px #000 !important;
-}
-.speaker-right.lehrer {
-	background-color: #1976D2 !important;
-	color: #fff !important;
-	box-shadow: 5px 0px 10px #000 !important;
-}
-.triangle-right.lehrer {
-	border-left: 20px solid #1976D2 !important;
-}
-.triangle-left {
-	border-right: 20px solid #00E676 !important;
-}
-.speaker-left {
-	background: #00E676 !important;
-	color: #121212 !important;
-	box-shadow: 0px 0px 10px #000 !important;
-}
-.message-left {
-	background: #00C853 !important;
-	border: unset !important;
-	box-shadow: 10px 0px 10px #000 !important;
-}
-.message-new {
-	background-color: #424242 !important;
-}
-[name="msgtext"] {
-    background: #424242 !important;
-    color: #fff !important;
-    border-radius: 0px;
-    height: 67px !important;
-}
 #charCounter {
 	color: #fff !important;
 }
@@ -607,7 +561,7 @@ div.nzts {
 	box-shadow: 0px 0px 5px #000;
 }
 .content > div:nth-child(1) > table:nth-child(4) > tbody:nth-child(1) > tr > td {
-	background: #727272 !important;
+	background: #424242 !important;
 	border: 1px solid #616161 !important;
 	border-radius: 4px;
 }
@@ -691,7 +645,7 @@ tr.green td {
 	background: #09af00;
 }
 .table tbody tr:nth-child(2n+1):hover, .table tbody tr:nth-child(2n):hover, .table th:hover {
-	background-color: #757575;
+    background-color: #212121;
 }
 a[onclick="clearNames()"] > div {
 	background: #424242 !important;
@@ -710,7 +664,7 @@ ul.token-input-list {
 	height: auto !important; 
 	height: 1%;
 	width: 200px;
-	border: 1px solid #a0a0a0;
+	border: 1px solid #858585
 	cursor: text;
 	font-size: 0.9em;
 	font-family: Tahoma, Helvetica, sans-serif;
@@ -718,6 +672,7 @@ ul.token-input-list {
 	margin: 0;
 	padding: 0;
 	background-color: #424242;
+	border-radius: 4px;
 }
 ul.token-input-list li {
 	list-style-type: none;
@@ -727,6 +682,11 @@ ul.token-input-list li input {
 	width: 200px;
 	padding: 3px 8px;
 	background-color: #616161 !important;
+	min-width: 30px;
+	border-radius: 0px 4px 4px 0px;
+}
+ul.token-input-focused {
+	border-radius: 4px 4px 0px 0px;
 }
 li.token-input-token {
 	overflow: hidden;
@@ -734,7 +694,7 @@ li.token-input-token {
 	height: 1%;
 	margin: 3px;
 	padding: 3px 5px;
-	background-color: #e0e0e0;
+	background-color: #BDBDBD;
 	color: #000;
 	cursor: default;
 	display: block;
@@ -770,7 +730,8 @@ div.token-input-dropdown {
 	cursor: default;
 	font-size: 0.9em;
 	font-family: Tahoma, Helvetica, sans-serif;
-	z-index: 1;
+	z-index: 1 !important;
+	border-radius: 0px 0px 4px 4px;
 }
 div.token-input-dropdown p {
 	margin: 0;
@@ -786,6 +747,7 @@ div.token-input-dropdown ul li {
 	background-color: #424242;
 	padding: 3px;
 	list-style-type: none;
+	transition: all 0.5s;
 }
 div.token-input-dropdown ul li.token-input-dropdown-item {
 	background-color: #424242;
@@ -805,11 +767,162 @@ span.version:before {
 	content: "Portal ";
 }
 span.version:after {
-	content: " | DarkMode v1.003";
+	content: " | DarkMode v1.004";
 }
 #uplform {
-    background-color: #212121 !important;
-    border-radius: 4px;
-    width: auto !important;
-    border: 1px solid #616161;
+	background-color: #212121 !important;
+	border-radius: 4px;
+	width: auto !important;
+	border: 1px solid #616161;
+	top: 30vh;
+	left: 25vw;
+	margin: unset !important;
+	box-shadow: 0px 0px 10px #000;
 }
+form[action*="/videochat/beitretenIntern"] > button {
+	background: rgba(255,255,255,0.2);
+	border-radius: 15px;
+	padding: 5px;
+}
+
+
+
+
+
+/* Neues Chat-Design */
+
+
+.message-right {
+	background-color: #424242 !important;
+	color: #fff !important;
+	border: unset !important;
+	padding-left: 10px;
+	border-radius: 15px 0px 0px 15px;
+}
+.speaker-right {
+	background: #424242;
+	color: #fff;
+	padding-left: 10px;
+	border-radius: 0px 15px 15px 0px;
+}
+.triangle-right {
+	border-left: 20px solid #424242;
+	margin-top: 15px;
+}
+.message-right.lehrer {
+	background: var(--message-right-lehrer-background) !important;
+	border: unset !important;
+	color: #fff !important;
+	border-radius: 0px;
+}
+.speaker-right.lehrer {
+	background-color: var(--message-right-lehrer-background) !important;
+	color: #fff !important;
+}
+.triangle-right.lehrer {
+	border-left: 20px solid var(--message-right-lehrer-background) !important;
+}
+.triangle-left {
+	border-right: 20px solid var(--message-left-background) !important;
+	margin-top: 15px;
+}
+.speaker-left {
+	background: var(--message-left-background) !important;
+	color: #121212 !important;
+	padding-left: 10px;
+}
+.message-left {
+	background: var(--message-left-background) !important;
+	border: unset !important;
+	color: #000;
+}
+td.speaker-left:nth-child(2) {
+	border-radius: 15px 0px 0px 0px;
+}
+td.speaker-left:nth-child(4) {
+	border-radius: 0px 15px 0px 0px !important;
+}
+td.speaker-left:last-of-type {
+	border-radius: 0px 0px 15px 15px !important;
+}
+td.speaker-right.lehrer:nth-child(2) {
+	border-radius: 15px 0px 0px 0px;
+}
+td.speaker-right.lehrer:nth-child(4) {
+	border-radius: 0px 15px 0px 0px;
+}
+td.speaker-right.lehrer:first-of-type {
+	border-radius: 15px 0px 15px 0px !important;
+}
+td.speaker-right.lehrer:last-of-type {
+	border-radius: 0px 0px 15px 15px !important;
+}
+.triangle-new {
+	width: 0;
+	height: 0;
+	padding: 0;
+	float: left;
+	border-top: 10px solid transparent;
+	border-right: 20px solid #757575;
+	border-bottom: 10px solid transparent;
+	margin-top: 15px;
+	visibility: hidden;
+}
+.speaker-new {
+	vertical-align: middle;
+	text-align: center;
+	background-color: #757575;
+	font-size: 12px;
+	color: #fff;
+	padding: 4px;
+}
+.message-new {
+	vertical-align: top;
+	background-color: #757575;
+	font-size: 16px;
+	padding: 0px;
+	border: 1px solid #757575;
+}
+.speaker-new:nth-child(2) {
+	border-radius: 15px 0px 0px 15px;
+}
+.speaker-new:nth-child(4) {
+	border-radius: 0px 15px 15px 0px;
+}
+img[src="edu/icn/reddotok.png"] {
+	margin-top: 5px;
+}
+[name="msgtext"] {
+	background: #757575 !important;
+	color: #fff !important;
+	border-radius: 0px;
+	height: 67px !important;
+	border: unset !important;
+}
+form[action*="action=addmsg"] > div.content > table > tbody > tr > .speaker-right {
+	border-radius: 0px 15px 15px 0px !important;
+}
+form[action*="action=addmsg"] > div.content > table > tbody > tr > .message-right {
+	border-radius: 15px 0px 0px 15px !important;
+}
+form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .speaker-right:nth-child(4) {
+	border-radius: 0px 15px 0px 0px !important;
+}
+td.speaker-new:nth-child(2) > a > img {
+visibility: hidden;
+}
+td.speaker-new:nth-child(2) {
+background-image: url(https://i.ibb.co/G0khmNw/searchpng-com-sent-icon-png-image-free-download.png);
+background-repeat: no-repeat;
+background-size: 35px;
+background-position: center 18px;
+}
+a[href*="chat.php?action=direkt&id="] {
+    background-image: url(https://i.ibb.co/phq1GsN/reply-solid.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+a[href*="chat.php?action=direkt&id="] > img {
+visibility: hidden;
+
+/* Ende Chat-Design */
