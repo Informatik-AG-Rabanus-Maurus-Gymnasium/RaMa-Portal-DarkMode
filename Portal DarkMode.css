@@ -924,5 +924,11 @@ a[href*="chat.php?action=direkt&id="] {
 }
 a[href*="chat.php?action=direkt&id="] > img {
 visibility: hidden;
-
+}
+.content > table[style*="width:880px;"] > tbody > tr > td.message-right.lehrer {
+    border-radius: 15px 0px 0px 15px;
+}
+.content > table[style*="width:880px;"] > tbody > tr > td.speaker-right.lehrer {
+border-radius: 0px 15px 15px 0px;
+}
 /* Ende Chat-Design */
