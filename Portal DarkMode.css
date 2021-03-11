@@ -858,26 +858,15 @@ td.speaker-right.lehrer:last-of-type {
 	border-radius: 0px 0px 15px 15px !important;
 }
 .triangle-new {
-	width: 0;
-	height: 0;
-	padding: 0;
-	float: left;
-	border-top: 10px solid transparent;
-	border-right: 20px solid #757575;
-	border-bottom: 10px solid transparent;
-	margin-top: 15px;
 	visibility: hidden;
 }
 .speaker-new {
 	vertical-align: middle;
 	text-align: center;
 	background-color: #757575;
-	font-size: 12px;
+	font-size: 0px;
 	color: #fff;
 	padding: 4px;
-}
-.speaker-new:nth-child(4) {
-font-size: 0px;
 }
 .message-new {
 	vertical-align: top;
@@ -912,17 +901,8 @@ form[action*="action=addmsg"] > div.content > table > tbody > tr > .message-righ
 form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .speaker-right:nth-child(4) {
 	border-radius: 0px 15px 0px 0px !important;
 }
-td.speaker-new:nth-child(2) > a > img {
-	visibility: hidden;
-}
-td.speaker-new:nth-child(2) {
-	background-image: url(https://i.ibb.co/G0khmNw/searchpng-com-sent-icon-png-image-free-download.png);
-	background-repeat: no-repeat;
-	background-size: 35px;
-	background-position: center 18px;
-}
 a[href*="chat.php?action=direkt&id="] {
-	background-image: url(https://i.ibb.co/phq1GsN/reply-solid.png);
+	background-image: url(https://i.ibb.co/cv9zb4w/reply.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -935,14 +915,55 @@ a[href*="chat.php?action=direkt&id="] > img {
 .content > table[style*="width:880px;"] > tbody > tr > td.speaker-right.lehrer {
 	border-radius: 0px 15px 15px 0px;
 }
-a[onclick*="$(\"#uplform\").show();"] > img {
+td.speaker-new:nth-child(2) > a > img {
 	visibility: hidden;
 }
-a[onclick*="$(\"#uplform\").show();"] {
-	background-image: url(https://i.ibb.co/vHQgXrC/upload.png);
-	background-size: 30px;
+td.speaker-new:nth-child(2) > a {
+	background-image: url(https://i.ibb.co/fCfrh9b/send.png);
 	background-repeat: no-repeat;
+	background-size: 35px;
 	background-position: center;
 	display: block;
 }
+td.speaker-new:nth-child(4) > a > img {
+	visibility: hidden;
+}
+td.speaker-new:nth-child(4) > a {
+	background-image: url(https://i.ibb.co/r7cz39y/upload.png);
+	background-repeat: no-repeat;
+	background-size: 35px;
+	background-position: center;
+	display: block;
+}
+[name="msgform"] > .content > table > tbody > tr > td.speaker-left {
+	border-radius: 15px 0px 0px 15px;
+}
+[name="msgform"] > .content > table > tbody > tr > td.message-left {
+	border-radius: 0px 15px 15px 0px;
+}
+a[onclick^="rmmsg("][onclick*="direkt"] {
+	background-image: url(https://i.ibb.co/jZmGHQX/del-message.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+a[onclick^="rmmsg("][onclick*="direkt"] > img {
+	visibility: hidden;
+}
 /* Ende Chat-Design */
+
+
+
+#username, #password {
+    outline: none;
+    color: #999 !important;
+}
+#username:focus, #password:focus {
+    color: #fff !important;
+}
+input[name="searchtext"] {
+    color: #999 !important;
+}
+input[name="searchtext"]:focus {
+    color: #fff !important;
+    outline: none;
+}
