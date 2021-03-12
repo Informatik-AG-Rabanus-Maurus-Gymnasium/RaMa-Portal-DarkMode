@@ -1,7 +1,8 @@
 :root {
 	--primary: #9d2032;
-	--message-left-background: #43A047;
-	--message-right-lehrer-background: #01579B;
+	--message-self-background: #43A047;
+	--message-student-background: #424242;
+	--message-teacher-background: #01579B;
 }
 
 
@@ -331,9 +332,9 @@ a:hover, a:active {
 	color: #ff3535;
 }
 tr.zeile_g {
-	background-color: #616161;
-	color: #fff;
-	transition: all 0.5s;
+    background-color: #424242;
+    color: #fff;
+    transition: all 0.5s;
 }
 tr.zeile_g a {
 	color: #fff;
@@ -348,9 +349,9 @@ tr.zeile_w {
 	background-color: #ffffff;
 }
 tr.zeile_g:hover {
-	background-color: #9E9E9E;
-	color: #121212;
-	text-shadow: none;
+    background-color: #616161;
+    color: #fff;
+    text-shadow: none;
 }
 tr.zeile_u:hover {
 	background-color: #424242;
@@ -539,14 +540,12 @@ td.plan {
 [style="background:#eee;"] {
 	background: #616161 !important;
 }
-#charCounter {
-	color: #fff !important;
-}
 table.stdplan-table th {
 	background: #424242 !important;
 }
 table.stdplan-table td {
-	color: #424242;
+	color: #fff;
+	background: #212121 !important;
 }
 div.nzts {
 	background: #424242 !important;
@@ -767,7 +766,7 @@ span.version:before {
 	content: "Portal ";
 }
 span.version:after {
-	content: " | DarkMode v1.004";
+	content: " | DarkMode v1.005-b1";
 }
 #uplform {
 	background-color: #212121 !important;
@@ -793,48 +792,59 @@ form[action*="/videochat/beitretenIntern"] > button {
 
 
 .message-right {
-	background-color: #424242 !important;
+	background-color: var(--message-student-background) !important;
 	color: #fff !important;
 	border: unset !important;
 	padding-left: 10px;
 	border-radius: 15px 0px 0px 15px;
 }
+.message-right.lehrer {
+	background: var(--message-teacher-background) !important;
+}
+form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .message-right {
+	border-radius: 0px !important;
+}
 .speaker-right {
-	background: #424242;
+	background: var(--message-student-background);
 	color: #fff;
 	padding-left: 10px;
 	border-radius: 0px 15px 15px 0px;
 }
-.triangle-right {
-	border-left: 20px solid #424242;
-	margin-top: 15px;
-}
-.message-right.lehrer {
-	background: var(--message-right-lehrer-background) !important;
-	border: unset !important;
-	color: #fff !important;
-	border-radius: 0px;
-}
 .speaker-right.lehrer {
-	background-color: var(--message-right-lehrer-background) !important;
-	color: #fff !important;
+	background-color: var(--message-teacher-background) !important;
+}
+td.speaker-right.lehrer:nth-child(2) {
+	border-radius: 15px 0px 0px 0px;
+}
+td.speaker-right.lehrer:first-of-type {
+	border-radius: 15px 0px 15px 0px !important;
+}
+td.speaker-right.lehrer:last-of-type {
+	border-radius: 0px 0px 15px 15px !important;
+}
+form[action*="action=addmsg"] > div.content > table > tbody > tr > .speaker-right {
+	border-radius: 0px 15px 15px 0px !important;
+}
+form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .speaker-right:nth-child(4) {
+	border-radius: 0px 15px 0px 0px !important;
+}
+.content > table[style*="width:880px;"] > tbody > tr > td.speaker-right.lehrer:nth-child(2) {
+	border-radius: 15px 0px 0px 15px;
+}
+.content > table[style*="width:880px;"] > tbody > tr > td.speaker-right.lehrer:nth-child(4) {
+	border-radius: 0px 15px 15px 0px;
+}
+.triangle-right {
+	border-left: 20px solid var(--message-student-background);
+	margin-top: 15px;
 }
 .triangle-right.lehrer {
-	border-left: 20px solid var(--message-right-lehrer-background) !important;
-}
-.triangle-left {
-	border-right: 20px solid var(--message-left-background) !important;
-	margin-top: 15px;
+	border-left: 20px solid var(--message-teacher-background) !important;
 }
 .speaker-left {
-	background: var(--message-left-background) !important;
-	color: #121212 !important;
-	padding-left: 10px;
-}
-.message-left {
-	background: var(--message-left-background) !important;
-	border: unset !important;
+	background: var(--message-self-background) !important;
 	color: #000;
+	padding-left: 10px;
 }
 td.speaker-left:nth-child(2) {
 	border-radius: 15px 0px 0px 0px;
@@ -845,17 +855,21 @@ td.speaker-left:nth-child(4) {
 td.speaker-left:last-of-type {
 	border-radius: 0px 0px 15px 15px !important;
 }
-td.speaker-right.lehrer:nth-child(2) {
-	border-radius: 15px 0px 0px 0px;
+[name="msgform"] > .content > table > tbody > tr > td.speaker-left {
+	border-radius: 15px 0px 0px 15px;
 }
-td.speaker-right.lehrer:nth-child(4) {
-	border-radius: 0px 15px 0px 0px;
+.message-left {
+	background: var(--message-self-background) !important;
+	border: unset;
+	color: #000;
+	border-radius: 0px 15px 15px 0px;
 }
-td.speaker-right.lehrer:first-of-type {
-	border-radius: 15px 0px 15px 0px !important;
+form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .message-left {
+	border-radius: 0px;
 }
-td.speaker-right.lehrer:last-of-type {
-	border-radius: 0px 0px 15px 15px !important;
+.triangle-left {
+	border-right: 20px solid var(--message-self-background) !important;
+	margin-top: 15px;
 }
 .triangle-new {
 	visibility: hidden;
@@ -868,18 +882,38 @@ td.speaker-right.lehrer:last-of-type {
 	color: #fff;
 	padding: 4px;
 }
+.speaker-new:nth-child(2) {
+	border-radius: 15px 0px 0px 15px;
+}
+td.speaker-new:nth-child(2) > a {
+	background-image: url(https://i.ibb.co/fCfrh9b/send.png);
+	background-repeat: no-repeat;
+	background-size: 35px;
+	background-position: center;
+	display: block;
+}
+td.speaker-new:nth-child(2) > a > img {
+	visibility: hidden;
+}
+.speaker-new:nth-child(4) {
+	border-radius: 0px 15px 15px 0px;
+}
+td.speaker-new:nth-child(4) > a {
+	background-image: url(https://i.ibb.co/r7cz39y/upload.png);
+	background-repeat: no-repeat;
+	background-size: 35px;
+	background-position: center;
+	display: block;
+}
+td.speaker-new:nth-child(4) > a > img {
+	visibility: hidden;
+}
 .message-new {
 	vertical-align: top;
 	background-color: #757575;
 	font-size: 16px;
 	padding: 0px;
 	border: 1px solid #757575;
-}
-.speaker-new:nth-child(2) {
-	border-radius: 15px 0px 0px 15px;
-}
-.speaker-new:nth-child(4) {
-	border-radius: 0px 15px 15px 0px;
 }
 img[src="edu/icn/reddotok.png"] {
 	margin-top: 5px;
@@ -892,14 +926,8 @@ img[src="edu/icn/reddotok.png"] {
 	border: unset !important;
 	outline: none !important;
 }
-form[action*="action=addmsg"] > div.content > table > tbody > tr > .speaker-right {
-	border-radius: 0px 15px 15px 0px !important;
-}
-form[action*="action=addmsg"] > div.content > table > tbody > tr > .message-right {
-	border-radius: 15px 0px 0px 15px !important;
-}
-form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .speaker-right:nth-child(4) {
-	border-radius: 0px 15px 0px 0px !important;
+#charCounter {
+	color: #fff !important;
 }
 a[href*="chat.php?action=direkt&id="] {
 	background-image: url(https://i.ibb.co/cv9zb4w/reply.png);
@@ -908,38 +936,6 @@ a[href*="chat.php?action=direkt&id="] {
 }
 a[href*="chat.php?action=direkt&id="] > img {
 	visibility: hidden;
-}
-.content > table[style*="width:880px;"] > tbody > tr > td.message-right.lehrer {
-	border-radius: 15px 0px 0px 15px;
-}
-.content > table[style*="width:880px;"] > tbody > tr > td.speaker-right.lehrer {
-	border-radius: 0px 15px 15px 0px;
-}
-td.speaker-new:nth-child(2) > a > img {
-	visibility: hidden;
-}
-td.speaker-new:nth-child(2) > a {
-	background-image: url(https://i.ibb.co/fCfrh9b/send.png);
-	background-repeat: no-repeat;
-	background-size: 35px;
-	background-position: center;
-	display: block;
-}
-td.speaker-new:nth-child(4) > a > img {
-	visibility: hidden;
-}
-td.speaker-new:nth-child(4) > a {
-	background-image: url(https://i.ibb.co/r7cz39y/upload.png);
-	background-repeat: no-repeat;
-	background-size: 35px;
-	background-position: center;
-	display: block;
-}
-[name="msgform"] > .content > table > tbody > tr > td.speaker-left {
-	border-radius: 15px 0px 0px 15px;
-}
-[name="msgform"] > .content > table > tbody > tr > td.message-left {
-	border-radius: 0px 15px 15px 0px;
 }
 a[onclick^="rmmsg("][onclick*="direkt"] {
 	background-image: url(https://i.ibb.co/jZmGHQX/del-message.png);
@@ -952,18 +948,68 @@ a[onclick^="rmmsg("][onclick*="direkt"] > img {
 /* Ende Chat-Design */
 
 
-
 #username, #password {
-    outline: none;
-    color: #999 !important;
+	outline: none;
+	color: #999 !important;
 }
 #username:focus, #password:focus {
-    color: #fff !important;
+	color: #fff !important;
 }
 input[name="searchtext"] {
-    color: #999 !important;
+	color: #999 !important;
 }
 input[name="searchtext"]:focus {
-    color: #fff !important;
-    outline: none;
+	color: #fff !important;
+	outline: none;
+}
+#printdiv {
+	display: none !important;
+}
+
+
+/* Umfragen-Design */
+
+.actsel {
+    background: #00C853;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.tosel {
+    background: #616161;
+    border-radius: 4px;
+    color: #fff;
+}
+.que {
+    width: auto;
+    padding: 10px;
+    background: #424242;
+border-radius: 4px;
+}
+/* Selector für Umfragen-Div Elem */
+.content > div:nth-child(4)[style*="overflow-y:scroll"] {
+    height: calc(100% - 128px) !important;
+}
+.f5 > table > tbody > tr > td > div {
+	border-radius: 0px 15px 15px 0px;
+}
+.f5 > table > tbody > tr > td:nth-child(2) {
+    border-left: 1px solid #fff;
+    padding-left: 0px;
+    margin-left: 4px;
+    display: block;
+}
+.f5 > table > tbody > tr:nth-child(1) > td > div {
+	background: #00C853 !important;
+}
+.f5 > table > tbody > tr:nth-child(2) > td > div {
+    background: #7CB342 !important;
+}
+.f5 > table > tbody > tr:nth-child(3) > td > div {
+    background: #FFD600 !important;
+}
+.f5 > table > tbody > tr:nth-child(4) > td > div {
+    background: #FF8F00 !important;
+}
+.f5 > table > tbody > tr:nth-child(5) > td > div {
+    background: #D32F2F !important;
 }
