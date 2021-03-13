@@ -17,7 +17,7 @@ Bugreports, Vorschläge und ähnliches können entweder hier auf GitHub unter [I
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/69604121/111031367-85d68c80-8407-11eb-8fcd-8446e4990aa2.png" alt="Image missing" width="400" style="float: left;"/>
+<img src="https://user-images.githubusercontent.com/69604121/111031367-85d68c80-8407-11eb-8fcd-8446e4990aa2.png" alt="Image missing" width="400" style="float: right;"/>
 <img src="https://user-images.githubusercontent.com/69604121/111031369-8b33d700-8407-11eb-8055-d84311e199e2.png" alt="Image missing" width="400" style="float: left;"/>
 <img src="https://user-images.githubusercontent.com/69604121/111031370-8d963100-8407-11eb-9b31-829070806652.png" alt="Image missing" width="400" style="float: left;"/>
 <img src="https://user-images.githubusercontent.com/69604121/111031339-59227500-8407-11eb-9f49-f61e69561e2a.png" alt="Image missing" width="400" style="float: left;"/>
