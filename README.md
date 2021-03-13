@@ -5,7 +5,7 @@
 
 ## Beschreibung
 
-Dies ist der Entwicklungs-Code für den RaMa-Portal DarkMode und das Mobile-Design. Das ganze basiert auf Vorgaben des Material-Themes (https://material.io) und ist in CSS geschrieben.
+Dies ist der Entwicklungs-Code für den RaMa-Portal DarkMode und das Mobile-Design. Das ganze basiert auf Vorgaben des [Material-Themes](https://material.io) und ist in CSS geschrieben.
 
 Das Mobile-Design funktioniert von ca. 300px Breite bis 640px. 
 
