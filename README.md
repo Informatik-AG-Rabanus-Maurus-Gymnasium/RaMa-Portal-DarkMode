@@ -5,17 +5,25 @@
 
 ## Beschreibung
 
-Dies ist der Entwicklungs-Code für den RaMa-Portal DarkMode und das Mobile-Design. Das ganze basiert auf Vorgaben des [Material-Themes](https://material.io) und ist in CSS geschrieben.
+Dies ist ein alternatives dunkles Design für das [RaMa-Portal](https://portal.rama-mainz.de) (und alle anderen Schulen, die das Portal von Ingo Schnell verwenden) und ein Mobile-Design der Lernumgebung für Handys. Das ganze basiert auf Vorgaben des [Material-Themes](https://material.io) und ist in [CSS](https://www.w3.org/Style/CSS/Overview.en.html) geschrieben.
 
-Das Mobile-Design funktioniert von ca. 300px Breite bis 640px. 
+Der DarkMode wird über ein Browser-Addon eingebunden, mit welchem der DarkMode mit 2 Klicks aktiviert/deaktiviert werden kann. Es werden einige Grafik-Bugs der normalen Oberfläche behoben und insgesamt wirkt das Design moderner und runder. Sowohl die normale Oberfläche, als auch die Lernumgebung sind in dunklem Design.
 
-Aktuell gibt es noch einige Bugs, die nach möglichkeit behoben werden.
-Wer Anregungen oder Vorschläge hat oder selbst HTML und CSS beherscht, kann mich kontakieren und bei der Programmierung mitarbeiten.
+Das Mobile-Design für die Lernumgebung funktioniert von ca. 300px Breite bis 640px.
+
+Bugreports, Vorschläge und ähnliches können entweder hier auf GitHub unter [Issues](https://github.com/HackerFrosch/RaMa-Portal/issues) gemacht werden oder ihr könnt mich Privat über WhatsApp oder Discord anschreiben.
+
+
+
+## Screenshots
+
+<hier screens + Links einfügen>
+
 
 
 ## Installation
 
-**Hinweis:** Kursiv geschriebener Text markiert immer Eigennamen oder Text den du eingeben sollst. Text der in den Klammern <> steht, soll nicht wörtlich eingesetzt werden, sondern in den Klammern steht, was du dort einsetzen sollst.
+**Hinweis:** *Kursiv* geschriebener Text markiert immer Eigennamen oder Text den du eingeben sollst. Text der in den Klammern <> steht, soll nicht wörtlich eingesetzt werden, sondern in den Klammern steht, was du dort einsetzen sollst.
 
 
 1. Installiere das Addon *Custom Style Script* für deinen Browser
