@@ -2,7 +2,7 @@
 	--primary: #9d2032;
 	--message-self-background: #43A047;
 	--message-student-background: #424242;
-	--message-teacher-background: #01579B;
+	--message-teacher-background: #0277BD;
 }
 
 
@@ -323,13 +323,13 @@ h2 {
 	padding-bottom: 40px;
 }
 a:link, a:visited {
-	color: var(--primary);
+	color: #F44336;
 	text-decoration: none;
 	transition: color 0.5s;
 }
 a:hover, a:active {
 	text-decoration: none;
-	color: #ff3535;
+	color: #C62828;
 }
 tr.zeile_g {
     background-color: #424242;
@@ -597,6 +597,10 @@ div.content > a > div[style*="background:#eee"] {
 	box-shadow: 0px 0px 5px #000;
 	margin-left: 5px !important;
 }
+#oe_sidebar > li:nth-child(1) > div > table > tbody > tr > td {
+    background: #F5F5F5 !important;
+    border-radius: 4px;
+}
 [src*="/img/logo_rama.png"] {
 	filter: brightness(1.5);
 }
@@ -683,6 +687,7 @@ ul.token-input-list li input {
 	background-color: #616161 !important;
 	min-width: 30px;
 	border-radius: 0px 4px 4px 0px;
+	color: #fff;
 }
 ul.token-input-focused {
 	border-radius: 4px 4px 0px 0px;
@@ -766,7 +771,7 @@ span.version:before {
 	content: "Portal ";
 }
 span.version:after {
-	content: " | DarkMode v1.005-b1";
+	content: " | DarkMode v1.005-b2";
 }
 #uplform {
 	background-color: #212121 !important;
@@ -801,7 +806,7 @@ form[action*="/videochat/beitretenIntern"] > button {
 .message-right.lehrer {
 	background: var(--message-teacher-background) !important;
 }
-form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .message-right {
+form[action*="action=adddirectmsg"] td.message-right {
 	border-radius: 0px !important;
 }
 .speaker-right {
@@ -822,10 +827,10 @@ td.speaker-right.lehrer:first-of-type {
 td.speaker-right.lehrer:last-of-type {
 	border-radius: 0px 0px 15px 15px !important;
 }
-form[action*="action=addmsg"] > div.content > table > tbody > tr > .speaker-right {
+form[action*="action=addmsg"] td.speaker-right {
 	border-radius: 0px 15px 15px 0px !important;
 }
-form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .speaker-right:nth-child(4) {
+form[action*="action=adddirectmsg"] td.speaker-right:nth-child(4) {
 	border-radius: 0px 15px 0px 0px !important;
 }
 .content > table[style*="width:880px;"] > tbody > tr > td.speaker-right.lehrer:nth-child(2) {
@@ -864,7 +869,7 @@ td.speaker-left:last-of-type {
 	color: #000;
 	border-radius: 0px 15px 15px 0px;
 }
-form[action*="action=adddirectmsg"] > div.content > div > table > tbody > tr > .message-left {
+form[action*="action=adddirectmsg"] td.message-left {
 	border-radius: 0px;
 }
 .triangle-left {
@@ -891,6 +896,11 @@ td.speaker-new:nth-child(2) > a {
 	background-size: 35px;
 	background-position: center;
 	display: block;
+	transition: transform ease 0.5s, filter ease 0.5s;
+}
+td.speaker-new:nth-child(2) > a:hover {
+	transform: scale(1.5);
+	filter: brightness(0.7);
 }
 td.speaker-new:nth-child(2) > a > img {
 	visibility: hidden;
@@ -904,6 +914,11 @@ td.speaker-new:nth-child(4) > a {
 	background-size: 35px;
 	background-position: center;
 	display: block;
+	transition: transform ease 0.5s, filter ease 0.5s;
+}
+td.speaker-new:nth-child(4) > a:hover {
+	transform: scaleY(1.1) scale(1.1);
+	filter: brightness(0.7);
 }
 td.speaker-new:nth-child(4) > a > img {
 	visibility: hidden;
@@ -933,6 +948,7 @@ a[href*="chat.php?action=direkt&id="] {
 	background-image: url(https://i.ibb.co/cv9zb4w/reply.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+color: #000;
 }
 a[href*="chat.php?action=direkt&id="] > img {
 	visibility: hidden;
@@ -941,11 +957,64 @@ a[onclick^="rmmsg("][onclick*="direkt"] {
 	background-image: url(https://i.ibb.co/jZmGHQX/del-message.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+color: #000;
 }
 a[onclick^="rmmsg("][onclick*="direkt"] > img {
 	visibility: hidden;
 }
 /* Ende Chat-Design */
+
+
+/* Umfragen-Design */
+
+.actsel {
+	background: #00C853;
+color: #000;
+	font-weight: bold;
+	border-radius: 4px;
+}
+.tosel {
+	background: #616161;
+	border-radius: 4px;
+	color: #fff;
+}
+.que {
+	width: auto;
+	padding: 10px;
+	background: #424242;
+	border-radius: 4px;
+}
+/* Selector für Umfragen-Div Elem */
+.content > div:nth-child(4)[style*="overflow-y:scroll"] {
+	height: calc(100% - 128px) !important;
+}
+.f5 > table > tbody > tr > td > div {
+	border-radius: 0px 15px 15px 0px;
+}
+.f5 > table > tbody > tr > td:nth-child(2) {
+	border-left: 1px solid #fff;
+	padding-left: 0px;
+	margin-left: 4px;
+	display: block;
+}
+.f5 > table > tbody > tr:nth-child(1) > td > div {
+	background: #00C853 !important;
+}
+.f5 > table > tbody > tr:nth-child(2) > td > div {
+	background: #7CB342 !important;
+}
+.f5 > table > tbody > tr:nth-child(3) > td > div {
+	background: #FFD600 !important;
+}
+.f5 > table > tbody > tr:nth-child(4) > td > div {
+	background: #FF8F00 !important;
+}
+.f5 > table > tbody > tr:nth-child(5) > td > div {
+	background: #D32F2F !important;
+}
+
+/* Umfragen-Design Ende */
+
 
 
 #username, #password {
@@ -965,51 +1034,12 @@ input[name="searchtext"]:focus {
 #printdiv {
 	display: none !important;
 }
-
-
-/* Umfragen-Design */
-
-.actsel {
-    background: #00C853;
-    font-weight: bold;
-    border-radius: 4px;
+#imgKennwort {
+	filter: brightness(2);
 }
-.tosel {
-    background: #616161;
-    border-radius: 4px;
-    color: #fff;
+a[onclick*="subm(\"dwnl\","] {
+	transition: all 0.5s;
 }
-.que {
-    width: auto;
-    padding: 10px;
-    background: #424242;
-border-radius: 4px;
-}
-/* Selector für Umfragen-Div Elem */
-.content > div:nth-child(4)[style*="overflow-y:scroll"] {
-    height: calc(100% - 128px) !important;
-}
-.f5 > table > tbody > tr > td > div {
-	border-radius: 0px 15px 15px 0px;
-}
-.f5 > table > tbody > tr > td:nth-child(2) {
-    border-left: 1px solid #fff;
-    padding-left: 0px;
-    margin-left: 4px;
-    display: block;
-}
-.f5 > table > tbody > tr:nth-child(1) > td > div {
-	background: #00C853 !important;
-}
-.f5 > table > tbody > tr:nth-child(2) > td > div {
-    background: #7CB342 !important;
-}
-.f5 > table > tbody > tr:nth-child(3) > td > div {
-    background: #FFD600 !important;
-}
-.f5 > table > tbody > tr:nth-child(4) > td > div {
-    background: #FF8F00 !important;
-}
-.f5 > table > tbody > tr:nth-child(5) > td > div {
-    background: #D32F2F !important;
+a[onclick*="subm(\"dwnl\","]:hover {
+	color: #aaa;
 }
