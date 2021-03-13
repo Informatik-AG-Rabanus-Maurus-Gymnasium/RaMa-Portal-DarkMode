@@ -19,11 +19,11 @@ Wer Anregungen oder Vorschläge hat oder selbst HTML und CSS beherscht, kann mic
 
 
 1. Installiere das Addon *Custom Style Script* für deinen Browser
-- Chrome: https://chrome.google.com/webstore/detail/custom-style-script/ecjfaoeopefafjpdgnfcjnhinpbldjij
-- Firefox: https://addons.mozilla.org/de/firefox/addon/custom-style-script/
-- Opera: https://addons.opera.com/de/extensions/details/custom-style-script/
+- [Custom Style Script für Chrome](https://chrome.google.com/webstore/detail/custom-style-script/ecjfaoeopefafjpdgnfcjnhinpbldjij)
+- [Custom Style Script für Firefox](https://addons.mozilla.org/de/firefox/addon/custom-style-script/)
+- [Custom Style Script für Opera](https://addons.opera.com/de/extensions/details/custom-style-script/)
 
-2. Klicke auf der GitHub-Seite (https://github.com/HackerFrosch/RaMa-Portal) rechts auf *Releases* und lade unten bei *Assets* die Datei *Source Code (Zip)* herunter
+2. Klicke auf der [GitHub-Seite](https://github.com/HackerFrosch/RaMa-Portal) rechts auf *Releases* und lade unten bei *Assets* die Datei *Source Code (Zip)* herunter
 3. Extrahiere die Dateien aus dem ZIP-Ordner. Mache dazu einen Rechtsklick auf den Ordner und gehe auf *Alle extrahieren* (bei Windows)
 
 4. Öffne die Datei *Portal DarkMode.css* mit dem Windows-Editor
