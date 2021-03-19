@@ -518,22 +518,6 @@ td.plan {
 
 /* Hinzugefügt für DarkMode! */
 
-.loginbox {
-	background: transparent !important;
-}
-#bttSenden {
-	color: #fff !important;
-	border-radius: 4px;
-}
-#searchform {
-	background: transparent !important;
-	height: auto !important;
-	width: auto !important;
-	left: 550px;
-	margin: auto !important;
-	top: 20px;
-	z-index: 0 !important;
-}
 [style="background:#eee; height:32px;"] {
 	background: #212121 !important;
 }
@@ -771,7 +755,7 @@ span.version:before {
 	content: "Portal ";
 }
 span.version:after {
-	content: " | DarkMode v1.005-b2";
+	content: " | DarkMode v1.005 | Icons by FontAwesome";
 }
 #uplform {
 	background-color: #212121 !important;
@@ -962,6 +946,22 @@ color: #000;
 a[onclick^="rmmsg("][onclick*="direkt"] > img {
 	visibility: hidden;
 }
+#searchform {
+	background: transparent !important;
+	height: auto !important;
+	width: auto !important;
+	left: 550px;
+	margin: auto !important;
+	top: 20px;
+	z-index: 0 !important;
+}
+input[name="searchtext"] {
+	color: #999 !important;
+}
+input[name="searchtext"]:focus {
+	color: #fff !important;
+	outline: none;
+}
 /* Ende Chat-Design */
 
 
@@ -1016,26 +1016,70 @@ color: #000;
 /* Umfragen-Design Ende */
 
 
+/* Login-Design */
 
+.loginbox {
+	width: 300px !important;
+	margin-left: 200px !important;
+	background: none !important;
+}
+.loginbox * {
+	color: #fff;
+	background: none !important;
+}
+.loginbox input {
+	border: none !important;
+	outline: none !important;
+	width: 80%;
+	margin; 0px 10px;
+}
+.loginbox img {
+	float: right;
+}
 #username, #password {
-	outline: none;
-	color: #999 !important;
+	width: 90%;
+	margin: 8px 0px;
+	padding: 8px 0px;
+	border-bottom: 1px solid var(--primary) !important;
+	border-radius: 0px;
+	color: #aaa !important;
+	transition: all 0.5s;
 }
 #username:focus, #password:focus {
 	color: #fff !important;
 }
-input[name="searchtext"] {
-	color: #999 !important;
-}
-input[name="searchtext"]:focus {
-	color: #fff !important;
-	outline: none;
-}
-#printdiv {
-	display: none !important;
-}
 #imgKennwort {
 	filter: brightness(2);
+}
+#bttSenden, #bttDirect {
+	width: 40%;
+	border: 2px soild var(--primary));
+	padding: 5px;
+	cursor: pointer;
+	margin: 12px 12px 0px 25%;
+	border-radius: 4px;
+}
+.loginbox label[for="username"] {
+    display: none;
+}
+.loginbox label[for="password"] {
+    display: none;
+}
+.loginbox br:nth-child(1) {
+    display: none;
+}
+.loginbox br:nth-child(3) {
+    display: none;
+}
+.loginbox br:nth-child(4) {
+    display: none;
+}
+
+/* Login-Design Ende */
+
+
+#printdiv {
+	display: none !important;
 }
 a[onclick*="subm(\"dwnl\","] {
 	transition: all 0.5s;
