@@ -26,28 +26,28 @@ Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosc
 
 ## Installation
 
-**Hinweis:** *Kursiv* geschriebener Text markiert immer Eigennamen oder Text den du eingeben sollst. Text der in den Klammern <> steht, soll nicht wörtlich eingesetzt werden, sondern in den Klammern steht, was du dort einsetzen sollst.
+**Hinweis:** *Kursiv* geschriebener Text markiert immer Eigennamen oder Text den du eingeben sollst. Text in den Klammern <> soll nicht wörtlich abgeschrieben werden.
 
 
 1. Installiere das Addon *Custom Style Script* für deinen Browser ([Firefox](https://addons.mozilla.org/de/firefox/addon/custom-style-script/), [Chrome](https://chrome.google.com/webstore/detail/custom-style-script/ecjfaoeopefafjpdgnfcjnhinpbldjij), [Opera](https://addons.opera.com/de/extensions/details/custom-style-script/))
 
-2. Öffne die [Releases-Seite](https://github.com/HackerFrosch/RaMa-Portal/releases) und lade unter *Assets* die Datei *Source Code (ZIP)* herunter
+2. Öffne die [Releases-Seite](https://github.com/HackerFrosch/RaMa-Portal/releases) und lade unter *Assets* die Datei *Source Code (zip)* herunter
 3. Extrahiere die Dateien, indem du einen Rechtsklick auf den heruntergeladenen ZIP-Ordner machst und auf *Alle extrahieren* klickst (bei Windows)
 
-4. Öffne die Datei *Portal DarkMode.css* mit dem Windows-Editor
-5. Wähle den gesamten Inhalt aus (Strg A) und kopiere ihn (Strg C)
+4. Öffne die Dateien *Portal DarkMode.css* und *add.js* (in dem Ordner der extrahierten Dateien) mit dem Windows-Editor (Doppelklick)
+5. Wähle erst den gesamten Inhalt einer Datei aus (Strg A) und kopiere ihn (Strg C)
 
 6. Gehe in deinem Browser oben rechts bei den Addons auf das Symbol </>
 7. Gehe auf *Open Options Page*
-8. Trage bei *III. Code* folgendes in die Spalten ein
+8. Trage bei *III. Code* folgendes in die Spalten ein (wiederhole Schritt 5 mit der anderen Datei)
 
 | URL | SCRIPT | STYLE (CSS) |
 | ----------- | ----------- | ----------- |
-| https://portal.rama-mainz.de | - | <füge den kopierten Inhalt ein (Strg V)> |
+| https://portal.rama-mainz.de | <füge den Inhalt der Datei *add.js* ein (Strg V)> | <füge den Inhalt der Datei *Portal DarkMode.css* ein (Strg V)> |
 
 
 9. Klicke auf das Plus unter der Tabelle
-10. Wiederhole die Schritte 5-9 mit der Datei *Lernumgebung DarkMode.css*
+10. Wiederhole die Schritte 4-9 mit der Datei *Lernumgebung DarkMode.css*
 
 | URL | SCRIPT | STYLE (CSS) |
 | ----------- | ----------- | ----------- |
