@@ -20,7 +20,7 @@ Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosc
 <img src="https://user-images.githubusercontent.com/69604121/111031367-85d68c80-8407-11eb-8fcd-8446e4990aa2.png" alt="Image missing" width="600"/>
 <img src="https://user-images.githubusercontent.com/69604121/111031369-8b33d700-8407-11eb-8055-d84311e199e2.png" alt="Image missing" width="600"/>
 <img src="https://user-images.githubusercontent.com/69604121/111031370-8d963100-8407-11eb-9b31-829070806652.png" alt="Image missing" width="600"/>
-<img src="https://user-images.githubusercontent.com/69604121/111031339-59227500-8407-11eb-9f49-f61e69561e2a.png" alt="Image missing" width="600"/>
+<img src="https://user-images.githubusercontent.com/69604121/111775836-8bbde900-88b1-11eb-8491-8f27f4200293.png" alt="Image missing" width="600"/>
 
 
 
