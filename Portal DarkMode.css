@@ -521,6 +521,9 @@ td.plan {
 [style="background:#eee; height:32px;"] {
 	background: #212121 !important;
 }
+[style="background:#eee;"] {
+	background: #616161 !important;
+}
 table.stdplan-table th {
 	background: #424242 !important;
 }
@@ -790,6 +793,12 @@ form[action*="/videochat/beitretenIntern"] > button {
 form[action*="action=adddirectmsg"] td.message-right {
 	border-radius: 0px !important;
 }
+form[action*="action=addmsg"] td.message-right {
+	border-radius: 15px 0px 0px 15px !important;
+}
+.content > table[style*="width:880px;"]:nth-child(2) > tbody > tr > td.message-right {
+	border-radius: 0px;
+}
 .speaker-right {
 	background: var(--message-student-background);
 	color: #fff;
@@ -811,14 +820,20 @@ td.speaker-right.lehrer:last-of-type {
 form[action*="action=addmsg"] td.speaker-right {
 	border-radius: 0px 15px 15px 0px !important;
 }
+form[action*="action=adddirectmsg"] td.speaker-right:nth-child(2) {
+	border-radius: 15px 0px 0px 0px !important;
+}
 form[action*="action=adddirectmsg"] td.speaker-right:nth-child(4) {
 	border-radius: 0px 15px 0px 0px !important;
 }
-.content > table[style*="width:880px;"] > tbody > tr > td.speaker-right.lehrer:nth-child(2) {
+.content > table[style*="width:880px;"] > tbody > tr > td.speaker-right:nth-child(2) {
 	border-radius: 15px 0px 0px 15px;
 }
-.content > table[style*="width:880px;"] > tbody > tr > td.speaker-right.lehrer:nth-child(4) {
+.content > table[style*="width:880px;"] > tbody > tr > td.speaker-right:nth-child(4) {
 	border-radius: 0px 15px 15px 0px;
+}
+form[action*="action=adddirectmsg"] tbody[class*="msgbody"] > tr:nth-child(2) > td.speaker-right {
+	border-radius: 0px 0px 15px 15px !important;
 }
 .triangle-right {
 	border-left: 20px solid var(--message-student-background);
