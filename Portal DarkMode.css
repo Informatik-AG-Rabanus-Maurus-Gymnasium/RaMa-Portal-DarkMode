@@ -521,9 +521,6 @@ td.plan {
 [style="background:#eee; height:32px;"] {
 	background: #212121 !important;
 }
-[style="background:#eee;"] {
-	background: #616161 !important;
-}
 table.stdplan-table th {
 	background: #424242 !important;
 }
@@ -1037,9 +1034,9 @@ color: #000;
 	float: right;
 }
 #username, #password {
-	width: 90%;
+	width: 75%;
 	margin: 8px 0px;
-	padding: 8px 0px;
+	padding: 8px 8px 8px 35px;
 	border-bottom: 1px solid var(--primary) !important;
 	border-radius: 0px;
 	color: #aaa !important;
@@ -1048,8 +1045,17 @@ color: #000;
 #username:focus, #password:focus {
 	color: #fff !important;
 }
+#username {
+background: url(https://i.ibb.co/BfwNM8m/user-solid.png) 5px center no-repeat !important;
+background-size: 18px !important;
+}
+#password {
+background: url(https://i.ibb.co/3fGLLQJ/lock-solid.png) 5px center no-repeat !important;
+background-size: 18px !important;
+}
 #imgKennwort {
 	filter: brightness(2);
+margin-top: 16px;
 }
 #bttSenden, #bttDirect {
 	width: 40%;
