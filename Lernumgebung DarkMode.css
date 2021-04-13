@@ -97,7 +97,7 @@ body {
 	margin:4px 0px 4px 6px;
 	min-width:20px;
 	height:20px;
-	padding:6px 4px 6px 18px;
+	padding:6px 4px 6px 20px;
 	float:left;
 	display:flex;
 	align-items:center;
@@ -189,8 +189,8 @@ body {
 	cursor:pointer;
 }
 .melem {
-	width:160px;
-	height:30px;
+	width:90%;
+	height:42px;
 	padding:6px 6px 6px 42px;
 	white-space:nowrap;
 	overflow:hidden;
@@ -210,8 +210,8 @@ body {
 	pointer-events: none;
 }
 .melem_s {
-	width:160px;
-	height:30px;
+	width:90%;
+	height:42px;
 	padding:6px 6px 6px 42px;
 	color: #fff;
 	background: #424242;
@@ -589,39 +589,47 @@ img[src="edufile.php?typ=img&id=419570"] {
 
 /* Icon-Austausch */
 .navelem_l[style*="background:url(icn/home.png)"] {
-	background: url(https://i.ibb.co/dm6vS6w/home.png) no-repeat left !important;
-	background-size: 18px !important;
+	background: url(https://i.ibb.co/M6Jdjwf/home.png) no-repeat left !important;
+	background-size: 20px !important;
 }
 .navelem_l[style*="background:url(icn/copy.png)"] {
 	background: url(https://i.ibb.co/NNpqzXQ/copy.png) no-repeat left !important;
-	background-size: 18px !important;
+	background-size: 20px !important;
 }
 .navelem_l[style*="background:url(icn/move.png)"] {
-	background: url(https://i.ibb.co/ZWJCQ41/move.png) no-repeat left !important;
+	background: url(https://i.ibb.co/N6YP3Xh/move.png) no-repeat left !important;
 	background-size: 20px !important;
 }
 .navelem_l[style*="background:url(icn/add.png)"] {
-	background: url(https://i.ibb.co/t805zS8/add.png) no-repeat left !important;
-	background-size: 16px !important;
+	background: url(https://i.ibb.co/23V2bTn/add.png) no-repeat left !important;
+	background-size: 20px !important;
 }
 .navelem_l[style*="background:url(icn/edit.png)"] {
-	background: url(https://i.ibb.co/PMSVFZk/edit.png) no-repeat left !important;
+	background: url(https://i.ibb.co/Dk84CPg/edit.png) no-repeat left !important;
 	background-size: 20px !important;
 }
 .navelem_l[style*="background:url(icn/reload.png)"] {
-	background: url(https://i.ibb.co/HdjnbHq/reload.png) no-repeat left !important;
-	background-size: 16px !important;
+	background: url(https://i.ibb.co/H7xh3Mw/reload.png) no-repeat left !important;
+	background-size: 20px !important;
 }
 .navelem_l[style*="background:url(icn/down.png)"] {
-	background: url(https://i.ibb.co/PDX8Hmm/down.png) no-repeat left !important;
+	background: url(https://i.ibb.co/MkvXH8w/down.png) no-repeat left !important;
 	background-size: 20px !important;
 }
 .navelem_l[style*="background:url(icn/lock.png)"] {
-	background: url(https://i.ibb.co/LhHfr8V/lock.png) no-repeat left !important;
+	background: url(https://i.ibb.co/2tMZgM8/lock.png) no-repeat left !important;
 	background-size: 20px !important;
 }
 .navelem_l[style*="background:url(icn/unlock.png)"] {
 	background: url(https://i.ibb.co/L0FqY5C/unlock.png) no-repeat left !important;
+	background-size: 20px !important;
+}
+.navelem_l[style*="background:url(icn/del.png)"] {
+	background: url(https://i.ibb.co/6mL8Lxj/del.png) no-repeat left !important;
+	background-size: 20px !important;
+}
+.navelem_r[style*="background:url(icn/search.png)"] {
+	background: url(https://i.ibb.co/9qShPp9/search.png) no-repeat left !important;
 	background-size: 20px !important;
 }
 
@@ -635,12 +643,9 @@ img[src="edufile.php?typ=img&id=419570"] {
 	background-position: 0px center !important;
 	background-size: contain !important;
 }
-.dhx_toolbar_base_18_dhx_skyblue, .dhx_toolbar_base_24_dhx_skyblue, .dhx_toolbar_base_32_dhx_skyblue, .dhx_toolbar_base_48_dhx_skyblue {
-	background: #212121;
-}
-.dhx_toolbar_base_18_dhx_skyblue div.dhx_toolbar_btn, .dhx_toolbar_base_24_dhx_skyblue div.dhx_toolbar_btn, .dhx_toolbar_base_32_dhx_skyblue div.dhx_toolbar_btn, .dhx_toolbar_base_48_dhx_skyblue div.dhx_toolbar_btn {
-	color: #fff !important;
-}
+
+/* Icon-Austausch Ende */
+
 .dhx_spread_window {
 	background-color: #616161 !important;
 	border: 1px solid rgba(255,255,255,0.12) !important;
@@ -702,3 +707,38 @@ img[src*="icn/playpause200.png"] {
 }
 
 /* Tooltip-Design Ende */
+
+/* Datei-Editor Design */
+.toolbar {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    cursor: default;
+    filter: invert(0.9);
+}
+#viewerContainer {
+    background: #212121;
+}
+.pdfViewer .page {
+    direction: ltr;
+    margin: 10px auto 10px auto;
+    position: relative;
+    overflow: visible;
+    border: unset;
+    background-clip: content-box;
+    border-image: unset;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 20px #000;
+}
+/* Datei-Editor Design Ende */
+
+.searchline {
+background: #212121;
+}
+.searchline * {
+color: #fff !important;
+}
+.searchline.light {
+    background: #424242;
+}
