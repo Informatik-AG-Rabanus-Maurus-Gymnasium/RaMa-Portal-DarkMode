@@ -51,9 +51,18 @@ Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosc
 ![Image missing](https://user-images.githubusercontent.com/69604121/114931177-69be7480-9e25-11eb-8c05-6ad41801bffa.png)
 
 
-## Updaten (Bei Beta-Versionen)
+7. Wiederhole die Schritte 4-6 mit den folgenden Links
 
-Der DarkMode Updtated sich vollautomatisch. Es ist kein manuelles Handeln erforderlich!
+| URL | SCRIPT LINK / CODE | STYLE LINK / CODE |
+| ----------- | ----------- | ----------- |
+| https://portal.rama-mainz.de/edu | - | https://cdn.statically.io/gh/HackerFrosch/RaMa-Portal/master/Lernumgebung%20DarkMode.css |
+
+![Kazam_screenshot_00000](https://user-images.githubusercontent.com/69604121/114932171-b48cbc00-9e26-11eb-9bdf-7e1245988bdf.png)
+
+
+## Updates
+
+Der DarkMode updated sich vollautomatisch. Es ist kein manuelles Handeln erforderlich!
 
 
 ## Deaktivieren/Aktivieren des DarkModes
