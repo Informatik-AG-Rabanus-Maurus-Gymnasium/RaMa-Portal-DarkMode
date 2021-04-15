@@ -31,45 +31,29 @@ Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosc
 
 1. Installiere das Addon *Custom Style Script* für deinen Browser ([Firefox](https://addons.mozilla.org/firefox/downloads/file/3553190/custom_style_script-0.1.4-an+fx.xpi), [Chrome](https://chrome.google.com/webstore/detail/custom-style-script/ecjfaoeopefafjpdgnfcjnhinpbldjij), [Opera](https://addons.opera.com/de/extensions/details/custom-style-script/))
 
-2. Öffne die [Releases-Seite](https://github.com/HackerFrosch/RaMa-Portal/releases) und lade unter *Assets* die Datei *Source Code (zip)* herunter
-3. Extrahiere die Dateien, indem du einen Rechtsklick auf den heruntergeladenen ZIP-Ordner machst und auf *Alle extrahieren* klickst (bei Windows)
-
-4. Öffne die Dateien *Portal DarkMode.css* und *add.js* (in dem Ordner der extrahierten Dateien) mit dem Windows-Editor (Doppelklick)
-5. Wähle erst den gesamten Inhalt einer Datei aus (Strg A) und kopiere ihn (Strg C)
-
-6. Gehe in deinem Browser oben rechts bei den Addons auf das Symbol </>
-7. Gehe auf *Open Options Page*
-8. Trage bei *III. Code* folgendes in die Spalten ein (wiederhole Schritt 5 mit der anderen Datei)
+2. Gehe in deinem Browser oben rechts bei den Addons auf das Symbol *</>* (das Addon-Menü)
+3. Gehe auf *Open Options Page*
+4. Trage bei *III. Code* folgendes in die Spalten ein (siehe Bild)
 
 | URL | SCRIPT | STYLE (CSS) |
 | ----------- | ----------- | ----------- |
-| https://portal.rama-mainz.de | <füge den Inhalt der Datei *add.js* ein (Strg V)> | <füge den Inhalt der Datei *Portal DarkMode.css* ein (Strg V)> |
+| https://portal.rama-mainz.de | - | - |
 
+![Image missing](https://user-images.githubusercontent.com/69604121/114930600-b8b7da00-9e24-11eb-8620-ee7b83de161c.png)
 
-9. Klicke auf das Plus unter der Tabelle
-10. Wiederhole die Schritte 4-9 mit der Datei *Lernumgebung DarkMode.css*
+5. Klicke auf das graue Plus unter der Tabelle
+6. Füge nun bei *Item #1* die Links in die folgenden Spalten ein (siehe Bild)
 
-| URL | SCRIPT | STYLE (CSS) |
+| URL | SCRIPT LINK / CODE | STYLE LINK / CODE |
 | ----------- | ----------- | ----------- |
-| https://portal.rama-mainz.de/edu | - | <füge den kopierten Inhalt ein (Strg V)> |
+| https://portal.rama-mainz.de | https://cdn.statically.io/gh/HackerFrosch/RaMa-Portal/master/Portal%20add.js | https://cdn.statically.io/gh/HackerFrosch/RaMa-Portal/master/Portal%20DarkMode.css |
 
+![Image missing](https://user-images.githubusercontent.com/69604121/114931177-69be7480-9e25-11eb-8c05-6ad41801bffa.png)
 
 
 ## Updaten (Bei Beta-Versionen)
 
-1. Gehe im GitHub auf die Datei *Portal DarkMode.css*
-2. Kopiere den gesamten Code aus der Datei
-3. Gehe im Browser auf das Addon und dann auf *Open Options Page*
-4. Ersetze den Code bei *Item #1* in der Spalte *Style (CSS)* vollständig durch den kopierten Code
-5. Wiederhole diese Schritte mit der Datei *Lernumgebung Style.css* für *Item #2*
-
-
-
-## Updaten (Bei einem Release)
-
-1. Mache die Schritte 2-7 der DarkMode-Installation
-2. Ersetze den Code bei *Item #1* in der Spalte *Style (CSS)* vollständig durch den kopierten Code
-3. Wiederhole diese Schritte mit der Datei *Lernumgebung Style.css* für *Item #2*
+Der DarkMode Updtated sich vollautomatisch. Es ist kein manuelles Handeln erforderlich!
 
 
 ## Deaktivieren/Aktivieren des DarkModes
