@@ -1053,12 +1053,12 @@ input[name="searchtext"]:focus {
 
 .actsel {
 	background: #00C853;
-color: #000;
+	color: #000;
 	font-weight: bold;
 	border-radius: 4px;
 }
 .tosel {
-	background: #616161;
+	background: rgba(255,255,255,0.16);
 	border-radius: 4px;
 	color: #fff;
 }
@@ -1068,32 +1068,28 @@ color: #000;
 	background: #424242;
 	border-radius: 4px;
 }
-/* Selector für Umfragen-Div Elem */
-.content > div:nth-child(4)[style*="overflow-y:scroll"] {
-	height: calc(100% - 128px) !important;
-}
-.f5 > table > tbody > tr > td > div {
+.f5 div {
 	border-radius: 0px 15px 15px 0px;
 }
-.f5 > table > tbody > tr > td:nth-child(2) {
+.f5 td:nth-child(2) {
 	border-left: 1px solid #fff;
 	padding-left: 0px;
 	margin-left: 4px;
 	display: block;
 }
-.f5 > table > tbody > tr:nth-child(1) > td > div {
+.f5 tr:nth-child(1) div {
 	background: #00C853 !important;
 }
-.f5 > table > tbody > tr:nth-child(2) > td > div {
+.f5 tr:nth-child(2) div {
 	background: #7CB342 !important;
 }
-.f5 > table > tbody > tr:nth-child(3) > td > div {
+.f5 tr:nth-child(3) div {
 	background: #FFD600 !important;
 }
-.f5 > table > tbody > tr:nth-child(4) > td > div {
+.f5 tr:nth-child(4) div {
 	background: #FF8F00 !important;
 }
-.f5 > table > tbody > tr:nth-child(5) > td > div {
+.f5 tr:nth-child(5) div {
 	background: #D32F2F !important;
 }
 
