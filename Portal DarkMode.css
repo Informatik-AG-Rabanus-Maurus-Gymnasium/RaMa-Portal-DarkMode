@@ -1,6 +1,6 @@
 :root {
 	--primary: #9d2032;
-  --primary-hover: #ebb5be;
+	--primary-hover: #ebb5be;
 	--message-self-background: #43A047;
 	--message-student-background: #424242;
 	--message-teacher-background: #0277BD;
@@ -110,7 +110,7 @@ ul.m_menu1 > li > p {
 	text-decoration: none;
 }
 ul.m_menu1 > li > a.disabled {
-	opacity:0.3;
+	opacity: 0.3;
 }
 @keyframes message {
 	0% { background-color: #f0a0a0; }
@@ -297,10 +297,9 @@ h1 {
 	left: 170px;
 	height: 32px;
 	width: 890px;
-	font-size: 28px !important;
-	font-weight: lighter !important;
+	font-size: 28px;
 	background: none;
-	border-bottom: 1px solid #999 !important;
+	border-bottom: 1px solid #757575 !important;
 }
 h2 {
 	font-size: 20px;
@@ -330,15 +329,15 @@ a:hover, a:active {
 	color: #C62828;
 }
 tr.zeile_g {
-    background-color: #424242;
-    color: #fff;
-    transition: all 0.5s;
+	background-color: #424242;
+	color: #fff;
+	transition: all 0.5s;
 }
 tr.zeile_g a {
 	color: #fff;
 }
 tr.zeile_u {
-  background: #212121 !important;
+	background: #212121 !important;
 	transition: background 1s;
 }
 tr.zeile_y {
@@ -348,9 +347,9 @@ tr.zeile_w {
 	background-color: #ffffff;
 }
 tr.zeile_g:hover {
-    background-color: #616161;
-    color: #fff;
-    text-shadow: none;
+	background-color: #616161;
+	color: #fff;
+	text-shadow: none;
 }
 tr.zeile_u:hover {
 	background-color: #424242;
@@ -361,16 +360,12 @@ tr.zeile_y:hover {
 tr.zeile_w:hover {
 	background-color: #ffd080;
 }
-td {
-	padding: 4px;
-}
-th {
+td, th {
 	padding: 4px;
 }
 .boxed {
 	border: 1px solid #a0a0a0;
 	padding: 2px;
-	border: 1px solid #a0a0a0;
 	min-height: 20px;
 	background-color: #fff;
 	color: #000;
@@ -426,56 +421,56 @@ button:hover {
 	padding: 0px;
 }
 .accordion section:target h2 a {
-  display:none;
+	display: none;
 }
 .accordion section h2 a.collapse {
-  display: none;
+	display: none;
 }
 .accordion section:target h2 a.collapse {
-  display: block;
+	display: block;
 }
 .accordion section h2 a.expand:hover {
 	background: #616161 url('/icn/accdown.png') no-repeat right bottom;
 }
 .accordion section h2 a.collapse:hover {
-  background: #616161 url('/icn/accup.png') no-repeat right bottom;
+	background: #616161 url('/icn/accup.png') no-repeat right bottom;
 }
 .accordion section {
-  float: left;
-  overflow: hidden;
-  color: #000;
-  margin: 0px 0px 10px 0px;
-  width: 100%;
-  height: 44px;
-  transition:height 0.2s ease-out;
+	float: left;
+	overflow: hidden;
+	color: #000;
+	margin: 0px 0px 10px 0px;
+	width: 100%;
+	height: 44px;
+	transition: height 0.2s ease-out;
 }
 .accordion section h2 a {
-  padding:10px;
-  display:block;
-  font-weight:normal;
-  color:#fff;
-  text-decoration:none;
-  background-color: rgba(255,255,255,0.12);
+	padding: 10px;
+	display: block;
+	font-weight: normal;
+	color: #fff;
+	text-decoration: none;
+	background-color: rgba(255,255,255,0.12);
 	border-radius: 8px;
 	transition: background-color 1s;
 }
 .accordion section p {
-  display: none;
-  padding: 10px 0px 0px 0px;
+	display: none;
+	padding: 10px 0px 0px 0px;
 }
 .accordion section:target {
-  height: 250px;
-  overflow: hidden;
+	height: 250px;
+	overflow: hidden;
 }
 .accordion section:target:hover {
-  background: none;
+	background: none;
 }
 .accordion section:target h2 {
-  width:100%;
-  border-bottom:1px solid #aaa;
+	width: 100%;
+	border-bottom: 1px solid #aaa;
 }
 .accordion section:target p {
-  display:block;
+	display: block;
 }
 .reference {
 	position: fixed;
@@ -491,8 +486,8 @@ button:hover {
 	box-shadow: 0px 0px 10px #000;
 }
 a.selected {
-	 background: unset;
-	 color: #fff;
+	background: unset;
+	color: #fff;
 }
 .reference a {
 	color: #fff;
@@ -522,74 +517,36 @@ td.plan {
 
 
 
-/* Hinzugefügt für DarkMode! */
-
-.tagesbutton {
-  background: rgba(255,255,255,0.08);
-  color: #fff;
-  border-radius: 25px;
-  padding: 0px 5px;
-  border: unset;
-}
-.tagesbutton:hover {
-	border: unset;
-  color: #fff;
-  background: rgba(255,255,255,0.16);
-}
-.tagesbutton.selected {
-  background: var(--primary);
-  color: #fff;
-}
-div.nzts {
-  width: calc(100% - 8px);
-  margin-left: 4px;
-  background: #424242;
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
-}
-div.nzts > p {
-  margin-top: 10px;
-}
-div.nzts > p:first-child {
-  margin-top: 0;
-}
-tr.relevant {
-  background: #00C853;
-}
-tr.relevant:hover {
-  background: #00C853;
-}
-
+/* Hinzugefügt für DarkMode: */
 
 /* Videochat Design */
 .targetGruppe {
-  width: 115px;
-  height: 40px;
-  background: var(--primary);
-  padding: 5px;
-  margin: 2px;
-  text-align: center;
-  float: left;
-  color: #fff !important;
-  overflow: hidden;
-  transition: all 1s !important;
-  border-radius: 8px;
+	width: 115px;
+	height: 40px;
+	background: var(--primary);
+	padding: 5px;
+	margin: 2px;
+	text-align: center;
+	float: left;
+	color: #fff !important;
+	overflow: hidden;
+	transition: all 1s !important;
+	border-radius: 8px;
 }
 .targetGruppe:hover {
-  background: var(--primary-hover);
+	background: var(--primary-hover);
 }
 .targetGruppe img {
-  height: 16px;
+	height: 16px;
 }
 .actions button {
-  border-radius: 25px;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.16);
-  border: none;
+	border-radius: 25px;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.16);
+	border: none;
 }
 .actions button:hover {
-  background-color: rgba(255, 255, 255, 0.24);
+	background-color: rgba(255, 255, 255, 0.24);
 }
 #videochat-uebersicht-table th {
 	background-color: rgba(255,255,255,0.12);
@@ -604,16 +561,16 @@ tr.relevant:hover {
 /* Videochat Design Ende */
 
 
-/* Klausurenplan */
-.daytable > tbody:nth-child(1) > tr:nth-child(1) > th {
+/* Klausurenplan Design */
+.daytable th {
 	background: #616161;
 	border-bottom: unset;
 }
-.daytable > tbody:nth-child(1) > tr > td {
+.daytable td {
 	background: #424242;
 	border-bottom: unset;
 }
-/* Klausurenplan Ende */
+/* Klausurenplan Design Ende */
 
 
 /* Kalender Design */
@@ -623,12 +580,12 @@ tr.relevant:hover {
 	border-radius: 4px;
 }
 #months * {
-    color: #bbb;
+	color: #bbb;
 }
 td[style="background:#f0a0a0;"] {
-    background: var(--primary) !important;
-    border-radius: 8px;
-    color: #fff !important;
+	background: var(--primary) !important;
+	border-radius: 8px;
+	color: #fff !important;
 }
 #filter {
 	margin: 0 !important;
@@ -652,84 +609,20 @@ td[style="background:#f0a0a0;"] {
 #filter input:hover {
 	background-color: rgba(255,255,255,0.20) !important;
 }
-/* Kalender Design ende */
+/* Kalender Design Ende */
 
 
-table.stdplan-table th {
-	background: #424242 !important;
-}
-table.stdplan-table td {
-	color: #fff;
-	background: #212121 !important;
-}
-
-.vplan > tbody > tr:nth-child(1) {
-	background: #616161;
-}
-.content > div:nth-child(1) > table:nth-child(4) > tbody:nth-child(1) > tr > td {
-	background: #424242 !important;
-	border: 1px solid #616161 !important;
-	border-radius: 4px;
-}
-.content > div:nth-child(1) > table:nth-child(4) > tbody:nth-child(1) > tr > td > a {
-	color: #fff;
-}
-div.content > a > div[style*="background:#eee"] {
-	border-radius: 4px;
-	background: #424242 !important;
-	border: 1px solid #616161 !important;
-	box-shadow: 0px 0px 5px #000;
-	margin-left: 5px !important;
-}
-[src*="/img/logo_rama.png"] {
-	filter: brightness(1.5);
-}
-.markdown-highlighting {
-	color: #fff !important;
-	caret-color: #fff !important;
-}
-.editor {
-	background: #424242 !important;
-}
-.preview, .preview__inner-1 {
-	color: #000 !important;
-}
-.table tbody tr:nth-child(2n), .table th {
-	background-color: #212121;
-}
-.table tbody tr:nth-child(2n+1) {
-	background-color: #212121;
-}
-tr.green td {
-	background: #09af00;
-}
-.table tbody tr:nth-child(2n+1):hover, .table tbody tr:nth-child(2n):hover, .table th:hover {
-    background-color: #212121;
-}
-a[onclick="clearNames()"] > div {
-	background: #424242 !important;
-	border: 1px solid #616161;
-	border-radius: 4px;
-	transition: background 1s, color 0.5s;
-}
-a[onclick="clearNames()"] > div:hover {
-	background: rgba(255,255,255,0.75) !important;
-	color: #121212;
-}
-
-/* tokeninput style: Token vertical list */
+/* tokeninput style */
 ul.token-input-list {
 	overflow: hidden;
 	height: auto !important;
 	height: 1%;
 	width: 200px;
-	border: 1px solid #858585
+	border: 1px solid #858585;
 	cursor: text;
 	font-size: 0.9em;
 	font-family: Tahoma, Helvetica, sans-serif;
 	z-index: 999;
-	margin: 0;
-	padding: 0;
 	background-color: #424242;
 	border-radius: 4px;
 }
@@ -762,8 +655,6 @@ li.token-input-token {
 }
 li.token-input-token p {
 	float: left;
-	padding: 0;
-	margin: 0;
 }
 li.token-input-token span {
 	float: right;
@@ -783,9 +674,6 @@ div.token-input-dropdown {
 	background-color: #424242;
 	overflow: hidden;
 	border: 1px solid #616161;
-	border-top-color: rgb(97, 97, 97);
-	border-top-style: solid;
-	border-top-width: 1px;
 	border-top: none;
 	cursor: default;
 	font-size: 0.9em;
@@ -798,10 +686,6 @@ div.token-input-dropdown p {
 	padding: 5px;
 	color: #fff !important;
 	background-color: #424242 !important;
-}
-div.token-input-dropdown ul {
-	margin: 0;
-	padding: 0;
 }
 div.token-input-dropdown ul li {
 	background-color: #424242;
@@ -821,46 +705,16 @@ div.token-input-dropdown ul li em {
 div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 	background-color: #757575;
 }
-/* tokeninput style end */
-
-span.version:before {
-	content: "Portal ";
-}
-span.version:after {
-	content: " | DarkMode v1.006-b2 | Icons by FontAwesome";
-}
-#uplform {
-	background-color: #212121 !important;
-	border-radius: 4px;
-	width: auto !important;
-	border: 1px solid #616161;
-	top: 30vh;
-	left: 25vw;
-	margin: unset !important;
-	box-shadow: 0px 0px 10px #000;
-}
-form[action*="/videochat/beitretenIntern"] > button {
-	background: rgba(255,255,255,0.2);
-	border-radius: 15px;
-	padding: 5px;
-}
+/* tokeninput style Ende */
 
 
-
-
-
-/* Neues Chat-Design */
-
-
+/* Chat-Design */
 .message-right {
 	background-color: var(--message-student-background) !important;
 	color: #fff !important;
 	border: unset !important;
 	padding-left: 10px;
 	border-radius: 15px 0px 0px 15px;
-}
-.message-right.lehrer {
-	background: var(--message-teacher-background) !important;
 }
 form[action*="action=adddirectmsg"] td.message-right {
 	border-radius: 0px !important;
@@ -876,9 +730,6 @@ form[action*="action=addmsg"] td.message-right {
 	color: #fff;
 	padding-left: 10px;
 	border-radius: 0px 15px 15px 0px;
-}
-.speaker-right.lehrer {
-	background-color: var(--message-teacher-background) !important;
 }
 td.speaker-right.lehrer:nth-child(2) {
 	border-radius: 15px 0px 0px 0px;
@@ -1025,7 +876,7 @@ a[onclick^="rmmsg("][onclick*="direkt"] {
 	background-image: url(https://i.ibb.co/jZmGHQX/del-message.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-color: #000;
+	color: #000;
 }
 a[onclick^="rmmsg("][onclick*="direkt"] > img {
 	visibility: hidden;
@@ -1046,11 +897,13 @@ input[name="searchtext"]:focus {
 	color: #fff !important;
 	outline: none;
 }
-/* Ende Chat-Design */
+.lehrer {
+	background: var(--message-teacher-background) !important;
+}
+/* Chat-Design Ende */
 
 
 /* Umfragen-Design */
-
 .actsel {
 	background: #00C853;
 	color: #000;
@@ -1092,12 +945,10 @@ input[name="searchtext"]:focus {
 .f5 tr:nth-child(5) div {
 	background: #D32F2F !important;
 }
-
 /* Umfragen-Design Ende */
 
 
 /* Login-Design */
-
 .loginbox {
 	width: 300px !important;
 	margin-left: 200px !important;
@@ -1111,7 +962,7 @@ input[name="searchtext"]:focus {
 	border: none !important;
 	outline: none !important;
 	width: 80%;
-	margin; 0px 10px;
+	margin: 0px 10px;
 }
 .loginbox img {
 	float: right;
@@ -1129,44 +980,79 @@ input[name="searchtext"]:focus {
 	color: #fff !important;
 }
 #username {
-background: url(https://i.ibb.co/BfwNM8m/user-solid.png) 5px center no-repeat !important;
-background-size: 18px !important;
+	background: url(https://i.ibb.co/BfwNM8m/user-solid.png) 5px center no-repeat !important;
+	background-size: 18px !important;
 }
 #password {
-background: url(https://i.ibb.co/3fGLLQJ/lock-solid.png) 5px center no-repeat !important;
-background-size: 18px !important;
+	background: url(https://i.ibb.co/3fGLLQJ/lock-solid.png) 5px center no-repeat !important;
+	background-size: 18px !important;
 }
 #imgKennwort {
 	filter: brightness(2);
-margin-top: 16px;
+	margin-top: 16px;
 }
 #bttSenden, #bttDirect {
 	width: 40%;
-	border: 2px soild var(--primary));
+	border: 2px solid var(--primary));
 	padding: 5px;
 	cursor: pointer;
 	margin: 12px 12px 0px 25%;
 	border-radius: 4px;
 }
 .loginbox label[for="username"] {
-    display: none;
+	display: none;
 }
 .loginbox label[for="password"] {
-    display: none;
+	display: none;
 }
 .loginbox br:nth-child(1) {
-    display: none;
+	display: none;
 }
 .loginbox br:nth-child(3) {
-    display: none;
+	display: none;
 }
 .loginbox br:nth-child(4) {
-    display: none;
+	display: none;
 }
-
 /* Login-Design Ende */
 
 
+.tagesbutton {
+	background: rgba(255,255,255,0.08);
+	color: #fff;
+	border-radius: 25px;
+	padding: 0px 5px;
+	border: unset;
+}
+.tagesbutton:hover {
+	border: unset;
+	color: #fff;
+	background: rgba(255,255,255,0.16);
+}
+.tagesbutton.selected {
+	background: var(--primary);
+	color: #fff;
+}
+div.nzts {
+	width: calc(100% - 8px);
+	margin-left: 4px;
+	background: #424242;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+div.nzts > p {
+	margin-top: 10px;
+}
+div.nzts > p:first-child {
+	margin-top: 0;
+}
+tr.relevant {
+	background: #00C853;
+}
+tr.relevant:hover {
+	background: #00C853;
+}
 #printdiv {
 	display: none !important;
 }
@@ -1175,4 +1061,85 @@ a[onclick*="subm(\"dwnl\","] {
 }
 a[onclick*="subm(\"dwnl\","]:hover {
 	color: #aaa;
+}
+.version:before {
+	content: "Portal ";
+}
+.version:after {
+	content: " | DarkMode v1.006-b2 | Icons by FontAwesome";
+}
+#uplform {
+	background-color: #212121 !important;
+	border-radius: 4px;
+	width: auto !important;
+	border: 1px solid #616161;
+	top: 30vh;
+	left: 25vw;
+	margin: unset !important;
+	box-shadow: 0px 0px 10px #000;
+}
+form[action*="/videochat/beitretenIntern"] > button {
+	background: rgba(255,255,255,0.2);
+	border-radius: 15px;
+	padding: 5px;
+}
+table.stdplan-table th {
+	background: #424242 !important;
+}
+table.stdplan-table td {
+	color: #fff;
+	background: #212121 !important;
+}
+.vplan tr:nth-child(1) {
+	background: #616161;
+}
+.content > div:nth-child(1) > table:nth-child(4) td {
+	background: #424242 !important;
+	border: 1px solid #616161 !important;
+	border-radius: 4px;
+}
+.content > div:nth-child(1) > table:nth-child(4) td a {
+	color: #fff;
+}
+.content > a > div[style*="background:#eee"] {
+	border-radius: 4px;
+	background: #424242 !important;
+	border: 1px solid #616161 !important;
+	box-shadow: 0px 0px 5px #000;
+	margin-left: 5px !important;
+}
+[src*="/img/logo_rama.png"] {
+	filter: brightness(1.5);
+}
+.markdown-highlighting {
+	color: #fff !important;
+	caret-color: #fff !important;
+}
+.editor {
+	background: #424242 !important;
+}
+.preview, .preview__inner-1 {
+	color: #000 !important;
+}
+.table tbody tr:nth-child(2n), .table th {
+	background-color: #212121;
+}
+.table tbody tr:nth-child(2n+1) {
+	background-color: #212121;
+}
+tr.green td {
+	background: #09af00;
+}
+.table tbody tr:nth-child(2n+1):hover, .table tbody tr:nth-child(2n):hover, .table th:hover {
+    background-color: #212121;
+}
+a[onclick="clearNames()"] > div {
+	background: #424242 !important;
+	border: 1px solid #616161;
+	border-radius: 4px;
+	transition: background 1s, color 0.5s;
+}
+a[onclick="clearNames()"] > div:hover {
+	background: rgba(255,255,255,0.75) !important;
+	color: #121212;
 }
