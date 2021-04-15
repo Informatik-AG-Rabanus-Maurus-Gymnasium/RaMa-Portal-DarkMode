@@ -29,7 +29,7 @@ Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosc
 **Hinweis:** *Kursiv* geschriebener Text markiert immer Eigennamen oder Text den du eingeben sollst. Text in den Klammern <> soll nicht wörtlich abgeschrieben werden.
 
 
-1. Installiere das Addon *Custom Style Script* für deinen Browser ([Firefox](https://addons.mozilla.org/de/firefox/addon/custom-style-script/), [Chrome](https://chrome.google.com/webstore/detail/custom-style-script/ecjfaoeopefafjpdgnfcjnhinpbldjij), [Opera](https://addons.opera.com/de/extensions/details/custom-style-script/))
+1. Installiere das Addon *Custom Style Script* für deinen Browser ([Firefox](https://addons.mozilla.org/firefox/downloads/file/3553190/custom_style_script-0.1.4-an+fx.xpi), [Chrome](https://chrome.google.com/webstore/detail/custom-style-script/ecjfaoeopefafjpdgnfcjnhinpbldjij), [Opera](https://addons.opera.com/de/extensions/details/custom-style-script/))
 
 2. Öffne die [Releases-Seite](https://github.com/HackerFrosch/RaMa-Portal/releases) und lade unter *Assets* die Datei *Source Code (zip)* herunter
 3. Extrahiere die Dateien, indem du einen Rechtsklick auf den heruntergeladenen ZIP-Ordner machst und auf *Alle extrahieren* klickst (bei Windows)
