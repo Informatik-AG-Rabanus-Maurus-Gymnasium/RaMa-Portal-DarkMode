@@ -70,3 +70,10 @@ Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosc
 1. Mache die Schritte 2-7 der DarkMode-Installation
 2. Ersetze den Code bei *Item #1* in der Spalte *Style (CSS)* vollständig durch den kopierten Code
 3. Wiederhole diese Schritte mit der Datei *Lernumgebung Style.css* für *Item #2*
+
+
+## Deaktivieren/Aktivieren des DarkModes
+
+1. Gehe in deinem Browser auf das Symbol des Addons (*</>*)
+2. Klicke auf das große *</>*-Symbol
+3. Lade die Website neu
