@@ -1,6 +1,6 @@
 :root {
 	--primary: #9d2032;
-	--primary-hover: #ebb5be;
+	--primary-hover: #cc354c;
 	--message-self-background: #43A047;
 	--message-student-background: #424242;
 	--message-teacher-background: #0277BD;
@@ -48,8 +48,8 @@ ul.m_menu0 > li > a {
 	border-radius: 8px;
 }
 ul.m_menu0 > li > a:hover {
-	background: #ebb5be;
-	color: #000;
+	background: var(--primary-hover);
+	color: #fff;
 }
 ul.m_menu0 > li > p {
 	box-sizing: border-box;
@@ -249,9 +249,8 @@ ul.oe_sidebar > li > a {
 }
 ul.oe_sidebar > li > a:hover,
 ul.oe_sidebar > li.selected > a {
-	background: #ebb5be;
-	color: #121212;
-	text-shadow: 1px 1px 1px #616161;
+	background: var(--primary-hover);
+	color: #000;
 }
 ul.oe_sidebar div {
 	position: absolute;
@@ -612,7 +611,7 @@ td[style="background:#f0a0a0;"] {
 /* Kalender Design Ende */
 
 
-/* tokeninput style */
+/* Tokeninput Design */
 ul.token-input-list {
 	overflow: hidden;
 	height: auto !important;
@@ -705,7 +704,7 @@ div.token-input-dropdown ul li em {
 div.token-input-dropdown ul li.token-input-selected-dropdown-item {
 	background-color: #757575;
 }
-/* tokeninput style Ende */
+/* Tokeninput Design Ende */
 
 
 /* Chat-Design */
@@ -764,6 +763,7 @@ form[action*="action=adddirectmsg"] tbody[class*="msgbody"] > tr:nth-child(2) > 
 }
 .triangle-right.lehrer {
 	border-left: 20px solid var(--message-teacher-background) !important;
+	background-color: unset !important
 }
 .speaker-left {
 	background: var(--message-self-background) !important;
@@ -900,6 +900,19 @@ input[name="searchtext"]:focus {
 .lehrer {
 	background: var(--message-teacher-background) !important;
 }
+.content > div:nth-child(1) table:nth-child(4) td {
+	display: block;
+	background-color: rgba(255,255,255,0.12) !important;
+	border: unset;
+	border-radius: 8px;
+	transition: all 1s;
+}
+.content > div:nth-child(1) table:nth-child(4) td:hover {
+	background-color: rgba(255,255,255,0.20) !important;
+}
+.chatgruppe {
+	color: #fff !important;
+}
 /* Chat-Design Ende */
 
 
@@ -954,30 +967,36 @@ input[name="searchtext"]:focus {
 	margin-left: 200px !important;
 	background: none !important;
 }
-.loginbox * {
-	color: #fff;
-	background: none !important;
-}
 .loginbox input {
 	border: none !important;
-	outline: none !important;
-	width: 80%;
-	margin: 0px 10px;
-}
-.loginbox img {
-	float: right;
-}
-#username, #password {
-	width: 75%;
-	margin: 8px 0px;
-	padding: 8px 8px 8px 35px;
-	border-bottom: 1px solid var(--primary) !important;
+	border-bottom: 2px solid var(--primary) !important;
 	border-radius: 0px;
+	outline: none !important;
+	width: 75%;
+	padding: 8px 8px 8px 35px;
 	color: #aaa !important;
 	transition: all 0.5s;
 }
-#username:focus, #password:focus {
+.loginbox input:focus {
 	color: #fff !important;
+}
+.loginbox button {
+	color: #fff;
+	width: 40%;
+	background-color: rgba(255,255,255,0.12);
+	border: unset;
+	padding: 5px;
+	cursor: pointer;
+	margin: 12px 25%;
+	border-radius: 25px;
+	box-shadow: 0px 0px 5px #000;
+	transition: all 0.5s;
+}
+.loginbox button:hover {
+	background: rgba(255,255,255,0.20);
+}
+.loginbox label {
+	display: none;
 }
 #username {
 	background: url(https://i.ibb.co/BfwNM8m/user-solid.png) 5px center no-repeat !important;
@@ -987,34 +1006,27 @@ input[name="searchtext"]:focus {
 	background: url(https://i.ibb.co/3fGLLQJ/lock-solid.png) 5px center no-repeat !important;
 	background-size: 18px !important;
 }
-#imgKennwort {
-	filter: brightness(2);
-	margin-top: 16px;
-}
-#bttSenden, #bttDirect {
-	width: 40%;
-	border: 2px solid var(--primary));
-	padding: 5px;
-	cursor: pointer;
-	margin: 12px 12px 0px 25%;
-	border-radius: 4px;
-}
-.loginbox label[for="username"] {
-	display: none;
-}
-.loginbox label[for="password"] {
-	display: none;
-}
-.loginbox br:nth-child(1) {
-	display: none;
-}
-.loginbox br:nth-child(3) {
-	display: none;
-}
-.loginbox br:nth-child(4) {
-	display: none;
-}
 /* Login-Design Ende */
+
+
+/* Speiseplan-Download Design */
+a[onclick*="subm(\"dwnl\","] {
+	color: #fff;
+}
+a[onclick*="subm(\"dwnl\","] div {
+	background: rgba(255,255,255,0.08) !important;
+	border: unset !important;
+	box-shadow: 0px 0px 5px #000;
+	border-radius: 25px;
+	margin: 12px 5px !important;
+	transition: all 1s;
+}
+a[onclick*="subm(\"dwnl\","] div:hover {
+	background: rgba(255,255,255,0.16) !important;
+	cursor: pointer;
+}
+/* Speiseplan-Download Design Ende */
+
 
 
 .tagesbutton {
@@ -1056,17 +1068,11 @@ tr.relevant:hover {
 #printdiv {
 	display: none !important;
 }
-a[onclick*="subm(\"dwnl\","] {
-	transition: all 0.5s;
-}
-a[onclick*="subm(\"dwnl\","]:hover {
-	color: #aaa;
-}
 .version:before {
 	content: "Portal ";
 }
 .version:after {
-	content: " | DarkMode v1.006-b2 | Icons by FontAwesome";
+	content: " | DarkMode v1.006-b3 | Icons by FontAwesome";
 }
 #uplform {
 	background-color: #212121 !important;
@@ -1092,21 +1098,6 @@ table.stdplan-table td {
 }
 .vplan tr:nth-child(1) {
 	background: #616161;
-}
-.content > div:nth-child(1) > table:nth-child(4) td {
-	background: #424242 !important;
-	border: 1px solid #616161 !important;
-	border-radius: 4px;
-}
-.content > div:nth-child(1) > table:nth-child(4) td a {
-	color: #fff;
-}
-.content > a > div[style*="background:#eee"] {
-	border-radius: 4px;
-	background: #424242 !important;
-	border: 1px solid #616161 !important;
-	box-shadow: 0px 0px 5px #000;
-	margin-left: 5px !important;
 }
 [src*="/img/logo_rama.png"] {
 	filter: brightness(1.5);
