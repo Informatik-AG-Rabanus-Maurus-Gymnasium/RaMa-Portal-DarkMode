@@ -11,13 +11,14 @@ Der DarkMode wird über das Browser-Addon *Custom Style Script* eingebunden, mit
 
 Die Mobile-Version für die Lernumgebung funktioniert von ca. 300px Breite bis 640px, wird aber nicht mehr entwickelt.
 
-Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosch/RaMa-Portal/issues) geäußert werden. Wenn ihr selbst gut CSS beherscht, könnt ihr mich Privat über WhatsApp oder Discord anschreiben.
+Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosch/RaMa-Portal/issues) geäußert werden.
+Support/Hilfe bei der Installation biete ich über Discord an: LoxxoHD#9204
+
 
 
 
 ## Screenshots
-
-<img src="https://user-images.githubusercontent.com/69604121/111031367-85d68c80-8407-11eb-8fcd-8446e4990aa2.png" alt="Image missing" width="600"/>
+<img src="https://user-images.githubusercontent.com/69604121/120025997-bcc54300-bff1-11eb-81eb-62cd3cecd057.png" alt="Image missing" width="600"/>
 <img src="https://user-images.githubusercontent.com/69604121/111031369-8b33d700-8407-11eb-8055-d84311e199e2.png" alt="Image missing" width="600"/>
 <img src="https://user-images.githubusercontent.com/69604121/111031370-8d963100-8407-11eb-9b31-829070806652.png" alt="Image missing" width="600"/>
 <img src="https://user-images.githubusercontent.com/69604121/111775836-8bbde900-88b1-11eb-8491-8f27f4200293.png" alt="Image missing" width="600"/>
@@ -33,7 +34,7 @@ Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosc
 
 2. Gehe in deinem Browser oben rechts bei den Addons auf das Symbol *</>* (das Addon-Menü)
 3. Gehe auf *Open Options Page*
-4. Trage bei *III. Code* folgendes in die Spalten ein (siehe Bild)
+4. Trage bei *III. Code* folgendes in die Spalten ein. Wichtig: Wähle die Links aus und kopiere sie. Drag&Drop erzeugt einen Fehler! (siehe Bild)
 
 | URL | SCRIPT | STYLE (CSS) |
 | ----------- | ----------- | ----------- |
@@ -42,7 +43,7 @@ Bugreports und Vorschläge können unter [Issues](https://github.com/HackerFrosc
 ![Image missing](https://user-images.githubusercontent.com/69604121/114930600-b8b7da00-9e24-11eb-8620-ee7b83de161c.png)
 
 5. Klicke auf das graue Plus unter der Tabelle
-6. Füge nun bei *Item #1* die Links in die folgenden Spalten ein (siehe Bild)
+6. Füge nun bei *Item #1* die Links in die folgenden Spalten ein. Wichtig: Wähle die Links aus und kopiere sie. Drag&Drop erzeugt einen Fehler! (siehe Bild)
 
 | URL | SCRIPT LINK / CODE | STYLE LINK / CODE |
 | ----------- | ----------- | ----------- |
