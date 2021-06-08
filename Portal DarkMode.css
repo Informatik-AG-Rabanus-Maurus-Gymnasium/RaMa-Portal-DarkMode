@@ -1,9 +1,10 @@
 :root {
-	--primary: #9d2032;
-	--primary-hover: #cc354c;
-	--message-self-background: #43A047;
+	--primary: #9c2132;
+	--primary-hover: #d2545b;
+	--message-self-background: #43A047; /* Green 600 */
 	--message-student-background: #424242;
-	--message-teacher-background: #0277BD;
+	--message-teacher-background: #0277BD; /* Light Blue 900 */
+	--chat-input-background: #484848;
 }
 
 
@@ -157,7 +158,7 @@ ul.oe_menu > li > a {
 	height: 100px;
 	padding: 10px;
 	margin: 4px;
-	transition: background 1s, color 0.5s;
+	background 0.5s, color 0.5s
 	box-shadow: 0px 0px 5px #000;
 }
 ul.oe_menu > li > a:hover,
@@ -245,12 +246,12 @@ ul.oe_sidebar > li > a {
 	margin: 4px !important;
 	box-shadow: 0px 0px 5px #000;
 	border-radius: 8px;
-	transition: all 1s;
+	transition: all 0.5s;
 }
 ul.oe_sidebar > li > a:hover,
 ul.oe_sidebar > li.selected > a {
 	background: var(--primary-hover);
-	color: #000;
+	color: #fff;
 }
 ul.oe_sidebar div {
 	position: absolute;
@@ -295,7 +296,8 @@ h1 {
 	top: 150px;
 	left: 170px;
 	height: 32px;
-	width: 890px;
+	width: auto;
+	min-width: 890px;
 	font-size: 28px;
 	background: none;
 	border-bottom: 1px solid #757575 !important;
@@ -318,14 +320,17 @@ h2 {
 	font-weight: normal;
 	padding-bottom: 40px;
 }
+.content[style*="margin-top: 0px;"] {
+	margin-top: 10px !important;
+}
 a:link, a:visited {
-	color: #F44336;
+	color: var(--primary);
 	text-decoration: none;
 	transition: color 0.5s;
 }
 a:hover, a:active {
 	text-decoration: none;
-	color: #C62828;
+	color: var(--primary-hover);
 }
 tr.zeile_g {
 	background-color: #424242;
@@ -359,6 +364,9 @@ tr.zeile_y:hover {
 tr.zeile_w:hover {
 	background-color: #ffd080;
 }
+tr {
+    height: 10px;
+}
 td, th {
 	padding: 4px;
 }
@@ -385,18 +393,17 @@ input[disabled] {
 	background-color: #fff;
 }
 input, textarea, select {
-	padding: 2px;
-	border: 1px solid #616161 !important;
-	background-color: #424242 !important;
-	color: #fff;
-	font-size: 0.9em;
-	transition: background 0.5s, color 0.25s;
-	border-radius: 4px;
+    padding: 4px;
+    border: 0px !important;
+    background-color: #212121 !important;
+    color: #fff !important;
+    font-size: 0.9em;
+    transition: background 0.5s, color 0.25s;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #000;
 }
-input:focus, textarea:focus {
-	background-color: #616161;
-	border: 1px solid #424242;
-	color: #121212;
+input:focus {
+    outline: 2px solid #1565C0 !important;
 }
 button {
 	border: 1px solid rgba(255,255,255,0.3);
@@ -721,9 +728,11 @@ form[action*="action=adddirectmsg"] td.message-right {
 form[action*="action=addmsg"] td.message-right {
 	border-radius: 15px 0px 0px 15px !important;
 }
+/* Testen!
 .content > table[style*="width:880px;"]:nth-child(2) > tbody > tr > td.message-right {
 	border-radius: 0px;
 }
+*/
 .speaker-right {
 	background: var(--message-student-background);
 	color: #fff;
@@ -801,7 +810,7 @@ form[action*="action=adddirectmsg"] td.message-left {
 .speaker-new {
 	vertical-align: middle;
 	text-align: center;
-	background-color: #757575;
+	background-color: var(--chat-input-background);
 	font-size: 0px;
 	color: #fff;
 	padding: 4px;
@@ -810,7 +819,7 @@ form[action*="action=adddirectmsg"] td.message-left {
 	border-radius: 15px 0px 0px 15px;
 }
 td.speaker-new:nth-child(2) > a {
-	background-image: url(https://i.ibb.co/fCfrh9b/send.png);
+	background-image: url(https://i.ibb.co/hCBq3by/send.png);
 	background-repeat: no-repeat;
 	background-size: 35px;
 	background-position: center;
@@ -819,7 +828,6 @@ td.speaker-new:nth-child(2) > a {
 }
 td.speaker-new:nth-child(2) > a:hover {
 	transform: scale(1.5);
-	filter: brightness(0.7);
 }
 td.speaker-new:nth-child(2) > a > img {
 	visibility: hidden;
@@ -828,37 +836,36 @@ td.speaker-new:nth-child(2) > a > img {
 	border-radius: 0px 15px 15px 0px;
 }
 td.speaker-new:nth-child(4) > a {
-	background-image: url(https://i.ibb.co/r7cz39y/upload.png);
+	background-image: url(https://i.ibb.co/2sPwFS9/upload.png);
 	background-repeat: no-repeat;
 	background-size: 35px;
 	background-position: center;
 	display: block;
-	transition: transform ease 0.5s, filter ease 0.5s;
+	transition: transform ease 0.5s;
 }
 td.speaker-new:nth-child(4) > a:hover {
 	transform: scaleY(1.1) scale(1.1);
-	filter: brightness(0.7);
 }
 td.speaker-new:nth-child(4) > a > img {
 	visibility: hidden;
 }
 .message-new {
 	vertical-align: top;
-	background-color: #757575;
+	background-color: var(--chat-input-background);
 	font-size: 16px;
-	padding: 0px;
-	border: 1px solid #757575;
+	border: none;
 }
 img[src="edu/icn/reddotok.png"] {
 	margin-top: 5px;
 }
 [name="msgtext"] {
-	background: #757575 !important;
+	background: var(--chat-input-background) !important;
 	color: #fff !important;
 	border-radius: 0px;
 	height: 67px !important;
 	border: unset !important;
 	outline: none !important;
+	box-shadow: none;
 }
 #charCounter {
 	color: #fff !important;
@@ -885,17 +892,13 @@ a[onclick^="rmmsg("][onclick*="direkt"] > img {
 	background: transparent !important;
 	height: auto !important;
 	width: auto !important;
-	left: 550px;
+	left: 500px;
 	margin: auto !important;
-	top: 20px;
+	top: 25px;
 	z-index: 0 !important;
 }
-input[name="searchtext"] {
-	color: #999 !important;
-}
-input[name="searchtext"]:focus {
-	color: #fff !important;
-	outline: none;
+#searchform col:nth-child(1) {
+    width: 80px !important;
 }
 .lehrer {
 	background: var(--message-teacher-background) !important;
@@ -975,7 +978,8 @@ input[name="searchtext"]:focus {
 	width: 75%;
 	padding: 8px 8px 8px 35px;
 	color: #aaa !important;
-	transition: all 0.5s;
+	transition: color 0.5s;
+	box-shadow: none;
 }
 .loginbox input:focus {
 	color: #fff !important;
@@ -990,7 +994,7 @@ input[name="searchtext"]:focus {
 	margin: 12px 25%;
 	border-radius: 25px;
 	box-shadow: 0px 0px 5px #000;
-	transition: all 0.5s;
+	transition: background 0.5s;
 }
 .loginbox button:hover {
 	background: rgba(255,255,255,0.20);
@@ -1014,15 +1018,15 @@ a[onclick*="subm(\"dwnl\","] {
 	color: #fff;
 }
 a[onclick*="subm(\"dwnl\","] div {
-	background: rgba(255,255,255,0.08) !important;
+	background: #424242 !important;
 	border: unset !important;
 	box-shadow: 0px 0px 5px #000;
 	border-radius: 25px;
-	margin: 12px 5px !important;
-	transition: all 1s;
+	margin: 10px 10px 0px 0px;
+	transition: background 0.5s;
 }
 a[onclick*="subm(\"dwnl\","] div:hover {
-	background: rgba(255,255,255,0.16) !important;
+	background: #616161 !important;
 	cursor: pointer;
 }
 /* Speiseplan-Download Design Ende */
@@ -1068,11 +1072,16 @@ tr.relevant:hover {
 #printdiv {
 	display: none !important;
 }
+.version {
+	float: left;
+	margin-left: 10px;
+	color: #ddd;
+}
 .version:before {
 	content: "Portal ";
 }
 .version:after {
-	content: " | DarkMode v1.006-b3 | Icons by FontAwesome";
+	content: " | DarkMode v1.006-b4 | Icons by FontAwesome";
 }
 #uplform {
 	background-color: #212121 !important;
@@ -1098,9 +1107,6 @@ table.stdplan-table td {
 }
 .vplan tr:nth-child(1) {
 	background: #616161;
-}
-[src*="/img/logo_rama.png"] {
-	filter: brightness(1.5);
 }
 .markdown-highlighting {
 	color: #fff !important;
@@ -1133,4 +1139,32 @@ a[onclick="clearNames()"] > div {
 a[onclick="clearNames()"] > div:hover {
 	background: rgba(255,255,255,0.75) !important;
 	color: #121212;
+}
+@keyframes fadeOut {
+	0% {
+		display: block;
+		max-height: 5em;
+		padding: 1em 1em;
+	}
+	80% {
+		max-height: 5em;
+		padding: 1em 1em;
+	}
+	100% {
+		max-height: 0;
+		padding: 0 1em;
+		display: none;
+	} 
+} 
+.error {
+	display: block;
+	padding: 1em;
+	background: #9c2132 !important;
+	margin-bottom: 1em;
+	max-height: 5em;
+	animation-name: fadeOut;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+	overflow: hidden;
+	border-radius: 8px;
 }
