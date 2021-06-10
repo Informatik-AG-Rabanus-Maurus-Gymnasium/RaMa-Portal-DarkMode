@@ -35,7 +35,6 @@ body {
 	cursor: pointer;
 }
 .reference {
-	box-shadow: 0px 0px 5px #000;
 	position: fixed;
 	left: 0px;
 	bottom: 0px;
@@ -46,7 +45,8 @@ body {
 	text-align: right;
 	height: 20px;
 	color: #fff;
-	z-index: 1;
+	z-index: 10;
+	box-shadow: 0px 0px 5px #000;
 }
 .reference a {
 	color: #fff;
@@ -61,7 +61,7 @@ body {
 	top: 0px;
 	background: #212121;
 	width: 100%;
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 13px;
 	text-align: right;
 	height: 40px;
@@ -71,18 +71,6 @@ body {
 	overflow: hidden;
 	box-shadow: 0px 0px 5px #000;
 	z-index: 2;
-}
-[class^="navbar-section"] {
-	height: 40px;
-	float: left;
-}
-.navbar-section-l > * {
-	height: 40px;
-}
-.navbar-section-c > * {
-	height: 40px;
-	display: table;
-	margin: 0 auto;
 }
 .navbar a {
 	color: #fff;
@@ -94,7 +82,7 @@ body {
 }
 .navelem_l {
 	margin: 4px 0px 4px 6px;
-	min-width: 20px;
+	min-width: 10px;
 	height: 20px;
 	padding: 6px 4px 6px 20px;
 	float: left;
@@ -114,22 +102,31 @@ body {
 	align-items: center;
 	text-align: left;
 }
-.flist {
-	position: fixed;
-	left: 0px;
+.hstack {
+	position:fixed;
+	left: 0;
 	top: 40px;
-	width: 80px;
 	height: calc(100% - 60px);
-	padding: 0px;
-	float: left;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+.flist {
 	background: #212121;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight:bold;
+	overflow-x:hidden;
+	overflow-y:auto;
+	height: 100%;
+	width: 6%;
+	min-width: 60px;
+	max-width: 200px;
 	box-shadow: 0px 0px 5px #000;
-	z-index: 1;
+	z-index: 2;
 }
 .flist a {
-	color: #fafafa;
+	color: #fff;
 }
 .flist a:hover {
 	color: #fff;
@@ -137,48 +134,43 @@ body {
 }
 .felem {
 	box-sizing: border-box;
-	width: 90%;
-	min-height: 40px;
-	float: left;
-	margin: 0;
-	margin-top: 5px;
-	padding: 10px 4px;
-	overflow: hidden;
+	width:90%;
+	min-height:40px;
+	float:left;
+	margin: 2.5px 0px;
+	padding:10px 4px;
+	overflow:hidden;
 	word-break: break-word;
 	position: relative;
 	border: 1px solid var(--primary);
 	border-left: none;
 	border-radius: 0px 4px 4px 0px;
-	transition: 0.2s all;
 }
 .felem_s {
 	box-sizing: border-box;
-	width: 90%;
-	min-height: 40px;
-	float: left;
-	padding: 10px 5px;
-	background-color: #424242;
-	border: 1px solid rgba(255,255,255,0.12);
-	border-left: none;
-	border-radius: 0px 4px 4px 0px;
-	overflow: hidden;
-	color: #fff;
-	margin-top: 5px;
+	width:90%;
+	min-height:40px;
+	float:left;
+	margin: 2.5px 0px;
+	padding:6px;
+	background-color:#424242;
+	overflow:hidden;
+	color:#fff;
 	word-break: break-word;
 	position: relative;
 	box-shadow: 0px 0px 2px #000;
+	border: 1px solid rgba(255,255,255,0.12);
+	border-left: none;
+	border-radius: 0px 4px 4px 0px;
 }
-.mlist {
-	position: fixed;
-	left: 80px;
-	top: 40px;
-	width: 220px;
-	height: 800px;
-	padding: 0px;
-	float: left;
-	background: #121212;
-	font-size: 14px;
-	color: #fff;
+.mlist{
+	background:#121212;
+	font-size:14px;
+	color:#fff;
+	height: 100%;
+	width: 20%;
+	min-width: 200px;
+	max-width: 400px;
 }
 .mlist a {
 	color: #666;
@@ -188,18 +180,24 @@ body {
 	cursor: pointer;
 }
 .melem {
+	box-sizing: border-box;
 	width: 90%;
 	height: 42px;
 	padding: 6px 6px 6px 42px;
-	white-space: nowrap;
-	overflow: hidden;
+	white-space:nowrap;
+	overflow:hidden;
 	text-overflow: ellipsis;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 	background: #212121;
 	color: #fff;
 	border-radius: 0px 25px 25px 0px;
 	box-shadow: 0px 0px 5px #000;
 	transition: 0.5s all;
-	margin-bottom: 10px
+	margin-bottom: 10px;
 }
 .target.over {
 	background: #a0d080;
@@ -209,6 +207,7 @@ body {
 	pointer-events: none;
 }
 .melem_s {
+	box-sizing: border-box;
 	width: 90%;
 	height: 42px;
 	padding: 6px 6px 6px 42px;
@@ -222,25 +221,26 @@ body {
 	text-overflow: ellipsis;
 }
 .mscrollbox {
-	height: calc(100% - 70px);
+	height: calc(100% - 40px);
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 .mtabs {
-	height: 41px;
-	width: 220px;
-	margin-top: 10px;
+	height: 40px;
+	width: 100%;
+	padding: 10px 0px;
 	background: transparent;
-	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-evenly;
 }
+.mtabs > a {
+	width: 40%;
+}
 [class^="mtab-"] {
-	height: 41px;
-	line-height: 41px;
-	text-align: center;
-	float: left;
+	height: 40px;
+	line-height: 40px;
+ 	text-align: center;
 }
 [class^="mtab-"] > * {
 	display: inline-block;
@@ -256,7 +256,7 @@ body {
 }
 .mtab-front {
 	background-color: #424242;
-	width: 100px !important;
+	width: 40% !important;
 	color: #fff;
 	border-radius: 4px;
 	box-shadow: 0px 0px 5px #000;
@@ -265,27 +265,31 @@ body {
 .mtab-back {
 	background-color: unset;
 	color: #fff;
-	width: 100px !important;
+	width: 100% !important;
 	border-radius: 4px;
 	border: 1px solid var(--primary);
 }
 .works {
-	position: fixed;
-	left: 300px;
-	top: 45px;
-	width: calc(100% - 342px) !important;
-	height: calc(100% - 97px) !important;
-	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+	flex-grow: 1;
+	height: 100%;
+	background:#121212;
+	font-size:14px;
+	color:#fff;
+	z-index:-1;
+}
+.worksfull {
+	padding:0px;
+	overflow:hidden;
+}
+.worksadj {
+	padding:16px;
 	padding-left: 26px;
-	float: left;
-	background: #121212;
-	font-size: 14px;
-	color: #fff;
-	overflow: auto;
-	z-index: -1;
+	overflow:auto;
 }
 .works a {
-	color: #666;
+	color: #999;
 }
 .works a:hover {
 	color: #eee;
@@ -301,11 +305,13 @@ body {
 	font-size: 20px;
 	font-weight: bold;
 	margin: 16px 0px;
+	position: unset;
 }
 .works h3 {
 	font-size: 16px;
 	font-weight: bold;
 	margin: 16px 0px;
+	position: unset;
 }
 .works p {
 	margin: 16px 0px;
@@ -345,12 +351,10 @@ body {
 	border: 1px solid #aaa;
 	border-radius: 8px;
 	background-color: #121212;
-	display: flex;
-	align-items: center;
 	text-align: center;
 	overflow: hidden;
 	top: 50%;
-	left: 50%;
+	left: 40%;
 	transform: translate(-50%, -50%);
 	box-shadow: 0px 0px 15px #000;
 }
@@ -486,30 +490,6 @@ body {
 	width: 100%;
 	height: 100%;
 }
-.openfs {
-	position: fixed;
-	z-index: 11;
-	width: 32px;
-	height: 32px;
-	top: 45px;
-	right: 4px;
-	padding: 0px;
-	background: url(icn/fullscreen32.png) center no-repeat;
-	text-align: center;
-	overflow: hidden;
-}
-.exitfs {
-	position: fixed;
-	z-index: 11;
-	width: 32px;
-	height: 32px;
-	top: 44px;
-	right: 4px;
-	padding: 0px;
-	background: url(icn/exitfullscreen32.png) center no-repeat;
-	text-align: center;
-	overflow: hidden;
-}
 .pupil {
 	width: 80px;
 	height: 60px;
@@ -522,6 +502,9 @@ body {
 	text-align: left;
 	overflow: hidden;
 	font-size: 14px;
+}
+.active span{
+	font-weight: bold;
 }
 .pupil :not(a) {
 	pointer-events: none;
@@ -560,9 +543,6 @@ body {
 }
 .searchline * {
 	color: #fff !important;
-}
-.searchline.light {
-	background: #424242;
 }
 .light {
 	background: #fff;
@@ -663,7 +643,7 @@ body {
 		visibility: visible;
 	}
 	100% {
-		opacity: 0; 
+		opacity: 0;
 		visibility: hidden;
 	}
 }
