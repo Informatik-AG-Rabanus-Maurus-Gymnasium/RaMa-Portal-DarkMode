@@ -1081,7 +1081,7 @@ tr.relevant:hover {
 	content: "Portal ";
 }
 .version:after {
-	content: " | DarkMode v1.006-b4 | Icons by FontAwesome";
+	content: " | DarkMode v1.006 | Icons by FontAwesome";
 }
 #uplform {
 	background-color: #212121 !important;
