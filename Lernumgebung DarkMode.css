@@ -3,8 +3,6 @@
 }
 
 
-
-
 * {
 	margin: 0;
 	padding: 0;
@@ -84,7 +82,7 @@ body {
 	margin: 4px 0px 4px 6px;
 	min-width: 10px;
 	height: 20px;
-	padding: 6px 4px 6px 20px;
+	padding: 6px 4px 6px 25px;
 	float: left;
 	display: flex;
 	align-items: center;
@@ -96,7 +94,7 @@ body {
 	min-width: 2%;
 	max-width: 6%;
 	height: 20px;
-	padding: 6px 4px 6px 18px;
+	padding: 6px 4px 6px 25px;
 	float: right;
 	display: flex;
 	align-items: center;
@@ -119,7 +117,7 @@ body {
 	overflow-x:hidden;
 	overflow-y:auto;
 	height: 100%;
-	width: 6%;
+	width: 8%;
 	min-width: 60px;
 	max-width: 200px;
 	box-shadow: 0px 0px 5px #000;
@@ -134,40 +132,43 @@ body {
 }
 .felem {
 	box-sizing: border-box;
-	width:90%;
-	min-height:40px;
-	float:left;
-	margin: 2.5px 0px;
-	padding:10px 4px;
-	overflow:hidden;
+	width: 95%;
+	min-height: 40px;
+	float: left;
+	padding: 12.5px 4px;
+	overflow: hidden;
 	word-break: break-word;
 	position: relative;
-	border: 1px solid var(--primary);
-	border-left: none;
-	border-radius: 0px 4px 4px 0px;
+	border-radius: 0px 25px 25px 0px;
+	transition: all 0.5s ease;
+}
+.felem:hover {
+	background-color: #333;
+}
+.felem > div {
+	right: 20px !important;
 }
 .felem_s {
 	box-sizing: border-box;
-	width:90%;
-	min-height:40px;
-	float:left;
-	margin: 2.5px 0px;
-	padding:6px;
-	background-color:#424242;
-	overflow:hidden;
-	color:#fff;
+	width: 95%;
+	min-height: 40px;
+	float: left;
+	padding: 12.5px 4px;
+	background-color: var(--primary);
+	overflow: hidden;
+	color: #fff;
 	word-break: break-word;
 	position: relative;
-	box-shadow: 0px 0px 2px #000;
-	border: 1px solid rgba(255,255,255,0.12);
-	border-left: none;
-	border-radius: 0px 4px 4px 0px;
+	border-radius: 0px 25px 25px 0px;
+}
+.felem_s > div {
+	right: 20px !important;
 }
 .mlist{
 	background:#121212;
 	font-size:14px;
 	color:#fff;
-	height: 100%;
+	height: calc(100% - 25px);
 	width: 20%;
 	min-width: 200px;
 	max-width: 400px;
@@ -181,9 +182,9 @@ body {
 }
 .melem {
 	box-sizing: border-box;
-	width: 90%;
-	height: 42px;
-	padding: 6px 6px 6px 42px;
+	width: 85%;
+	height: auto;
+	padding: 5px 5px 5px 42px;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow: ellipsis;
@@ -199,6 +200,10 @@ body {
 	transition: 0.5s all;
 	margin-bottom: 10px;
 }
+.melem:hover {
+	width: 95%;
+	background: #424242;
+}
 .target.over {
 	background: #a0d080;
 	color: #000;
@@ -208,9 +213,9 @@ body {
 }
 .melem_s {
 	box-sizing: border-box;
-	width: 90%;
-	height: 42px;
-	padding: 6px 6px 6px 42px;
+	width: 95%;
+	height: auto;
+	padding: 5px 5px 5px 42px;
 	color: #fff;
 	background: #424242;
 	border-radius: 0px 25px 25px 0px;
@@ -258,16 +263,20 @@ body {
 	background-color: #424242;
 	width: 40% !important;
 	color: #fff;
-	border-radius: 4px;
-	box-shadow: 0px 0px 5px #000;
-	border: 1px solid #616161;
+	border-radius: 25px;
+	border: 1px solid #424242;
 }
 .mtab-back {
 	background-color: unset;
 	color: #fff;
 	width: 100% !important;
-	border-radius: 4px;
+	border-radius: 25px;
 	border: 1px solid var(--primary);
+	transition: background-color 0.5s;
+}
+.mtab-back:hover {
+	background-color: var(--primary);
+	box-shadow: 0px 0px 10px #000;
 }
 .works {
 	position: relative;
@@ -556,48 +565,56 @@ body {
 
 /* Icon-Austausch */
 .navelem_l[style*="background:url(icn/home.png)"] {
-	background: url(https://i.ibb.co/M6Jdjwf/home.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/c3J922Q/home.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_l[style*="background:url(icn/copy.png)"] {
-	background: url(https://i.ibb.co/NNpqzXQ/copy.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/f964MfW/copy.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_l[style*="background:url(icn/move.png)"] {
-	background: url(https://i.ibb.co/N6YP3Xh/move.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/WVsXrh7/move.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_l[style*="background:url(icn/add.png)"] {
-	background: url(https://i.ibb.co/23V2bTn/add.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/c2JgwbV/add.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_l[style*="background:url(icn/edit.png)"] {
-	background: url(https://i.ibb.co/Dk84CPg/edit.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/Z86pvb6/edit.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_l[style*="background:url(icn/reload.png)"] {
-	background: url(https://i.ibb.co/H7xh3Mw/reload.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/QKDxsb1/reload.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_l[style*="background:url(icn/down.png)"] {
-	background: url(https://i.ibb.co/MkvXH8w/down.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/mSM5jnJ/down.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_l[style*="background:url(icn/lock.png)"] {
-	background: url(https://i.ibb.co/2tMZgM8/lock.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/vZ838dr/lock.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_l[style*="background:url(icn/unlock.png)"] {
-	background: url(https://i.ibb.co/L0FqY5C/unlock.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/fqRbD4C/unlock.png) no-repeat left !important;
+	background-size: 25px !important;
+}
+.navelem_l[style*="background:url(icn/task.png)"] {
+	background: url(https://i.ibb.co/yNFV90p/task.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_l[style*="background:url(icn/del.png)"] {
-	background: url(https://i.ibb.co/6mL8Lxj/del.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/xGQpvFR/del.png) no-repeat left !important;
+	background-size: 25px !important;
+}
+.navelem_r[style*="background:url(icn/recycle.png)"] {
+	background: url(https://i.ibb.co/PNbbbhz/recycle.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .navelem_r[style*="background:url(icn/search.png)"] {
-	background: url(https://i.ibb.co/9qShPp9/search.png) no-repeat left !important;
-	background-size: 20px !important;
+	background: url(https://i.ibb.co/yYtXWP5/search.png) no-repeat left !important;
+	background-size: 25px !important;
 }
 .melem[style*='background-image: url("icn/lnk.png")'], .melem_s[style*='background-image: url("icn/lnk.png")'] {
 	background-image: url(https://i.ibb.co/sq7JZMK/ink.png) !important;
