@@ -255,21 +255,25 @@ ul.oe_sidebar > li.selected > a {
 }
 ul.oe_sidebar div {
 	position: absolute;
-	top: 1px;
+	top: 4px;
 	left: 113px;
-	background: #424242;
-	border: 1px solid #757575;
+	background: #212121;
+	border: none;
 	min-width: 292px;
-	min-height: 180px;
+	min-height: auto;
 	padding: 20px;
 	display: none;
-	z-index: 9;
+	z-index: 9 !important;
 	box-shadow: 0px 0px 10px #000;
 	border-radius: 8px;
 }
+ul.oe_sidebar div tr:nth-child(2) td {
+	background: #424242 !important;
+	border-radius: 25px;
+	padding: 5px;
+}
 ul.oe_sidebar div td {
-	background: #616161 !important;
-	border-radius: 4px;
+	background: none !important;
 }
 ul.oe_sidebar div a {
 	color: #fff;
@@ -343,6 +347,14 @@ tr.zeile_g a {
 tr.zeile_u {
 	background: #212121 !important;
 	transition: background 1s;
+}
+tr.zeile_u td {
+	border: none !important;
+	padding: 4px !important;
+}
+tr.zeile_u td[style*="background:#f0f040"] {
+	background: var(--primary-hover) !important;
+	border-radius: 8px;
 }
 tr.zeile_y {
 	background-color: #f0e0d0;
@@ -581,17 +593,36 @@ td.plan {
 
 /* Kalender Design */
 #months {
-	background: rgba(255,255,255,0.08) none repeat scroll 0% 0% !important;
-	box-shadow: 0px 0px 5px #000;
+	background: #212121 none repeat scroll 0% 0% !important;
 	border-radius: 4px;
 }
 #months * {
-	color: #bbb;
+	color: #ccc;
+}
+#months th a {
+	color: var(--primary) !important;
 }
 td[style="background:#f0a0a0;"] {
 	background: var(--primary) !important;
 	border-radius: 8px;
 	color: #fff !important;
+}
+#entries {
+	background: #212121;
+	border-radius: 4px;
+}
+#entry {
+	position: absolute;
+	background: #424242 !important;
+	margin: 40px 0 0 180px;
+	height: 720px;
+	width: auto !important;
+	z-index: 99;
+	padding: 10px;
+	border-radius: 8px;
+	display: none;
+	overflow-y: scroll;
+	box-shadow: 0px 0px 10px #000;
 }
 #filter {
 	margin: 0 !important;
@@ -602,7 +633,6 @@ td[style="background:#f0a0a0;"] {
 	border-radius: 8px;
 	box-shadow: 0px 0px 10px #000;
 	height: auto !important;
-	border: 1px solid #616161 !important;
 }
 #filter input {
 	background-color: rgba(255,255,255,0.12) !important;
@@ -1081,7 +1111,7 @@ tr.relevant:hover {
 	content: "Portal ";
 }
 .version:after {
-	content: " | DarkMode v1.006 | Icons by FontAwesome";
+	content: " | DarkMode v1.008-b1 | Icons by FontAwesome";
 }
 #uplform {
 	background-color: #212121 !important;
