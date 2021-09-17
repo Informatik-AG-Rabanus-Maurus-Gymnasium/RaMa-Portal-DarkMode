@@ -412,7 +412,7 @@ input, textarea, select {
     font-size: 0.9em;
     transition: background 0.5s, color 0.25s;
     border-radius: 4px;
-    box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 2px #000;
 }
 input:focus {
     outline: 2px solid #1565C0 !important;
@@ -1111,7 +1111,7 @@ tr.relevant:hover {
 	content: "Portal ";
 }
 .version:after {
-	content: " | DarkMode v1.008-b1 | Icons by FontAwesome";
+	content: " | DarkMode v1.008-b2 | Icons by FontAwesome";
 }
 #uplform {
 	background-color: #212121 !important;
@@ -1197,4 +1197,10 @@ a[onclick="clearNames()"] > div:hover {
 	animation-fill-mode: both;
 	overflow: hidden;
 	border-radius: 8px;
+}
+.nicescroll-rails div {
+	background-color: #424242 !important;
+	border: 1px solid #616161 !important;
+	border-radius: 25px !important;
+	box-shadow: 0px 0px 3px #000 !important;
 }
