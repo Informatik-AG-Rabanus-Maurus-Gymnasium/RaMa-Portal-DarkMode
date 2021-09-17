@@ -357,9 +357,9 @@ body {
 	padding: 16px;
 	font-size: 16px;
 	line-height: 48px;
-	border: 1px solid #aaa;
+	border: none;
 	border-radius: 8px;
-	background-color: #121212;
+	background-color: #424242;
 	text-align: center;
 	overflow: hidden;
 	top: 50%;
@@ -379,22 +379,22 @@ body {
 	overflow: hidden;
 }
 .welem_s input, .welem_s button {
-	background: #212121 !important;
-	border-radius: 4px !important;
-	color: #ccc !important;
-	border: 1px solid #424242 !important;
-	outline: unset !important;
-	transition: all 0.5s;
+	background: #212121;
+	border-radius: 25px !important;
+	color: #fff;
+	border: none;
+	margin: 2px;
+	box-sizing: border-box;
 }
 .welem_s input:hover {
-	background: #424242 !important;
+	background: #212121 !important;
 	border: 1px solid #616161 !important;
 	color: #fff !important;
 }
 .welem_s input[type="text"]:focus {
-	background: #424242 !important;
+	background: #212121 !important;
 	color: #fff !important;
-	border: 1px solid #616161 !important;
+	border: 1px solid #999 !important;
 	outline: unset !important;
 }
 .welem_s input[type="button"][disabled=""] {
@@ -539,6 +539,7 @@ body {
 	height: 10px;
 	background-color: #ddd;
 	margin: 10px auto;
+	border-radius: 8px;
 }
 .progressbar {
 	width: 0%;
