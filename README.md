@@ -18,16 +18,17 @@ Support/Hilfe bei der Installation biete ich über Discord an: LoxxoHD#9204
 
 
 ## Screenshots
-<img src="https://user-images.githubusercontent.com/69604121/120025997-bcc54300-bff1-11eb-81eb-62cd3cecd057.png" alt="Image missing" width="600"/>
-<img src="https://user-images.githubusercontent.com/69604121/111031369-8b33d700-8407-11eb-8055-d84311e199e2.png" alt="Image missing" width="600"/>
-<img src="https://user-images.githubusercontent.com/69604121/111031370-8d963100-8407-11eb-9b31-829070806652.png" alt="Image missing" width="600"/>
-<img src="https://user-images.githubusercontent.com/69604121/111775836-8bbde900-88b1-11eb-8491-8f27f4200293.png" alt="Image missing" width="600"/>
+<img src="https://user-images.githubusercontent.com/69604121/142028166-21938e1a-77c9-4913-98ee-4af451915436.png" alt="Image missing" width="600"/>
+<img src="https://user-images.githubusercontent.com/69604121/142028115-4b707548-91b6-401a-b807-0e0983e61c59.png" alt="Image missing" width="600"/>
+<img src="https://user-images.githubusercontent.com/69604121/142028177-23382b68-4407-4c47-bd2a-6d89c7bdbe8a.png" alt="Image missing" width="600"/>
 
 
 
 ## Installation
 
 **Hinweis:** *Kursiv* geschriebener Text markiert immer Eigennamen oder Text den du eingeben sollst. Text in den Klammern <> soll nicht wörtlich abgeschrieben werden.
+
+
 
 
 1. Installiere das Addon *Custom Style Script* für deinen Browser ([Firefox](https://addons.mozilla.org/firefox/downloads/file/3553190/custom_style_script-0.1.4-an+fx.xpi), [Chrome](https://chrome.google.com/webstore/detail/custom-style-script/ecjfaoeopefafjpdgnfcjnhinpbldjij), [Opera](https://addons.opera.com/de/extensions/details/custom-style-script/))
