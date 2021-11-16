@@ -5,6 +5,22 @@
 	--message-student-background: #424242;
 	--message-teacher-background: #0277BD; /* Light Blue 900 */
 	--chat-input-background: #484848;
+	--success-color: #09af00;
+	--transition-duration: 0.5s;
+	--1dp-shadow: 0.1px 0.1px 0.1px rgba(0, 0, 0, 0.084), 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.122), 0.4px 0.3px 0.4px rgba(0, 0, 0, 0.15), 0.6px 0.5px 0.6px rgba(0, 0, 0, 0.175), 1px 0.8px 1px rgba(0, 0, 0, 0.2), 1.5px 1.2px 1.5px rgba(0, 0, 0, 0.228), 2.5px 2px 2.5px rgba(0, 0, 0, 0.266), 5px 4px 5px rgba(0, 0, 0, 0.35);
+
+/* 0.1px 0.2px 0.2px rgba(0, 0, 0, 0.056),
+  0.3px 0.5px 0.5px rgba(0, 0, 0, 0.081),
+  0.5px 1px 1px rgba(0, 0, 0, 0.1),
+  0.9px 1.8px 1.8px rgba(0, 0, 0, 0.119),
+  1.7px 3.4px 3.4px rgba(0, 0, 0, 0.144),
+  4px 8px 8px rgba(0, 0, 0, 0.2)
+;
+
+*/
+
+	--1dp-shadow-hover: 0.1px 0.1px 0.4px rgba(0, 0, 0, 0.084), 0.2px 0.2px 0.9px rgba(0, 0, 0, 0.122), 0.4px 0.3px 1.6px rgba(0, 0, 0, 0.15), 0.6px 0.5px 2.5px rgba(0, 0, 0, 0.175), 1px 0.8px 3.9px rgba(0, 0, 0, 0.2), 1.5px 1.2px 6px rgba(0, 0, 0, 0.228), 2.5px 2px 10px rgba(0, 0, 0, 0.266), 5px 4px 20px rgba(0, 0, 0, 0.35);
+	--2dp-shadow: 0.3px 0.1px 0.3px rgba(0, 0, 0, 0.084), 0.7px 0.3px 0.7px rgba(0, 0, 0, 0.121), 1.3px 0.6px 1.3px rgba(0, 0, 0, 0.15), 2.2px 1.1px 2.2px rgba(0, 0, 0, 0.179), 4.2px 2.1px 4.2px rgba(0, 0, 0, 0.216), 10px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -13,7 +29,7 @@
 	padding: 0;
 }
 html {
-	background: #121212;
+	background-image: url('https://i.ibb.co/sKLNP49/rama-bkgr.png') !important;
 	height: 100%;
 }
 body {
@@ -31,7 +47,7 @@ ul.m_menu0 > li {
 	width: auto;
 	height: auto;
 	float: left;
-	overflow: hidden;
+	overflow: visible;
 }
 ul.m_menu0 > li > a {
 	box-sizing: border-box;
@@ -44,12 +60,13 @@ ul.m_menu0 > li > a {
 	background-color: var(--primary);
 	color: #fff;
 	text-decoration: none;
-	transition: all 0.5s;
-	box-shadow: 0px 0px 5px #000;
+	transition: all var(--transition-duration);
+	box-shadow: var(--1dp-shadow);
 	border-radius: 8px;
 }
 ul.m_menu0 > li > a:hover {
 	background: var(--primary-hover);
+	box-shadow: var(--1dp-shadow-hover);
 	color: #fff;
 }
 ul.m_menu0 > li > p {
@@ -77,7 +94,7 @@ ul.m_menu1 > li {
 	width: auto;
 	height: auto;
 	float: left;
-	overflow: hidden;
+	overflow: visible;
 }
 ul.m_menu1 > li > a {
 	box-sizing: border-box;
@@ -87,15 +104,16 @@ ul.m_menu1 > li > a {
 	margin: 4px;
 	padding: 10px;
 	font-size: 14px;
-	background-color: rgba(255,255,255,0.12);
+	background-color: #2f2f2f;
 	color: #fff;
 	text-decoration: none;
-	transition: all 0.5s;
-	box-shadow: 0px 0px 5px #000;
+	transition: all var(--transition-duration);
+	box-shadow: var(--1dp-shadow);
 	border-radius: 8px;
 }
 ul.m_menu1 > li > a:hover {
-	background: rgba(255,255,255,0.25);
+	background: #4e4e4e;
+	box-shadow: var(--1dp-shadow-hover);
 	color: #fff;
 }
 ul.m_menu1 > li > p {
@@ -149,7 +167,7 @@ ul.oe_menu > li {
 ul.oe_menu > li > a {
 	box-sizing: border-box;
 	display: block;
-	background-color: rgba(255,255,255,0.16);
+	background-color: #2f2f2f;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 8px;
@@ -158,12 +176,13 @@ ul.oe_menu > li > a {
 	height: 100px;
 	padding: 10px;
 	margin: 4px;
-	transition: background 0.5s, color 0.5s;
-	box-shadow: 0px 0px 5px #000;
+	transition: background var(--transition-duration), color var(--transition-duration);
+	box-shadow: var(--1dp-shadow);
 }
 ul.oe_menu > li > a:hover,
 ul.oe_menu > li.selected > a {
-	background: rgba(255,255,255,0.29);
+	background: #4e4e4e;
+	box-shadow: var(--1dp-shadow-hover);
 	color: #fff;
 }
 .oe_wrapper ul.hovered > li > a {
@@ -182,7 +201,7 @@ ul.oe_menu div {
 	display: none;
 	text-shadow: 1px 1px 1px #121212;
 	border-radius: 8px;
-	box-shadow: 0px 2px 2px #000;
+	box-shadow: var(--2dp-shadow);
 }
 ul.oe_menu div ul li a {
 	text-decoration: none;
@@ -191,7 +210,7 @@ ul.oe_menu div ul li a {
 	padding-left: 4px;
 	margin: 2px;
 	display: block;
-	transition: background 0.5s, color 0.5s;
+	transition: background var(--transition-duration), color var(--transition-duration);
 	font-size: 14px;
 	border-radius: 5px;
 }
@@ -246,7 +265,7 @@ ul.oe_sidebar > li > a {
 	margin: 4px !important;
 	box-shadow: 0px 0px 5px #000;
 	border-radius: 8px;
-	transition: all 0.5s;
+	transition: all var(--transition-duration);
 }
 ul.oe_sidebar > li > a:hover,
 ul.oe_sidebar > li.selected > a {
@@ -330,23 +349,25 @@ h2 {
 a:link, a:visited {
 	color: var(--primary);
 	text-decoration: none;
-	transition: color 0.5s;
+	transition: color var(--transition-duration);
 }
 a:hover, a:active {
 	text-decoration: none;
 	color: var(--primary-hover);
 }
 tr.zeile_g {
-	background-color: #424242;
+	background-color: #2f2f2f !important;
 	color: #fff;
-	transition: all 0.5s;
+}
+tr.zeile_g:nth-child(1) {
+	background-color: #424242;
 }
 tr.zeile_g a {
 	color: #fff;
 }
 tr.zeile_u {
 	background: #212121 !important;
-	transition: background 1s;
+	transition: background var(--transition-duration);
 }
 tr.zeile_u td {
 	border: none !important;
@@ -363,9 +384,7 @@ tr.zeile_w {
 	background-color: #ffffff;
 }
 tr.zeile_g:hover {
-	background-color: #616161;
-	color: #fff;
-	text-shadow: none;
+	background-color: none;
 }
 tr.zeile_u:hover {
 	background-color: #424242;
@@ -410,25 +429,27 @@ input, textarea, select {
     background-color: #212121 !important;
     color: #fff !important;
     font-size: 0.9em;
-    transition: background 0.5s, color 0.25s;
+    transition: background var(--transition-duration), color 0.25s;
     border-radius: 4px;
-    box-shadow: 0px 0px 2px #000;
+    box-shadow: 0px 0px 5px #000;
 }
 input:focus {
     outline: 2px solid #1565C0 !important;
 }
 button {
-	border: 1px solid rgba(255,255,255,0.3);
+	border: none;
+	border-radius: 25px;
 	margin: 1px;
-	font-family: "Source Sans Pro", "Trebuchet MS", Tahoma, Helvetica, sans-serif;
+	padding: 5px;
 	font-size: 0.9em;
-	color: #2050b0;
+	color: #fff;
 	background: #424242;
-	transition: background 0.5s, color 0.5s;
+	transition: background var(--transition-duration), color var(--transition-duration);
 }
 button:hover {
-	border: 1px solid #ca231b;
-	color: #ca231b;
+	border: none;
+	color: #fff;
+	background: #616161;
 }
 .accordion {
 	width: 100%;
@@ -448,10 +469,10 @@ button:hover {
 	display: block;
 }
 .accordion section h2 a.expand:hover {
-	background: #616161 url('/icn/accdown.png') no-repeat right bottom;
+	background: #424242 url('/icn/accdown.png') no-repeat right bottom;
 }
 .accordion section h2 a.collapse:hover {
-	background: #616161 url('/icn/accup.png') no-repeat right bottom;
+	background: #424242 url('/icn/accup.png') no-repeat right bottom;
 }
 .accordion section {
 	float: left;
@@ -468,7 +489,7 @@ button:hover {
 	font-weight: normal;
 	color: #fff;
 	text-decoration: none;
-	background-color: rgba(255,255,255,0.12);
+	background: #2f2f2f url('/icn/accdown.png') no-repeat right bottom;
 	border-radius: 8px;
 	transition: background-color 1s;
 }
@@ -501,7 +522,7 @@ button:hover {
 	text-align: right;
 	height: 20px;
 	color: #fff;
-	box-shadow: 0px 0px 10px #000;
+	box-shadow: 0px 0px 0.6px rgba(0, 0, 0, 0.084), 0px 0px 1.3px rgba(0, 0, 0, 0.121), 0px 0px 2.5px rgba(0, 0, 0, 0.15), 0px 0px 4.5px rgba(0, 0, 0, 0.179), 0px 0px 8.4px rgba(0, 0, 0, 0.216), 0px 0px 20px rgba(0, 0, 0, 0.3) !important;
 }
 a.selected {
 	background: unset;
@@ -567,25 +588,82 @@ td.plan {
 	background-color: rgba(255, 255, 255, 0.24);
 }
 #videochat-uebersicht-table th {
-	background-color: rgba(255,255,255,0.12);
-}
-#videochat-uebersicht-table tr.old td {
 	background-color: #424242;
+}
+#videochat-uebersicht-table td {
+	background-color: #2f2f2f;
 	opacity: 1;
 }
 #videochat-uebersicht-table tr.green td {
 	background-color: #00C853 !important;
 }
+
+
+
+.error {
+	display: block;
+	padding: 1em;
+	background: #9c2132 !important;
+	margin-bottom: 1em;
+	overflow: hidden;
+	border-radius: 8px;
+}
+ .success {
+	display: block;
+	padding: 1em;
+	background: var(--success-color) !important;
+	margin-bottom: 1em;
+	border-radius: 8px;
+ }
+.success button {
+width: auto;
+background-color: rgba(255,255,255,0.3);
+}
+ .waiting-box {
+ top: calc(50% - 160px);
+ position: fixed;
+ left: calc(50% - 220px);
+ width: 400px;
+ padding: 20px;
+ background: #a0d8f0;
+ z-index: 100;
+ }
+ .waiting-overlay {
+ display: none;
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background: rgba(0, 0, 0, 0.5);
+ z-index: 100;
+ }
+ .waiting-overlay .center {
+ width: 100%;
+ text-align: center;
+ }
+ .waiting-overlay .start {
+ font-size: 1.3em;
+ line-height: 2em;
+ }
+ .waiting-overlay .name {
+ font-weight: bold;
+ }
+ .waiting-overlay .warten {
+ line-height: 2em;
+ font-size: 1.5em;
+ }
+ 
 /* Videochat Design Ende */
 
 
 /* Klausurenplan Design */
 .daytable th {
-	background: #616161;
+	background: #424242;
 	border-bottom: unset;
 }
 .daytable td {
-	background: #424242;
+	background: #2f2f2f;
 	border-bottom: unset;
 }
 /* Klausurenplan Design Ende */
@@ -1017,17 +1095,17 @@ a[onclick^="rmmsg("][onclick*="direkt"] > img {
 .loginbox button {
 	color: #fff;
 	width: 40%;
-	background-color: rgba(255,255,255,0.12);
+	background-color: #2f2f2f;
 	border: unset;
 	padding: 5px;
 	cursor: pointer;
 	margin: 12px 25%;
 	border-radius: 25px;
-	box-shadow: 0px 0px 5px #000;
-	transition: background 0.5s;
+	box-shadow: var(--1dp-shadow);
+	transition: background var(--transition-duration);
 }
 .loginbox button:hover {
-	background: rgba(255,255,255,0.20);
+	background: #4e4e4e;
 }
 .loginbox label {
 	display: none;
@@ -1079,13 +1157,14 @@ a[onclick*="subm(\"dwnl\","] div:hover {
 	background: var(--primary);
 	color: #fff;
 }
-div.nzts {
-	width: calc(100% - 8px);
-	margin-left: 4px;
-	background: #424242;
+.nzts {
+	width: calc(100% - 8px) !important;
+	margin: 0px 4px 1em 4px;
+	background: var(--success-color) !important;
 	text-align: center;
 	padding: 10px;
 	box-sizing: border-box;
+	border-radius: 8px;
 }
 div.nzts > p {
 	margin-top: 10px;
@@ -1111,7 +1190,7 @@ tr.relevant:hover {
 	content: "Portal ";
 }
 .version:after {
-	content: " | DarkMode v1.008-b2 | Icons by FontAwesome";
+	content: " | DarkMode v1.8.0 | Icons by FontAwesome";
 }
 #uplform {
 	background-color: #212121 !important;
@@ -1133,10 +1212,10 @@ table.stdplan-table th {
 }
 table.stdplan-table td {
 	color: #fff;
-	background: #212121 !important;
+	background: #2f2f2f !important;
 }
 .vplan tr:nth-child(1) {
-	background: #616161;
+	background: #424242;
 }
 .markdown-highlighting {
 	color: #fff !important;
@@ -1185,22 +1264,4 @@ a[onclick="clearNames()"] > div:hover {
 		padding: 0 1em;
 		display: none;
 	} 
-} 
-.error {
-	display: block;
-	padding: 1em;
-	background: #9c2132 !important;
-	margin-bottom: 1em;
-	max-height: 5em;
-	animation-name: fadeOut;
-	animation-duration: 5s;
-	animation-fill-mode: both;
-	overflow: hidden;
-	border-radius: 8px;
-}
-.nicescroll-rails div {
-	background-color: #424242 !important;
-	border: 1px solid #616161 !important;
-	border-radius: 25px !important;
-	box-shadow: 0px 0px 3px #000 !important;
 }
