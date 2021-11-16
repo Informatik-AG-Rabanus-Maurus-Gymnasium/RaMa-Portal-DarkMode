@@ -672,7 +672,7 @@ body {
 	opacity: 0;
 	transition: opacity 0.3s 0.5s;
 	pointer-events: none;
-	animation: unset;
+	animation: 5s fadeOut backwards;
 }
 .tooltip-anchor hr {
 	color: var(--primary);
