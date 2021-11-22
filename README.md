@@ -157,57 +157,67 @@ Einige Regeln müssen mit der Eigenschaft *!important* überschrieben werden, da
 </a>
 
 `primary-color`
-<p>**Standardwert: #9c2132**</p>
+
+**Standardwert: #9c2132**<br />
 Definiert die primäre Design-Farbe.
 <br /><br />
 
 `primary-hover-color`
-<p>**Standardwert: #d2545b**</p>
+
+**Standardwert: #d2545b**<br />
 Definiert die Farbe einer Hover-Animation von einem Primärfarbenen Element.
 <br /><br />
 
 `message-self-color`
-<p>**Standardwert: #43A047**</p>
+
+**Standardwert: #43A047**<br />
 Definiert die Hintergrundfarbe für eigene Chat-Nachrichten.
 <br /><br />
 
 `message-student-color`
-<p>**Standardwert: #424242**</p>
+
+**Standardwert: #424242**<br />
 Definiert die Hintergrundfarbe für Chat-Nachrichten von Schülern.
 <br /><br />
 
 `message-teacher-color`
-<p>**Standardwert: #0277BD**</p>
+
+**Standardwert: #0277BD**<br />
 Definiert die Hintergrundfarbe für Chat-Nachrichten von Lehrern.
 <br /><br />
 
 `chat-input-color`
-<p>**Standardwert: #484848**</p>
+**Standardwert: #484848**<br />
 Definiert die Hintergrundfarbe für das Nachrichten-Eingabefeld.
 <br /><br />
 
 `success-color`
-<p>**Standardwert: #09af00**</p>
+
+**Standardwert: #09af00**<br />
 Definiert die Hintergrundfarbe für Success-Dialoge.
 <br /><br />
 
 `transition-duration`
-<p>**Standardwert: 0.5s**</p>
+
+**Standardwert: 0.5s**<br />
 Definiert die normale Übergangsdauer für Animationen.
 <br /><br />
 
 `1dp-shadow`
-<p>**Standardwert: 2px 4px 4px hsl(0deg 0% 0% / 0.6)**</p>
+
+**Standardwert: 2px 4px 4px hsl(0deg 0% 0% / 0.6)**<br />
 Definiert den Box-Shadow für die erste Elevation-Stufe.
 <br /><br />
 
 `1dp-shadow-hover`
-<p>**Standardwert: 2px 4px 8px hsl(0deg 0% 0% / 0.6)**</p>
+
+**Standardwert: 2px 4px 8px hsl(0deg 0% 0% / 0.6)**<br />
 Definiert den Box-Shadow für die erste Elevation-Stufe bei einer Hover-Animation.
 <br /><br />
 
 `2dp-shadow`
-<p>**Standardwert: 4px 8px 8px hsl(0deg 0% 0% / 0.5)**</p>
+
+**Standardwert: 4px 8px 8px hsl(0deg 0% 0% / 0.5)**<br />
 Definiert den Box-Shadow für die zweite Elevation-Stufe.
 <br /><br />
 
