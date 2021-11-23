@@ -7,9 +7,9 @@
 <p align="center">
 	<a aria-label="last commit" href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/commits"><img src="https://img.shields.io/github/last-commit/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode.svg"></a>
 	<a aria-label="contributors graph" href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/graphs/contributors"><img src="https://img.shields.io/github/contributors/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode.svg"></a>
-	<a href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode" /></a>
-	<a aria-label="license" href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/LICENSE"><img src="https://img.shields.io/github/license/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode.svg" alt="">
-  </a>
+	<a href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode"></a>
+	<a aria-label="license" href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/LICENSE"><img src="https://img.shields.io/github/license/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode.svg"></a>
+	<a href="https://discord.com/users/599205209784188939"><img src="https://img.shields.io/badge/chat%20on-discord-7289da.svg"></a>
 </p>
 
 
