@@ -1,13 +1,16 @@
-# DarkMode für das RaMa-Portal
+<h1 align="center">DarkMode für das RaMa-Portal</h1>
 
 
-<ul>
-	<li>Augenschonendes dunkles Design</li>
-	<li>Stromsparend für OLED-Displays</li>
-	<li>Moderne und runde Oberfläche</li>
-	<li>Animationen für flüssigere Bedienung</li>
-</ul>
+<p align="center">Dunkles und modernes Design</p>
 <br />
+
+<p align="center">
+	<a aria-label="last commit" href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/commits"><img src="https://img.shields.io/github/last-commit/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode.svg"></a>
+	<a aria-label="contributors graph" href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/graphs/contributors"><img src="https://img.shields.io/github/contributors/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode.svg"></a>
+	<a href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode" /></a>
+	<a aria-label="license" href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/LICENSE"><img src="https://img.shields.io/github/license/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode.svg" alt="">
+  </a>
+</p>
 
 
 
@@ -32,7 +35,7 @@
 ## About
 </a>
 
-Dies ist ein alternatives dunkles Design für das [RaMa-Portal](https://portal.rama-mainz.de) (und alle anderen Schulen, die das Portal von Ingo Schnell verwenden). Das ganze basiert auf Vorgaben des [Material-Themes](https://material.io) und ist in [CSS](https://www.w3.org/Style/CSS/Overview.en.html) geschrieben.
+Dies ist ein alternatives dunkles Design für das [RaMa-Portal](https://portal.rama-mainz.de) (und <a href="#schulen">weitere Schulen</a>). Das ganze basiert auf Vorgaben des [Material-Themes](https://material.io) und ist in CSS und JS geschrieben.
 
 Der DarkMode wird über das Browser-Addon *Custom Style Script* eingebunden, mit welchem der DarkMode einfach aktiviert und deaktiviert werden kann. Es werden einige Grafik-Bugs der normalen Oberfläche behoben und das Design ist moderner und runder. Sowohl die normale Oberfläche, als auch die Lernumgebung sind in dunklem Design.
 
