@@ -19,6 +19,7 @@
 }
 html {
 	background: url('https://i.ibb.co/sKLNP49/rama-bkgr.png') #121212 !important;
+	background-size: cover !important;
 	height: 100%;
 }
 body {
