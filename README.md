@@ -20,12 +20,14 @@
 2. <a href="#screenshots">Screenshots</a>
 3. <a href="#schulen">Unterstützte Schulen</a>
 4. <a href="#installation">Installation</a>
-5. <a href="#updates">Updates</a>
-6. <a href="#deaktivieren">Deaktivieren/Aktivieren des DarkModes</a>
-7. <a href="#technik">Technische Details</a><br />
-7.1 <a href="#technik-allg">Allgemeines</a><br />
-7.2 <a href="#technik-vars">Variablen</a><br />
-7.3 <a href="#technik-files">Dateinamen</a>
+5. <a href="#einstellungen">Einstellungen</a><br />
+5.1 <a href="#optionen">Optionen</a>
+6. <a href="#updates">Updates</a>
+7. <a href="#deaktivieren">Deaktivieren/Aktivieren des DarkModes</a>
+8. <a href="#technik">Technische Details</a><br />
+8.1 <a href="#technik-allg">Allgemeines</a><br />
+8.2 <a href="#technik-vars">Variablen</a><br />
+8.3 <a href="#technik-files">Dateinamen</a>
 <br />
 <br />
 
@@ -117,6 +119,46 @@ Support/Hilfe bei der Installation biete ich über Discord an: LoxxoHD#9204
 ![Image missing](https://user-images.githubusercontent.com/69604121/114932171-b48cbc00-9e26-11eb-9bdf-7e1245988bdf.png)
 
 
+
+
+<a name="einstellungen">
+
+## Einstellungen
+</a>
+
+Der DarkMode verfügt über einige Einstellungen, mit dem sich der DarkMode individuell gestalten lässt. Diese werden auch nach dem schließen der Website und des Browsers lokal gespeichert. Es werden keine Daten an irgendwelche Server weitergeleitet!
+Die Einstellungen lassen sich unten in der Referenz-Leiste öffnen und entweder mit dem Kreuz oder per *esc* schließen.
+![Image Missing](https://user-images.githubusercontent.com/69604121/190807313-02a237d4-25a3-4eb6-8ef6-0363b81041ea.png)
+
+
+### Optionen
+
+**1. Hintergrund-Bild**<br />
+Wenn aktiviert, wird das Hintergrund-Bild angezeigt, ansonsten wird nur eine Farbe angezeigt.<br />
+*Standardwert: aktiviert*
+
+**2. Primärfarbe**<br />
+Legt die Farbe für alle Elemente mit einer Akzentfarbe fest.<br />
+*Standardwert: #9c2132*
+
+**3. Hoverfarbe**<br />
+Legt die Farbe für Elemente mit einer Akzentfarbe beim darüberfahren fest.<br />
+*Standardwert: #d2545b*
+
+**4. Eigene Nachrichten-Farbe**<br />
+Legt die Farbe für eigene Chat-Nachrichten fest.<br />
+*Standardwert: #43a047*
+
+**5. Schüler Nachrichten-Farbe**<br />
+Legt die Farbe für Chat-Nachrichten von Schülern fest.<br />
+*Standardwert: #424242*
+
+**6. Lehrer Nachrichten-Farbe**<br />
+Legt die Farbe für Chat-Nachrichten von Lehrern fest.<br />
+*Standardwert: #0277bd*
+
+
+
 <a name="updates">
 
 ## Updates
@@ -173,7 +215,7 @@ Definiert die Farbe einer Hover-Animation von einem Primärfarbenen Element.
 
 `message-self-color`
 
-**Standardwert: #43A047**<br />
+**Standardwert: #43a047**<br />
 Definiert die Hintergrundfarbe für eigene Chat-Nachrichten.
 <br /><br />
 
@@ -185,7 +227,7 @@ Definiert die Hintergrundfarbe für Chat-Nachrichten von Schülern.
 
 `message-teacher-color`
 
-**Standardwert: #0277BD**<br />
+**Standardwert: #0277bd**<br />
 Definiert die Hintergrundfarbe für Chat-Nachrichten von Lehrern.
 <br /><br />
 
