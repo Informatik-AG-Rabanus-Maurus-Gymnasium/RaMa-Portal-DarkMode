@@ -31,11 +31,17 @@ function createSettings() {
 
 	// Create the Settings
 	createSetting("setBg", "bg_option()", "checkbox", "Hintergrund-Bild");
+	if (!ls.url_set) { ls.url_set = "https://i.ibb.co/sKLNP49/rama-bkgr.png" }
+	createSetting("setUrl", "storeOption('url_set','setUrl')", "url", "Hintergrund-Bild Link", "Url", ls.url_set);
 	createSetting("primary", "storeOption('primary_set','primary')", "color", "Primärfarbe");
 	createSetting("hover", "storeOption('hover_set','hover')", "color", "Hoverfarbe");
 	createSetting("ownMessage", "storeOption('ownMessage_set','ownMessage')", "color", "Eigene Nachrichten-Farbe");
 	createSetting("message", "storeOption('message_set','message')", "color", "Schüler Nachrichten-Farbe");
 	createSetting("teacherMessage", "storeOption('teacherMessage_set','teacherMessage')", "color", "Lehrer Nachrichten-Farbe");
+
+	var reset = document.createElement("input");
+	setAttr(reset, { "id": "reset", "type": "button", "onclick": "setDefaults()", "value": "Reset"});
+	opts.appendChild(reset);
 
 	// Append the Settings to the Settings-Window
 	document.body
@@ -49,11 +55,11 @@ function setAttr(el, attrs) {
 		el.setAttribute(key, attrs[key]);
 	}
 }
-function createSetting(name, onchange, itype, text) {
+function createSetting(name, onchange, itype, text, placeholder, value) {
 	var el = document.createElement("div");
 	el.classList.add("Opt", name);
 	var el_i = document.createElement("input");
-	setAttr(el_i, { "id": name, "type": itype, "onchange": onchange });
+	setAttr(el_i, { "id": name, "type": itype, "onchange": onchange, "placeholder": placeholder, "value": value });
 	var el_s = document.createElement("span");
 	el_s.innerText = text;
 	opts
@@ -93,7 +99,7 @@ function applySettings() {
 	// Apply Background-Image
 	if (ls.bg_set === "true") {
 		document.getElementById("setBg").checked = true;
-		setAttr(document.documentElement, { "style": "background: url('https://i.ibb.co/sKLNP49/rama-bkgr.png') #121212 !important; background-size: cover !important;" });
+		setAttr(document.documentElement, { "style": "background: url(" + ls.url_set + ") #121212 !important; background-size: cover !important;" });
 	} else {
 		document.documentElement.style = "background: #121212 !important";
 	}
@@ -122,6 +128,9 @@ function checkDefaults() {
 	if (!ls.bg_set) {
 		ls.bg_set = true;
 	}
+	if (!ls.url_set) {
+		ls.url_set = "https://i.ibb.co/sKLNP49/rama-bkgr.png";
+	}
 	if (!ls.primary_set) {
 		ls.primary_set = "#9c2132";
 	}
@@ -137,4 +146,15 @@ function checkDefaults() {
 	if (!ls.teacherMessage_set) {
 		ls.teacherMessage_set = "#0277BD";
 	}
+}
+
+function setDefaults() {
+	ls.bg_set = true;
+	ls.url_set = "https://i.ibb.co/sKLNP49/rama-bkgr.png";
+	ls.primary_set = "#9c2132";
+	ls.hover_set = "#d2545b";
+	ls.ownMessage_set = "#43A047";
+	ls.message_set = "#424242";
+	ls.teacherMessage_set = "#0277BD";
+	location.reload();
 }
