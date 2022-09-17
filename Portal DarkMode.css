@@ -1139,7 +1139,7 @@ a[onclick*="subm(\"dwnl\","] div:hover {
 	height: 100vh;
 	z-index: 10000;
 	position: fixed;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	display: none;
 }
 #settings {
@@ -1185,28 +1185,51 @@ a[onclick*="subm(\"dwnl\","] div:hover {
 	display: flex;
 	justify-content: center;
 }
+.Opt span {
+	line-height: 24px;
+}
 .Opt input {
 	margin-right: 8px;
 	padding: 0px;
-	height: 20px;
+	height: 24px;
 	border-radius: 5px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
+	width: 80px;
+}
+.Opt input[type="checkbox"] {
+	height: 20px;
+}
+.Opt input[type="url"] {
+	text-align: left;
+	background-color: #424242 !important;
+	box-sizing: border-box;
+	padding: 0px 6px !important;
 }
 .Opt.primary input {
-	border: 11px solid var(--primary-color) !important;
+	border: 12px solid var(--primary-color) !important;
 }
 .Opt.hover input {
-	border: 11px solid var(--primary-hover-color) !important;
+	border: 12px solid var(--primary-hover-color) !important;
 }
 .Opt.ownMessage input {
-	border: 11px solid var(--message-self-color) !important;
+	border: 12px solid var(--message-self-color) !important;
 }
 .Opt.message input {
-	border: 11px solid var(--message-student-color) !important;
+	border: 12px solid var(--message-student-color) !important;
 }
 .Opt.teacherMessage input {
-	border: 11px solid var(--message-teacher-color) !important;
+	border: 12px solid var(--message-teacher-color) !important;
+}
+#reset {
+	background-color: var(--primary-color) !important;
+	width: 100px;
+	border-radius: 25px;
+	margin-top: 25px;
+
+}
+#reset:hover {
+	background-color: var(--primary-hover-color) !important;
 }
 /* Settings-Design Ende */
 
