@@ -128,7 +128,7 @@ Support/Hilfe bei der Installation biete ich über Discord an: LoxxoHD#9204
 
 Der DarkMode verfügt über einige Einstellungen, mit dem sich der DarkMode individuell gestalten lässt. Diese werden auch nach dem schließen der Website und des Browsers lokal gespeichert. Es werden keine Daten an irgendwelche Server weitergeleitet!
 Die Einstellungen lassen sich unten in der Referenz-Leiste öffnen und entweder mit dem Kreuz oder per *esc* schließen.
-![Image Missing](https://user-images.githubusercontent.com/69604121/190831282-ca013d03-a582-4d5b-ab01-54e6ba72cb2d.png)
+![Image Missing](https://user-images.githubusercontent.com/69604121/190850184-651a1c70-04f7-421a-a2c2-0b354ee68a93.png)
 
 
 ### Optionen
@@ -136,6 +136,10 @@ Die Einstellungen lassen sich unten in der Referenz-Leiste öffnen und entweder 
 **1. Hintergrund-Bild**<br />
 Wenn aktiviert, wird das Hintergrund-Bild angezeigt, ansonsten wird nur eine Farbe angezeigt.<br />
 *Standardwert: aktiviert*
+
+**2. Hintergrund-Bild Link**<br />
+Link zu einem belibigen Hintergrund-Bild.<br />
+*Standardwert: https://i.ibb.co/sKLNP49/rama-bkgr.png*
 
 **2. Primärfarbe**<br />
 Legt die Farbe für alle Elemente mit einer Akzentfarbe fest.<br />
