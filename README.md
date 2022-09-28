@@ -2,7 +2,7 @@
 
 
 <p align="center">Dunkles und modernes Design</p>
-<br />
+<img class="screen" src="https://user-images.githubusercontent.com/69604121/142028115-4b707548-91b6-401a-b807-0e0983e61c59.png" alt="RaMa-Portal Screenshot im DarkMode" />
 
 <p align="center">
 	<a aria-label="last commit" href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/commits"><img src="https://img.shields.io/github/last-commit/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode.svg"></a>
@@ -11,6 +11,8 @@
 	<a aria-label="license" href="https://github.com/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode/LICENSE"><img src="https://img.shields.io/github/license/Informatik-AG-Rabanus-Maurus-Gymnasium/RaMa-Portal-DarkMode.svg"></a>
 	<a href="https://discord.com/users/599205209784188939"><img src="https://img.shields.io/badge/chat%20on-discord-7289da.svg"></a>
 </p>
+
+
 
 
 
@@ -135,31 +137,31 @@ Die Einstellungen lassen sich unten in der Referenz-Leiste öffnen und entweder 
 
 **1. Hintergrund-Bild**<br />
 Wenn aktiviert, wird das Hintergrund-Bild angezeigt, ansonsten wird nur eine Farbe angezeigt.<br />
-*Standardwert: aktiviert*
+*Standardwert:* `aktiviert`
 
 **2. Hintergrund-Bild Link**<br />
 Link zu einem belibigen Hintergrund-Bild.<br />
-*Standardwert: https://i.ibb.co/sKLNP49/rama-bkgr.png*
+*Standardwert:* `https://i.ibb.co/sKLNP49/rama-bkgr.png`
 
 **2. Primärfarbe**<br />
 Legt die Farbe für alle Elemente mit einer Akzentfarbe fest.<br />
-*Standardwert: #9c2132*
+*Standardwert:* `#9c2132`
 
 **3. Hoverfarbe**<br />
 Legt die Farbe für Elemente mit einer Akzentfarbe beim darüberfahren fest.<br />
-*Standardwert: #d2545b*
+*Standardwert:* `#d2545b`
 
 **4. Eigene Nachrichten-Farbe**<br />
 Legt die Farbe für eigene Chat-Nachrichten fest.<br />
-*Standardwert: #43a047*
+*Standardwert:* `#43a047`
 
 **5. Schüler Nachrichten-Farbe**<br />
 Legt die Farbe für Chat-Nachrichten von Schülern fest.<br />
-*Standardwert: #424242*
+*Standardwert:* `#424242`
 
 **6. Lehrer Nachrichten-Farbe**<br />
 Legt die Farbe für Chat-Nachrichten von Lehrern fest.<br />
-*Standardwert: #0277bd*
+*Standardwert:* `#0277bd`
 
 
 
