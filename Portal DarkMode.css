@@ -1335,7 +1335,9 @@ tr.green td {
 .zettel{
 	color: black;
 }
-
+ol{
+	color: white;
+}
 
 a[onclick="clearNames()"] > div {
 	background: #424242 !important;
