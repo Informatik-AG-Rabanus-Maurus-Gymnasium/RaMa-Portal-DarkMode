@@ -1332,6 +1332,11 @@ tr.green td {
 .table tbody tr:nth-child(2n+1):hover, .table tbody tr:nth-child(2n):hover, .table th:hover {
 	background-color: #212121;
 }
+.zettel{
+	color: black;
+}
+
+
 a[onclick="clearNames()"] > div {
 	background: #424242 !important;
 	border: 1px solid #616161;
