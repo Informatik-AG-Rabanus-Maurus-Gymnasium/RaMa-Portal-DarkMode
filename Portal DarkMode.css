@@ -249,7 +249,7 @@ ul.oe_sidebar > li > a {
 	text-decoration: none;
 	font-size: 14px;
 	width: 100px;
-	height: auto;
+	height: 100px;
 	padding: 10px;
 	margin: 4px !important;
 	box-shadow: 0px 0px 5px #000;
@@ -390,6 +390,10 @@ tr {
 td, th {
 	padding: 4px;
 }
+th {
+    background-color: #616161;
+    color: #fff;
+}
 .boxed {
 	border: 1px solid #a0a0a0;
 	padding: 2px;
@@ -507,11 +511,11 @@ button:hover {
 	background: #424242;
 	width: 100%;
 	font-size: 12px;
-	line-height: 20px;
+	line-height: 25px;
 	text-align: right;
-	height: 20px;
+	height: 25px;
 	color: #fff;
-	z-index: 10001 !important;
+	z-index: 1000 !important;
 	box-shadow: 0px 0px 0.6px rgba(0, 0, 0, 0.084), 0px 0px 1.3px rgba(0, 0, 0, 0.121), 0px 0px 2.5px rgba(0, 0, 0, 0.15), 0px 0px 4.5px rgba(0, 0, 0, 0.179), 0px 0px 8.4px rgba(0, 0, 0, 0.216), 0px 0px 20px rgba(0, 0, 0, 0.3) !important;
 }
 a.selected {
@@ -1062,6 +1066,10 @@ a[onclick^="rmmsg("][onclick*="direkt"] > img {
 
 
 /* Login-Design */
+#imgKennwort {
+    filter: brightness(2.65);
+    vertical-align: middle !important;
+}
 .loginbox {
 	width: 300px !important;
 	margin-left: 200px !important;
@@ -1128,6 +1136,44 @@ a[onclick*="subm(\"dwnl\","] div:hover {
 }
 /* Speiseplan-Download Design Ende */
 
+/* Fehlzeiten Design */
+.rcol1 {
+  background: #616161;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  width: 624px;
+}
+.rcol3 {
+  background: #424242;
+  border: none;
+  border-radius: 8px;
+}
+.stag {
+  background: #424242;
+  border: none;
+  height: 20px;
+  color: #fff;
+  border-radius: 2px;
+}
+.stag.u {
+  background-color: var(--primary-color);
+}
+.stag.a {
+  background-color: #FFD600;
+  color: #000;
+}
+.stag.e {
+  background-color: var(--success-color);
+}
+.ftag {
+  background: #616161;
+  border: none;
+  height: 20px;
+  border-radius: 2px;
+  color: #fff;
+}
+/* Fehlzeiten Design Ende */
 
 /* Settings-Design */
 #settings-link {
@@ -1233,7 +1279,7 @@ a[onclick*="subm(\"dwnl\","] div:hover {
 }
 /* Settings-Design Ende */
 
-
+/* Vertretungsplan Design */
 .tagesbutton {
 	background: rgba(255,255,255,0.08);
 	color: #fff;
@@ -1250,6 +1296,15 @@ a[onclick*="subm(\"dwnl\","] div:hover {
 	background: var(--primary-color);
 	color: #fff;
 }
+.tagesbutton:first-child {
+    margin-left: 10px;
+}
+table.vplan {
+  border: none;
+}
+/* Vertretungsplan Design Ende */
+
+
 .nzts {
 	width: calc(100% - 8px) !important;
 	margin: 0px 4px 1em 4px;
@@ -1363,5 +1418,9 @@ a[onclick="clearNames()"] > div:hover {
 		max-height: 0;
 		padding: 0 1em;
 		display: none;
-	} 
+	}
+}
+
+.content > table:nth-child(1) > tbody:nth-child(2) > tr:empty {
+    height: 0px !important;
 }
