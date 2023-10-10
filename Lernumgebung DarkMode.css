@@ -163,12 +163,13 @@ body {
 }
 .felem_s > div {
 	right: 20px !important;
+	top: 10px !important;
 }
 .mlist{
 	background:#121212;
 	font-size:14px;
 	color:#fff;
-	height: calc(100% - 25px);
+	height: auto !important;
 	width: 20%;
 	min-width: 200px;
 	max-width: 400px;
@@ -226,7 +227,7 @@ body {
 	text-overflow: ellipsis;
 }
 .mscrollbox {
-	height: calc(100% - 40px);
+	height: calc(100% - 60px) !important;
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -746,4 +747,21 @@ img[src*="icn/playpause200.png"] {
 }
 #applet_bttns {
 	margin-bottom: 5px;
+}
+.box-message {
+  background-color: #424242 !important;
+  border-radius: 25px;
+  transition: var(--transition-duration);
+}
+.box-message:hover {
+  background-color: #616161 !important;
+}
+#inbox {
+overflow-y: auto;
+}
+.navelem_l {
+  background-size: 40px !important;
+  background-position: center !important;
+  padding: 4px;
+  margin: 0px;
 }
