@@ -82,7 +82,7 @@ body {
 	margin: 4px 0px 4px 6px;
 	min-width: 10px;
 	height: 20px;
-	padding: 6px 4px 6px 25px;
+	padding: 6px 4px 6px 30px;
 	float: left;
 	display: flex;
 	align-items: center;
@@ -94,7 +94,7 @@ body {
 	min-width: 2%;
 	max-width: 6%;
 	height: 20px;
-	padding: 6px 4px 6px 25px;
+	padding: 6px 4px 6px 30px;
 	float: right;
 	display: flex;
 	align-items: center;
@@ -566,64 +566,64 @@ body {
 /* Hinzugefügt für DarkMode */
 
 /* Icon-Austausch */
-.navelem_l[style*="background:url(icn/home.png)"] {
+.navelem_l[style*='url("icn/home.png")'] {
 	background: url(https://i.ibb.co/c3J922Q/home.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/copy.png)"] {
+.navelem_l[style*='url("icn/copy.png")'] {
 	background: url(https://i.ibb.co/f964MfW/copy.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/move.png)"] {
+.navelem_l[style*='url("icn/move.png")'] {
 	background: url(https://i.ibb.co/WVsXrh7/move.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/add.png)"] {
+.navelem_l[style*='url("icn/add.png")'] {
 	background: url(https://i.ibb.co/c2JgwbV/add.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/edit.png)"] {
+.navelem_l[style*='url("icn/edit.png")'] {
 	background: url(https://i.ibb.co/Z86pvb6/edit.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/reload.png)"] {
+.navelem_l[style*='url("icn/reload.png")'] {
 	background: url(https://i.ibb.co/QKDxsb1/reload.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/down.png)"] {
+.navelem_l[style*='url("icn/down.png")'] {
 	background: url(https://i.ibb.co/mSM5jnJ/down.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/lock.png)"] {
+.navelem_l[style*='url("icn/lock.png")'] {
 	background: url(https://i.ibb.co/vZ838dr/lock.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/unlock.png)"] {
+.navelem_l[style*='url("icn/unlock.png")'] {
 	background: url(https://i.ibb.co/fqRbD4C/unlock.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/task.png)"] {
+.navelem_l[style*='url("icn/task.png")'] {
 	background: url(https://i.ibb.co/yNFV90p/task.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_l[style*="background:url(icn/del.png)"] {
+.navelem_l[style*='url("icn/del.png")'] {
 	background: url(https://i.ibb.co/xGQpvFR/del.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_r[style*="background:url(icn/recycle.png)"] {
+.navelem_r[style*='url("icn/recycle.png")'] {
 	background: url(https://i.ibb.co/PNbbbhz/recycle.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.navelem_r[style*="background:url(icn/search.png)"] {
+.navelem_r[style*='url("icn/search.png")'] {
 	background: url(https://i.ibb.co/yYtXWP5/search.png) no-repeat left !important;
-	background-size: 25px !important;
+	background-size: 30px !important;
 }
-.melem[style*='background-image: url("icn/lnk.png")'], .melem_s[style*='background-image: url("icn/lnk.png")'] {
+.melem[style*='url("icn/lnk.png")'], .melem_s[style*='url("icn/lnk.png")'] {
 	background-image: url(https://i.ibb.co/sq7JZMK/ink.png) !important;
 	background-position: 0px center !important;
 	background-size: contain !important;
 }
-.melem[style*='background-image: url("icn/docx.png")'], .melem_s[style*='background-image: url("icn/docx.png")'] {
+.melem[style*='url("icn/docx.png")'], .melem_s[style*='url("icn/docx.png")'] {
 	background-image: url(https://i.ibb.co/SRPF8Rv/docx.png) !important;
 	background-position: 0px center !important;
 	background-size: contain !important;
